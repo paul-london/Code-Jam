@@ -35,14 +35,24 @@ This tool could serve use cases in delivery services, travel planning, field tec
 | 5               | TBD                  |
 
 ## 📁 Project Structure (Tentative)
+```text
 route-optimization-mvp/
-├── app/ # Core logic and algorithms
-├── data/ # Sample datasets
-├── static/ or public/ # Frontend or UI assets (if any)
-├── tests/ # Unit tests
-├── README.md # Project documentation
-├── requirements.txt # Dependencies
-└── main.py or app.py # Entry point
+├── app/                   # Core logic and route optimization algorithms
+│   ├── __init__.py
+│   ├── optimizer.py       # Algorithm implementation (e.g., Dijkstra, A*)
+│   └── utils.py           # Helper functions
+├── data/                  # Sample datasets or input files
+│   └── locations.csv
+├── static/                # Frontend assets (if applicable)
+│   └── style.css
+├── templates/             # HTML templates (if using Flask or similar)
+│   └── index.html
+├── tests/                 # Unit and integration tests
+│   └── test_optimizer.py
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+└── main.py                # Entry point (runs the app or script)
+```
 
 ## 🗓️ Timeline
 
