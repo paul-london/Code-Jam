@@ -29,11 +29,11 @@ This tool could serve use cases in delivery services, travel planning, field tec
 
 | Name            | Role                 |
 |-----------------|----------------------|
-| Alice           | Project Manager      |
-| Bob             | Backend Developer    |
-| Charlie         | Algorithm Specialist |
-| Dana            | Frontend Developer   |
-| You?            | TBD                  |
+| 1               | TBD                  |
+| 2               | TBD                  |
+| 3               | TBD                  |
+| 4               | TBD                  |
+| 5               | TBD                  |
 
 ## 📁 Project Structure (Tentative)
 route-optimization-mvp/
