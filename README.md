@@ -24,3 +24,46 @@ This tool could serve use cases in delivery services, travel planning, field tec
 - Programming Language: `Python` / `JavaScript` / `Node.js` *(decide based on group skillset)*
 - Algorithm: Dijkstra / A* / Simulated Annealing / Custom Heuristic
 - (Optional)
+
+  ## 🧑‍🤝‍🧑 Team Members
+
+| Name            | Role                 |
+|-----------------|----------------------|
+| Alice           | Project Manager      |
+| Bob             | Backend Developer    |
+| Charlie         | Algorithm Specialist |
+| Dana            | Frontend Developer   |
+| You?            | TBD                  |
+
+## 📁 Project Structure (Tentative)
+route-optimization-mvp/
+├── app/ # Core logic and algorithms
+├── data/ # Sample datasets
+├── static/ or public/ # Frontend or UI assets (if any)
+├── tests/ # Unit tests
+├── README.md # Project documentation
+├── requirements.txt # Dependencies
+└── main.py or app.py # Entry point
+
+## 🗓️ Timeline
+
+| Phase           | Milestone                    | Target Date |
+|----------------|-------------------------------|-------------|
+| 📌 Planning     | Define MVP scope & algorithm  | TBD         |
+| 🔧 Development  | Build core features           | TBD         |
+| 🧪 Testing       | Functional tests              | TBD         |
+| 🚀 Launch        | MVP Deployment                | TBD         |
+
+## 📝 Notes
+
+- Algorithm selection and trade-offs will be discussed as a group.
+- Aim to build something that *works*, then iterate and optimize.
+- Keep code modular and readable for team collaboration.
+
+## 📬 Contact & Communication
+
+Project coordination through [GitHub Issues](https://github.com/) and Discord.
+
+---
+
+_This is a temporary README. Will be updated as the project progresses._
