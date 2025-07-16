@@ -25,7 +25,7 @@ This tool could serve use cases in delivery services, travel planning, field tec
 - Algorithm: Dijkstra / A* / Simulated Annealing / Custom Heuristic
 - (Optional)
 
-  ## 🧑‍🤝‍🧑 Team Members
+## 🧑‍🤝‍🧑 Team Members
 
 | Name            | Role                 |
 |-----------------|----------------------|
