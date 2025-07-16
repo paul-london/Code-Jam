@@ -59,10 +59,10 @@ route-optimization-mvp/
 
 | Phase           | Milestone                    | Target Date |
 |----------------|-------------------------------|-------------|
-| 📌 Planning     | Define MVP scope & algorithm  | 7/17/2025        |
+| 📌 Planning     | Define scope & algorithm  | 7/17/2025        |
 | 🔧 Development  | Build core features           | 7/20/2025        |
-| 🧪 Testing       | Functional tests              | 7/21/2025         |
-| 🚀 Launch        | MVP Deployment                | 7/22/2025         |
+| 🧪 Testing       | Deployment, Submission            | 7/21/2025         |
+| 🚀 Launch        | Presentation                | 7/22/2025         |
 
 ## 📝 Notes
 
