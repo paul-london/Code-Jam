@@ -1,6 +1,6 @@
 # 🗺️ Route Optimization MVP
 
-A collaborative project focused on developing a Minimum Viable Product (MVP) that implements a route optimization algorithm to improve efficiency in travel, delivery, or logistics.
+A collaborative project between TripleTen Data Science and Software Engineering students focused on developing a Minimum Viable Product (MVP) that implements a route optimization algorithm to improve efficiency in travel, delivery, or logistics.
 
 ## 🚀 Project Overview
 
