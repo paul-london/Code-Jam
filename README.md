@@ -28,11 +28,11 @@ This tool could serve use cases in delivery services, travel planning, field tec
 
 | Name            | Role                 |
 |-----------------|----------------------|
-| 1               | TBD                  |
-| 2               | TBD                  |
-| 3               | TBD                  |
-| 4               | TBD                  |
-| 5               | TBD                  |
+| Austin               | TBD                  |
+| Matthew               | TBD                  |
+| Paul               | TBD                  |
+| Priti               | TBD                  |
+| Thato               | TBD                  |
 
 ## 📁 Project Structure (Tentative)
 
