@@ -23,7 +23,6 @@ This tool could serve use cases in delivery services, travel planning, field tec
 
 - Programming Language: `Python` / `JavaScript` / `Node.js` *(decide based on group skillset)*
 - Algorithm: Dijkstra / A* / Simulated Annealing / Custom Heuristic
-- (Optional)
 
 ## 🧑‍🤝‍🧑 Team Members
 
