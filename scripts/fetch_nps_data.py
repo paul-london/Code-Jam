@@ -11,6 +11,7 @@ name
 *longitude
 latLong (combined "lat:..., long:...")
 *activities (array of objects with id and name)
+*amenities
 topics
 *states
 contacts (e.g., phone, email)
@@ -25,6 +26,10 @@ images (photos array)
 weatherInfo
 """
 
+# Import requests for JSON and pandas
+import requests
+import pandas as pd
+
 API_KEY = "fpyJ9NycrgZX5mK8f0n90c4qXGPcYAsBPwt4BLJk"
 url = "https://developer.nps.gov/api/v1/parks"
 
@@ -37,7 +42,8 @@ def fetch_all_parks(api_key):
         params = {
             "limit": limit,
             "start": start,
-            "api_key": api_key
+            "api_key": api_key,
+            "fields": "amenities"
         }
 
         response = requests.get(url, params=params)
@@ -68,6 +74,7 @@ for park in parks_raw:
         'designation': park.get('designation', ''),
         'states': park.get('states', ''),
         'description': park.get('description', ''),
+        'amenities': park.get('amenities', ''),
         'activities': ', '.join(activity_names)
     })
 
