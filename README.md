@@ -29,10 +29,11 @@ This tool could serve use cases in delivery services, travel planning, field tec
 | Name            | Role                 |
 |-----------------|----------------------|
 | Austin               | Software Engineering    |
+| Lily              | Software Engineering       |
 | Matthew               | Software Engineering   |
 | Paul               | Data Science              |
 | Priti               | Data Science             |
-| Thato               | Software Engineering     |
+
 
 ## 📁 Project Structure (Tentative)
 
