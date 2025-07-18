@@ -30,6 +30,7 @@ weatherInfo
 import requests
 import pandas as pd
 import time
+from tqdm import tqdm 
 
 api_key = "fpyJ9NycrgZX5mK8f0n90c4qXGPcYAsBPwt4BLJk"
 url = "https://developer.nps.gov/api/v1/parks"
@@ -67,18 +68,68 @@ parks_raw = fetch_all_parks(api_key)
 # Convert to DataFrame
 records = []
 for park in parks_raw:
+    # Activities
     activity_list = park.get('activities', [])
     activity_names = [a.get('name', '') for a in activity_list]
-    
+    # Topics
+    topic_names = [t.get('name', '') for t in park.get('topics', [])]
+    # First image
+    images = park.get('images', [])
+    image_url = images[0].get('url') if images else ''
+    image_caption = images[0].get('caption') if images else ''
+    # Contacts
+    contacts = park.get('contacts', {})
+    phone = contacts.get('phoneNumbers', [{}])[0].get('phoneNumber', '') if contacts.get('phoneNumbers') else ''
+    email = contacts.get('emailAddresses', [{}])[0].get('emailAddress', '') if contacts.get('emailAddresses') else ''
+    # Addresses
+    addresses = park.get('addresses', [])
+    physical = next((a for a in addresses if a.get('type') == 'Physical'), {})
+    mailing = next((a for a in addresses if a.get('type') == 'Mailing'), {})
+    # Operating hours
+    hours = park.get('operatingHours', [{}])[0]
+    op_desc = hours.get('description', '')
+    standard_hours = hours.get('standardHours', {})
+    hours_string = ', '.join(f"{k}: {v}" for k, v in standard_hours.items())
+    # Entrance fees and passes
+    fee = park.get('entranceFees', [{}])[0]
+    fee_cost = fee.get('cost', '')
+    fee_desc = fee.get('description', '')
+    fee_title = fee.get('title', '')
+    # Passes
+    pass_info = park.get('entrancePasses', [{}])[0]
+    pass_cost = pass_info.get('cost', '')
+    pass_title = pass_info.get('title', '')
+    pass_desc = pass_info.get('description', '')
+
     records.append({
+        'id': park.get('id', ''),
+        'parkCode': park.get('parkCode', ''),
         'name': park.get('fullName', ''),
         'latitude': park.get('latitude', ''),
         'longitude': park.get('longitude', ''),
         'designation': park.get('designation', ''),
         'states': park.get('states', ''),
         'description': park.get('description', ''),
+        'directionsInfo': park.get('directionsInfo', ''),
+        'directionsUrl': park.get('directionsUrl', ''),
+        'weatherInfo': park.get('weatherInfo', ''),
+        'url': park.get('url', ''),
         'activities': ', '.join(activity_names),
-        'parkCode': park.get('parkCode', '')
+        'topics': ', '.join(topic_names),
+        'image_url': image_url,
+        'image_caption': image_caption,
+        'contact_phone': phone,
+        'contact_email': email,
+        'physical_address': f"{physical.get('line1', '')}, {physical.get('city', '')}, {physical.get('stateCode', '')} {physical.get('postalCode', '')}",
+        'mailing_address': f"{mailing.get('line1', '')}, {mailing.get('city', '')}, {mailing.get('stateCode', '')} {mailing.get('postalCode', '')}",
+        'operating_hours_description': op_desc,
+        'standard_hours': hours_string,
+        'entrance_fee_cost': fee_cost,
+        'entrance_fee_title': fee_title,
+        'entrance_fee_description': fee_desc,
+        'entrance_pass_cost': pass_cost,
+        'entrance_pass_title': pass_title,
+        'entrance_pass_description': pass_desc
     })
 
 parks = pd.DataFrame(records)
@@ -110,7 +161,12 @@ def get_amenities_by_park(park_code, api_key):
         return ""
 
 # Add amenities to dataframe
-parks['amenities'] = parks['parkCode'].apply(lambda code: (time.sleep(0.5), get_amenities_by_park(code, api_key))[1])
+amenities = []
+for code in tqdm(parks['parkCode']):
+    time.sleep(1)
+    amenities.append(get_amenities_by_park(code, api_key))
+
+parks['amenities'] = amenities
 
 # Drop parkCode column
 parks.drop(columns=['parkCode'], inplace=True)
