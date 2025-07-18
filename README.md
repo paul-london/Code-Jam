@@ -13,11 +13,11 @@ This tool could serve use cases in delivery services, travel planning, field tec
 
 ## 📦 Features
 
-- [ ] Clean and modular backend structure
-- [ ] Basic frontend interface or API endpoint
-- [ ] Input support: manual entry or uploaded data (e.g., CSV, JSON)
-- [ ] Route optimization algorithm (TBD)
-- [ ] Performance benchmarks and testing
+- Clean and modular backend structure
+- Basic frontend interface or API endpoint
+- Input support: manual entry or uploaded data (e.g., CSV, JSON)
+- Route optimization algorithm (TBD)
+- Performance benchmarks and testing
 
 ## 🧠 Technologies
 
