@@ -1,6 +1,6 @@
-# 🗺️ Route Optimization MVP
+# 🗺️ National Parks Roadtrip Map Tool
 
-A collaborative project between TripleTen Data Science and Software Engineering students focused on developing a Minimum Viable Product (MVP) that implements a route optimization algorithm to improve efficiency in travel, delivery, or logistics.
+A collaborative project between TripleTen Data Science and Software Engineering students focused on developing an online tool to plan a vacation to United States National Parks based on their location, activities, and amenities.
 
 ## 🚀 Project Overview
 
