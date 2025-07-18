@@ -86,17 +86,20 @@ for park in parks_raw:
     physical = next((a for a in addresses if a.get('type') == 'Physical'), {})
     mailing = next((a for a in addresses if a.get('type') == 'Mailing'), {})
     # Operating hours
-    hours = park.get('operatingHours', [{}])[0]
+    operating_hours_list = park.get('operatingHours', [])
+    hours = operating_hours_list[0] if operating_hours_list else {}
     op_desc = hours.get('description', '')
     standard_hours = hours.get('standardHours', {})
     hours_string = ', '.join(f"{k}: {v}" for k, v in standard_hours.items())
     # Entrance fees and passes
-    fee = park.get('entranceFees', [{}])[0]
+    entrance_fees = park.get('entranceFees', [])
+    fee = entrance_fees[0] if entrance_fees else {}
     fee_cost = fee.get('cost', '')
     fee_desc = fee.get('description', '')
     fee_title = fee.get('title', '')
     # Passes
-    pass_info = park.get('entrancePasses', [{}])[0]
+    entrance_passes = park.get('entrancePasses', [])
+    pass_info = entrance_passes[0] if entrance_passes else {}
     pass_cost = pass_info.get('cost', '')
     pass_title = pass_info.get('title', '')
     pass_desc = pass_info.get('description', '')
@@ -168,7 +171,7 @@ for code in tqdm(parks['parkCode']):
 
 parks['amenities'] = amenities
 
-# Drop parkCode column
+# Drop parkCode column - not needed
 parks.drop(columns=['parkCode'], inplace=True)
 
 # Save as CSV
