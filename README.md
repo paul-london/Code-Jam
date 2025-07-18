@@ -1,4 +1,4 @@
-# 🗺️ National Parks Roadtrip Map Tool
+# 🗺️ National Parks Vacation Route Tool
 
 A collaborative project between TripleTen Data Science and Software Engineering students focused on developing an online tool to plan a vacation to United States National Parks based on their location, activities, and amenities.
 
