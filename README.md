@@ -4,14 +4,14 @@ A collaborative project between TripleTen Data Science and Software Engineering 
 
 ## 🚀 Project Overview
 
-The goal of this project is to build a lightweight, functional MVP that:
-- Accepts location-based input (e.g., addresses, coordinates)
-- Applies a route optimization algorithm (e.g., Dijkstra, A*, Genetic Algorithm)
-- Outputs the most efficient route based on selected criteria (e.g., shortest time, least distance)
+The goal of this project is to build a lightweight, functional tool that:
+- Plans a vacation through a selection of National Parks based on the user's preferences
+- Applies a route optimization algorithm to minimize travel distance (Greedy Nearest Neighbor)
+- Displays the determined travel route on an interactive map
 
 This tool could serve use cases in delivery services, travel planning, field technician routing, or logistics.
 
-## 📦 Features (Planned)
+## 📦 Features
 
 - [ ] Clean and modular backend structure
 - [ ] Basic frontend interface or API endpoint
@@ -22,17 +22,17 @@ This tool could serve use cases in delivery services, travel planning, field tec
 ## 🧠 Technologies
 
 - Programming Language: `Python` / `JavaScript` / `Node.js` *(decide based on group skillset)*
-- Algorithm: Dijkstra / A* / Simulated Annealing / Custom Heuristic
+- Algorithm: Greedy Nearest Neighbor
 
 ## 🧑‍🤝‍🧑 Team Members
 
 | Name            | Role                 |
 |-----------------|----------------------|
-| Austin               | TBD                  |
-| Matthew               | TBD                  |
-| Paul               | TBD                  |
-| Priti               | TBD                  |
-| Thato               | TBD                  |
+| Austin               | Software Engineering    |
+| Matthew               | Software Engineering   |
+| Paul               | Data Science              |
+| Priti               | Data Science             |
+| Thato               | Software Engineering     |
 
 ## 📁 Project Structure (Tentative)
 
