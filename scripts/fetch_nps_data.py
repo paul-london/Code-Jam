@@ -3,7 +3,7 @@
 id
 url
 *fullName
-parkCode
+*parkCode (only needed for amenities)
 name
 *description
 *designation
@@ -29,11 +29,15 @@ weatherInfo
 # Import requests for JSON and pandas
 import requests
 import pandas as pd
+import time
 
-API_KEY = "fpyJ9NycrgZX5mK8f0n90c4qXGPcYAsBPwt4BLJk"
+api_key = "fpyJ9NycrgZX5mK8f0n90c4qXGPcYAsBPwt4BLJk"
 url = "https://developer.nps.gov/api/v1/parks"
 
 def fetch_all_parks(api_key):
+    """
+    Gets information from NPS about National Parks.
+    """
     all_parks = []
     start = 0
     limit = 50
@@ -43,7 +47,6 @@ def fetch_all_parks(api_key):
             "limit": limit,
             "start": start,
             "api_key": api_key,
-            "fields": "amenities"
         }
 
         response = requests.get(url, params=params)
@@ -59,7 +62,7 @@ def fetch_all_parks(api_key):
     return all_parks
 
 # Fetch data
-parks_raw = fetch_all_parks(API_KEY)
+parks_raw = fetch_all_parks(api_key)
 
 # Convert to DataFrame
 records = []
@@ -74,11 +77,43 @@ for park in parks_raw:
         'designation': park.get('designation', ''),
         'states': park.get('states', ''),
         'description': park.get('description', ''),
-        'amenities': park.get('amenities', ''),
-        'activities': ', '.join(activity_names)
+        'activities': ', '.join(activity_names),
+        'parkCode': park.get('parkCode', '')
     })
 
 parks = pd.DataFrame(records)
 
+# Get park amenities by park code
+def get_amenities_by_park(park_code, api_key):
+    """
+    Gets list of amenity names for a specific park by its parkCode.
+    """
+    url = "https://developer.nps.gov/api/v1/amenities/parksplaces"
+    params = {
+        "parkCode": park_code,
+        "api_key": api_key
+    }
+    try:
+        res = requests.get(url, params=params)
+        res.raise_for_status()
+        data = res.json().get("data", [])
+        print(f"Raw data for {park_code}: {data}")  # Debug
+        if data and isinstance(data[0], list):
+            amenities_list = data[0]
+        else:
+            amenities_list = []
+        print(f"Amenities list: {amenities_list}")  # Debug
+        amenity_names = [amenity['name'] for amenity in amenities_list]
+        return ', '.join(amenity_names)
+    except Exception as e:
+        print(f"Error for park {park_code}: {e}")
+        return ""
+
+# Add amenities to dataframe
+parks['amenities'] = parks['parkCode'].apply(lambda code: (time.sleep(0.5), get_amenities_by_park(code, api_key))[1])
+
+# Drop parkCode column
+parks.drop(columns=['parkCode'], inplace=True)
+
 # Save as CSV
-parks.to_csv("../data/nps_parks_with_activities.csv", index=False)
+parks.to_csv("../data/parks.csv", index=False)
