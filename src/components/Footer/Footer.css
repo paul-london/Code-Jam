@@ -10,4 +10,31 @@
 
 .footer__container {
   border-bottom: 1px solid rgba(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer__authors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer__credits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__author {
+  margin: 0;
+}
+
+.footer__git-logo {
+  height: 25px;
+  width: 25px;
 }
