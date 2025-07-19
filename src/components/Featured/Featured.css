@@ -1,6 +1,7 @@
 .featured {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
   background-color: rgba(25, 31, 52, 0.1);
 }
