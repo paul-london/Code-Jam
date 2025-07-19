@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import "./PlanTrip.css";
+import Explore from "../ExplorePage/ExplorePage";
 
 const PlanTrip = () => {
   const [activePanel, setActivePanel] = useState(null);
@@ -19,6 +20,7 @@ const PlanTrip = () => {
           onItineraryClick={openItinerary}
           onClose={closeSidebar}
         />
+        <Explore />
       </div>
     </div>
   );
