@@ -2,7 +2,7 @@ import "./ExplorePage.jsx";
 
 function Explore() {
   return (
-    <div className="explore">
+    <div className="explore modal">
       <h4 className="explore__title">
         Are you ready for the adventure of a life time?
       </h4>

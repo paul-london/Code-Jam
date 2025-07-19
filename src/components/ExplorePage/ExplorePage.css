@@ -1,0 +1,8 @@
+.modal {
+  visibility: hidden;
+  border: 1px solid black;
+}
+
+.modal_is_open {
+  visibility: visible;
+}
