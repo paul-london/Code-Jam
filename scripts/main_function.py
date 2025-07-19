@@ -25,10 +25,12 @@ gmaps = googlemaps.Client(key=api_key_g)
 # Define dataframes used in the function
 parks = pd.read_csv('../data/raw/parks.csv')
 parks_master = pd.read_csv('../data/parks_master.csv')
-parks_subset = pd.read_csv('../data/raw/parks_w.csv')
+parks_subset = pd.read_csv('../data/parks_w.csv')
 
 states = pd.read_csv('../data/raw/states.csv')
 states_master = pd.read_csv('../data/states_master.csv')
+
+route = []
 
 def VacationRoute(home_state):
     # Set up location data
