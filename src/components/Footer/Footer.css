@@ -1,0 +1,13 @@
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  background-color: rgb(41, 79, 182);
+  color: rgba(255, 255, 255);
+}
+
+.footer__container {
+  border-bottom: 1px solid rgba(255, 255, 255);
+}

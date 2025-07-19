@@ -1,0 +1,29 @@
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px 0;
+}
+
+.nav__logo {
+  display: flex;
+  gap: 10px;
+}
+
+.nav__image {
+  width: 60px;
+  height: 80px;
+  padding-left: 20px;
+}
+
+.nav__title {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.nav__links {
+  display: flex;
+  gap: 86px;
+  list-style-type: none;
+  padding: 0 50px;
+  margin: 20px 0 8px;
+}

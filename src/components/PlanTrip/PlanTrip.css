@@ -1,0 +1,9 @@
+.plan-trip {
+}
+
+.plan-trip__heading {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 300;
+}

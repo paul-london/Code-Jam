@@ -1,0 +1,53 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-image: url("../../assets/Mountain-clouds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.intro__container {
+  text-align: center;
+  max-width: 690px;
+  width: 100%;
+  margin: 80px 0;
+}
+
+.intro__title {
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0 auto;
+  color: rgba(255, 255, 255);
+  font-weight: 400;
+}
+
+.intro__paragraph {
+  margin: 40px auto;
+  color: rgba(255, 255, 255);
+}
+
+.intro__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+}
+
+.intro__plan {
+  width: 200px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255);
+}
+
+.intro__explore {
+  width: 150px;
+  border-radius: 12px;
+  font-size: 17px;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255);
+}

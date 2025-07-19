@@ -1,0 +1,16 @@
+.sidebar__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sidebar__button-icon {
+  width: 40px;
+}
