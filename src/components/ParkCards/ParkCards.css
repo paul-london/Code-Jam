@@ -1,8 +1,6 @@
 .cards {
   width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
+  max-width: 1660px;
 }
 
 .cards__container {
