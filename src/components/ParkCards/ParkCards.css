@@ -3,6 +3,7 @@
   max-width: 1200px;
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 
 .cards__container {
