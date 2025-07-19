@@ -1,4 +1,5 @@
 import "./Featured.css";
+import Cards from "../ParkCards/ParkCards";
 
 function Featured() {
   return (
@@ -10,6 +11,7 @@ function Featured() {
           unique landscapes and unforgettable experiences
         </p>
       </div>
+      <Cards />
     </div>
   );
 }
