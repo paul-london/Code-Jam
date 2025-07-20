@@ -84,9 +84,28 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
     # distance_matrix, duration_matrix, parks = precompute_park_distances(parks_w, gmaps)
     # Manual define from pre-calculcations
     travel_array_w = np.load('C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/arrays/travel_array_w.npy', allow_pickle=True)
-    distance_matrix = np.delete(travel_array_w.npy, 3, axis=1)
-    duration_matrix = np.delete(travel_array_w.npy, 2, axis=1)
+    distance_matrix = travel_array_w[:, 2:3]
+    duration_matrix = travel_array_w[:, 3:4]
+    parks_file = pd.read_csv(parks_file)
     parks = parks_file['name']
+
+    # Get all unique parks (origins and destinations)
+    all_parks = list(set(travel_array_w[:, 0]) | set(travel_array_w[:, 1]))
+    all_parks.sort()  # keep consistent order
+
+    # Map park names to indices
+    park_indices = {park: idx for idx, park in enumerate(all_parks)}
+
+    n = len(all_parks)
+    distance_matrix = np.full((n, n), np.inf)
+    duration_matrix = np.full((n, n), np.inf)
+
+    for row in travel_array_w:
+        origin, dest, dist, dur = row
+        i = park_indices[origin]
+        j = park_indices[dest]
+        distance_matrix[i, j] = float(dist)
+        duration_matrix[i, j] = float(dur)
 
     home_to_parks_dist, home_to_parks_dur = compute_home_to_parks(home_coord, parks_w['coordinates'].tolist(), gmaps)
 
