@@ -140,11 +140,4 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
     legs_df = pd.DataFrame(legs_info)
     return legs_df
 
-# Example usage:
-legs_df = VacationRoute(
-    home_state='PA',
-    parks_file = '../data/parks_w.csv',
-    states_file = '../data/states_master.csv',
-    api_key='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
- )
 print(legs_df)
