@@ -45,7 +45,7 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
 
     # distance_matrix, duration_matrix, parks = precompute_park_distances(parks_subset, gmaps)
     # Manual define from pre-calculcations
-    travel_array_subset = np.load(os.path.join(repo_root, 'arrays', 'travel_array_subset.npy'), allow_pickle=True)
+    travel_array_subset = np.load(os.path.join(repo_root, 'data', 'arrays', 'travel_array_subset.npy'), allow_pickle=True)
     distance_matrix = travel_array_subset[:, 2:3]
     duration_matrix = travel_array_subset[:, 3:4]
     
@@ -132,6 +132,9 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
 
     # Convert legs info to dataframe and return
     legs_df = pd.DataFrame(legs_info)
+    print(legs_df)
+    # Create JSON of parks_subset for SE
+    legs_df.to_json((os.path.join(repo_root, 'db.json', 'legs_df.json')), orient='records', indent=2)
     return legs_df
 
 def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
@@ -187,7 +190,7 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
         html = f"""
         <div style="width:220px">
         <h3 style="font-size:16px; margin-bottom:5px;">{row['destination']}</h3>
-        <img src="{img_url}" width="200"><br>
+        <img src="{img_url}" width="200"><br><br>
         <em>{description}</em><br>
         </div>
         """
@@ -215,7 +218,7 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
 if __name__ == "__main__":
     states_file = os.path.join(repo_root, 'data', 'states_master.csv')
     parks_file = os.path.join(repo_root, 'data', 'parks_subset.csv')
-    home_state = 'CA'
+    home_state = 'PA'
     api_key = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
 

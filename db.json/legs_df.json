@@ -1,0 +1,56 @@
+[
+  {
+    "source":"PA",
+    "destination":"Charles Young Buffalo Soldiers National Monument",
+    "distance_miles":436.06,
+    "duration_hours":6.62
+  },
+  {
+    "source":"Charles Young Buffalo Soldiers National Monument",
+    "destination":"Mount Rushmore National Memorial",
+    "distance_miles":1249.2,
+    "duration_hours":18.09
+  },
+  {
+    "source":"Mount Rushmore National Memorial",
+    "destination":"Theodore Roosevelt National Park",
+    "distance_miles":273.72,
+    "duration_hours":4.62
+  },
+  {
+    "source":"Theodore Roosevelt National Park",
+    "destination":"Zion National Park",
+    "distance_miles":270.15,
+    "duration_hours":4.58
+  },
+  {
+    "source":"Zion National Park",
+    "destination":"Big Bend National Park",
+    "distance_miles":270.15,
+    "duration_hours":4.58
+  },
+  {
+    "source":"Big Bend National Park",
+    "destination":"Fort Union National Monument",
+    "distance_miles":547.37,
+    "duration_hours":8.92
+  },
+  {
+    "source":"Fort Union National Monument",
+    "destination":"Golden Gate National Recreation Area",
+    "distance_miles":1252.73,
+    "duration_hours":18.47
+  },
+  {
+    "source":"Golden Gate National Recreation Area",
+    "destination":"Everglades National Park",
+    "distance_miles":2397.01,
+    "duration_hours":35.0
+  },
+  {
+    "source":"Everglades National Park",
+    "destination":"Fire Island National Seashore",
+    "distance_miles":1293.77,
+    "duration_hours":18.9
+  }
+]
