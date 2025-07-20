@@ -1,6 +1,12 @@
+import os
 import folium
 import pandas as pd
 from test4 import VacationRoute
+
+# Get repo root relative to this script's location (two levels up here)
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+states_file = os.path.join(repo_root, 'data', 'states_master.csv')
+parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
 
 def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
     legs_df = VacationRoute(
@@ -61,10 +67,10 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
     return route_map
 
 if __name__ == "__main__":
-    parks_file = '../data/parks_w.csv'
-    states_file = '../data/states_master.csv'
+    states_file = os.path.join(repo_root, 'data', 'states_master.csv')
+    parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
     home_state = 'PA'
-    api_key ='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
+    api_key = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
 
     route_map = plot_route_on_map(parks_file, states_file, home_state, api_key)
