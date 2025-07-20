@@ -70,13 +70,16 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
             tooltip=f"{row['distance_miles']:.1f} mi ({row['duration_hours']:.1f} hrs)"
         ).add_to(route_map)
 
-        folium.Marker(
-            location=dest_coord,
-            popup=folium.Popup(html, max_width=250
-            ),
-            icon=folium.Icon(color='red', icon='flag'),
-            tooltip=f"{row['destination']}"
-        ).add_to(route_map)
+        for i, (idx, row) in enumerate(legs_df.iterrows()):
+            icon = folium.Icon(color='red', icon='flag') if i == len(legs_df) - 1 else folium.Icon(color='red', icon='info-sign')
+            
+            dest_coord = parks_df.loc[parks_df['name'] == row['destination'], ['latitude', 'longitude']].values[0].tolist()
+            folium.Marker(
+                location=dest_coord,
+                popup=folium.Popup(html, max_width=250),
+                icon=icon,
+                tooltip=f"{row['destination']}"
+            ).add_to(route_map)
 
     return route_map
 
