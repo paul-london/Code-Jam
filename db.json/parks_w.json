@@ -1,0 +1,74 @@
+[
+  {
+    "name":"Keweenaw National Historical Park",
+    "latitude":47.1792308,
+    "longitude":-88.52275344,
+    "description":"The stories of people and copper in the Keweenaw Peninsula have been intertwined for more than 7,000 years. Indigenous peoples made copper into tools and trade items. Investors and immigrants arrived in the 1800s in a great mineral rush, developing thriving industries and cosmopolitan communities. Though the mines have since closed, their mark is still visible on the land and people.",
+    "url":"https:\/\/www.nps.gov\/kewe\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C7D1933-1DD8-B71B-0BDEE535F0C69BBC.jpg"
+  },
+  {
+    "name":"Hubbell Trading Post National Historic Site",
+    "latitude":35.70727324,
+    "longitude":-109.5599515,
+    "description":"W\u00f3shd\u0119\u0301\u0119\u0301, please come in where the squeaky wooden floors greet your entry into the oldest operating Trading Post on the Navajo Nation. As your eyes adjust to the dim light in the \"bullpen\", you'll find you've just entered a mercantile. Hubbell's in Ganado has been selling goods and trading Native American Art since 1878. Discover Hubbell Trading Post NHS, sheep, rugs, jewelry and so much more...",
+    "url":"https:\/\/www.nps.gov\/hutr\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C7C91D7-1DD8-B71B-0B54C08912784B29.jpg"
+  },
+  {
+    "name":"George Washington Birthplace National Monument",
+    "latitude":38.19362603,
+    "longitude":-76.92079458,
+    "description":"George Washington Birthplace National Monument is located in the Northern Neck of Virginia. It encompasses 551 acres of land where seven generations of the Washington family lived and where George Washington was born in 1732. The park was also central to one of the earliest efforts to memorialize George Washington during the celebration of his bicentennial birth anniversary in 1932.",
+    "url":"https:\/\/www.nps.gov\/gewa\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/0ABBFD32-FE2A-6141-1486AC0FF80936EC.jpg"
+  },
+  {
+    "name":"Muir Woods National Monument",
+    "latitude":37.89658027,
+    "longitude":-122.5808047,
+    "description":"Walk among old growth coast redwoods, cooling their roots in the fresh water of Redwood Creek and lifting their crowns to reach the sun and fog. Federally protected as a National Monument since 1908, this primeval forest is both refuge and laboratory, revealing our relationship with the living landscape. What will you discover in Muir Woods?",
+    "url":"https:\/\/www.nps.gov\/muwo\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/B8948A3E-F88D-F366-93C97C2CE440F386.jpg"
+  },
+  {
+    "name":"Capitol Reef National Park",
+    "latitude":38.2821653131,
+    "longitude":-111.247048378,
+    "description":"Located in south-central Utah in the heart of red rock country, Capitol Reef National Park is a hidden treasure filled with cliffs, canyons, domes, and bridges in the Waterpocket Fold, a geologic monocline (a wrinkle on the earth) extending almost 100 miles.",
+    "url":"https:\/\/www.nps.gov\/care\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C82E3C7-1DD8-B71B-0B4181834EE46AED.jpg"
+  },
+  {
+    "name":"Gloria Dei Church National Historic Site",
+    "latitude":39.93435005,
+    "longitude":-75.14398924,
+    "description":"Before Pennsylvania there was New Sweden. Discover this last historic link to a forgotten past. Visit the church's pastoral surroundings and its burial ground of patriots and ordinary citizens alike.",
+    "url":"https:\/\/www.nps.gov\/glde\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C7FA643-1DD8-B71B-0BC25E1EB46EC74C.jpg"
+  },
+  {
+    "name":"Presidio of San Francisco",
+    "latitude":37.797,
+    "longitude":-122.4671,
+    "description":"For 218 years, the Presidio served as an army post for three nations. World and local events, from military campaigns to World Fairs and earthquakes, left their mark. Come enjoy the history and the natural beauty of the Presidio. Explore centuries of architecture. Reflect in a national cemetery. Walk along an historic airfield, through forests or to beaches, and admire spectacular vistas.",
+    "url":"https:\/\/www.nps.gov\/prsf\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C80243D-1DD8-B71B-0B485E9DA8C86784.jpg"
+  },
+  {
+    "name":"African Burial Ground National Monument",
+    "latitude":40.71452681,
+    "longitude":-74.00447358,
+    "description":"The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.",
+    "url":"https:\/\/www.nps.gov\/afbg\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg"
+  },
+  {
+    "name":"Little Bighorn Battlefield National Monument",
+    "latitude":45.55633048,
+    "longitude":-107.4183614,
+    "description":"This land is a place to honor and reflect on the sacrifices made here on June 25 and 26, 1876, when Lakota, Cheyenne, and Arapaho warriors fought against a deliberate attack by the U.S. Army's 7th Cavalry, led by Lt. Col. George Custer, who sought to enforce policies that threatened their traditional way of life. How are the results of the battle felt in the West and Indigenous communities today?",
+    "url":"https:\/\/www.nps.gov\/libi\/index.htm",
+    "image_url":"https:\/\/www.nps.gov\/common\/uploads\/structured_data\/3C847035-1DD8-B71B-0B387957A7924FFA.jpg"
+  }
+]
