@@ -4,10 +4,14 @@
 }
 
 .cards__container {
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 450px);
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 32px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1150px;
   justify-content: center;
-  gap: 40px 40px;
 }
 
 .card {
@@ -26,26 +30,60 @@
 .card__image {
   width: 100%;
   height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 20px;
 }
 
 .card__heading {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .card__title {
-  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
 }
 
-.card__date {
-  padding-right: 100px;
+.card__badge {
+  background-color: #f0f4ff;
+  color: #3b5bdb;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-top: 6px;
 }
 
-.card__info {
-  padding-left: 20px;
+.card__location {
+  font-size: 14px;
+  color: #5e6778;
+  margin: 4px 0 12px;
+}
+
+.card__description {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.card__highlights {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.highlight {
+  background-color: #f1f3f5;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  white-space: nowrap;
 }

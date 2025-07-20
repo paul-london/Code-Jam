@@ -1,4 +1,4 @@
-import "./ExplorePage.jsx";
+import "./ExplorePage.css";
 
 function Explore({ onClose }) {
   return (
@@ -68,7 +68,13 @@ function Explore({ onClose }) {
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
+          <button type="submit" className="explore__submit-btn">
+            Go
+          </button>
         </form>
+        <div className="explore__car-animation">
+          <img src="src/assets/car.jpeg" alt="Driving car" className="car" />
+        </div>
       </div>
     </div>
   );
