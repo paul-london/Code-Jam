@@ -143,8 +143,8 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
 # Example usage:
 legs_df = VacationRoute(
     home_state='PA',
-    states_file='/Users/priti/Documents/GitHub/Code-Jam/data/states_master.csv',
-    parks_file='/Users/priti/Documents/GitHub/Code-Jam/data/parks_w.csv',
+    parks_file = '../data/parks_w.csv',
+    states_file = '../data/states_master.csv',
     api_key='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
  )
 print(legs_df)
