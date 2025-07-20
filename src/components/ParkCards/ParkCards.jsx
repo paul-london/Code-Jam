@@ -21,7 +21,7 @@ function Cards() {
               </span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 San Francisco, California</p>
 
             <p className="card__description">
               America's most visited national park, famous for its misty
@@ -58,7 +58,7 @@ function Cards() {
             <p className="card__description">
               Charles Young Buffalo Soldiers National Monument honors the life
               and legacy of Colonel Charles Young, a pioneering African American
-              Army officer and leader of the Buffalo Soldiers,
+              Army officer and leader of the Buffalo Soldiers.
             </p>
 
             <div className="card__highlights">
