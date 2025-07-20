@@ -3,7 +3,6 @@ import folium
 import pandas as pd
 import numpy as np
 import googlemaps
-#from test4 import VacationRoute
 
 # Get absolute path to the repo root (assuming script is in /scripts/)
 script_dir = os.path.dirname(os.path.abspath(__file__))
