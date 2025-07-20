@@ -10,7 +10,7 @@ repo_root = os.path.abspath(os.path.join(script_dir, '..'))
 
 # Build paths to CSVs in /data/ folder in the repo
 states_file = os.path.join(repo_root, 'data', 'states_master.csv')
-parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
+parks_file = os.path.join(repo_root, 'data', 'parks_subset.csv')
 
 def compute_home_to_parks(home_coord, parks_coords, gmaps):
     distances = []
@@ -34,23 +34,23 @@ def compute_home_to_parks(home_coord, parks_coords, gmaps):
 
 def VacationRoute(home_state, states_file, parks_file, api_key):
     states_master = pd.read_csv(states_file)
-    parks_w = pd.read_csv(parks_file)
+    parks_subset = pd.read_csv(parks_file)
 
     states_master['coordinates'] = list(zip(states_master['latitude'], states_master['longitude']))
-    parks_w['coordinates'] = list(zip(parks_w['latitude'], parks_w['longitude']))
+    parks_subset['coordinates'] = list(zip(parks_subset['latitude'], parks_subset['longitude']))
 
     home_coord = states_master.loc[states_master['abbreviation'] == home_state, 'coordinates'].values[0]
 
     gmaps = googlemaps.Client(key=api_key)
 
-    # distance_matrix, duration_matrix, parks = precompute_park_distances(parks_w, gmaps)
+    # distance_matrix, duration_matrix, parks = precompute_park_distances(parks_subset, gmaps)
     # Manual define from pre-calculcations
-    travel_array_w = np.load('C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/arrays/travel_array_w.npy', allow_pickle=True)
-    distance_matrix = travel_array_w[:, 2:3]
-    duration_matrix = travel_array_w[:, 3:4]
+    travel_array_subset = np.load(os.path.join(repo_root, 'arrays', 'travel_array_subset.npy'), allow_pickle=True)
+    distance_matrix = travel_array_subset[:, 2:3]
+    duration_matrix = travel_array_subset[:, 3:4]
     
     # Get all unique parks (origins and destinations)
-    all_parks = list(set(travel_array_w[:, 0]) | set(travel_array_w[:, 1]))
+    all_parks = list(set(travel_array_subset[:, 0]) | set(travel_array_subset[:, 1]))
     all_parks.sort()  # keep consistent order
 
     # Map park names to indices
@@ -61,7 +61,7 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
     distance_matrix = np.full((n, n), np.inf)
     duration_matrix = np.full((n, n), np.inf)
 
-    for row in travel_array_w:
+    for row in travel_array_subset:
         origin, dest, dist, dur = row
         i = park_indices[origin]
         j = park_indices[dest]
@@ -70,7 +70,7 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
 
     # Make sure order matches 'parks = all_parks'
     park_coords_ordered = [
-        parks_w.loc[parks_w['name'] == park, 'coordinates'].values[0] for park in parks
+        parks_subset.loc[parks_subset['name'] == park, 'coordinates'].values[0] for park in parks
         ]
     home_to_parks_dist, home_to_parks_dur = compute_home_to_parks(
         home_coord, park_coords_ordered, gmaps
@@ -214,7 +214,7 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
 
 if __name__ == "__main__":
     states_file = os.path.join(repo_root, 'data', 'states_master.csv')
-    parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
+    parks_file = os.path.join(repo_root, 'data', 'parks_subset.csv')
     home_state = 'CA'
     api_key = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
