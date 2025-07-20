@@ -67,7 +67,7 @@ def compute_home_to_parks(home_coord, parks_coords, gmaps):
         else:
             distances.append(np.inf)
             durations.append(np.inf)
-        time.sleep(1)  # API rate limit safety
+        #time.sleep(1)  # API rate limit safety
     return distances, durations
 
 def VacationRoute(home_state, states_file, parks_file, api_key):
