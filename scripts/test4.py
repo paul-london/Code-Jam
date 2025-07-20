@@ -4,6 +4,7 @@ import googlemaps
 import time
 import os
 
+"""
 def precompute_park_distances(parks_df, gmaps, dist_file='park_distance_matrix.npy', dur_file='park_duration_matrix.npy', names_file='park_names.npy'):
     if os.path.exists(dist_file) and os.path.exists(dur_file) and os.path.exists(names_file):
         print("Loading precomputed park-to-park distance matrices...")
@@ -46,6 +47,8 @@ def precompute_park_distances(parks_df, gmaps, dist_file='park_distance_matrix.n
     np.save(names_file, np.array(parks))
     print("Precomputation done and saved.")
     return distance_matrix, duration_matrix, parks
+"""
+
 
 def compute_home_to_parks(home_coord, parks_coords, gmaps):
     distances = []
@@ -78,7 +81,12 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
 
     gmaps = googlemaps.Client(key=api_key)
 
-    distance_matrix, duration_matrix, parks = precompute_park_distances(parks_w, gmaps)
+    # distance_matrix, duration_matrix, parks = precompute_park_distances(parks_w, gmaps)
+    # Manual define from pre-calculcations
+    travel_array_w = np.load('C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/arrays/travel_array_w.npy', allow_pickle=True)
+    distance_matrix = np.delete(travel_array_w.npy, 3, axis=1)
+    duration_matrix = np.delete(travel_array_w.npy, 2, axis=1)
+    parks = parks_file['name']
 
     home_to_parks_dist, home_to_parks_dur = compute_home_to_parks(home_coord, parks_w['coordinates'].tolist(), gmaps)
 
@@ -139,5 +147,13 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
     # Convert legs info to dataframe and return
     legs_df = pd.DataFrame(legs_info)
     return legs_df
+
+# Example usage
+legs_df = VacationRoute(
+    home_state='PA',
+    states_file='C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/states_master.csv',
+    parks_file='C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/parks_w.csv',
+    api_key='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
+ )
 
 print(legs_df)
