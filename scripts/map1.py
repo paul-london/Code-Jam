@@ -48,20 +48,34 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
             parks_df['name'] == row['destination'], ['latitude', 'longitude']
         ].values[0].tolist()
 
+        # Pull park descriptions and image URLs from parks_file
+        park_info = parks_df[parks_df['name'] == row['destination']].iloc[0]
+        img_url = park_info['image_url']
+        description = park_info['description']
+
+        # HTML for popup with image + description
+        html = f"""
+        <div style="width:220px">
+        <h3>{row['destination']}</h3><br>
+        <img src="{img_url}" width="200"><br>
+        <em>{description}</em><br>
+        </div>
+        """
+
         folium.PolyLine(
             locations=[source_coord, dest_coord],
             color='blue',
             weight=3,
-            opacity=0.7
+            opacity=0.7,
+            tooltip=f"{row['distance_miles']:.1f} mi ({row['duration_hours']:.1f} hrs)"
         ).add_to(route_map)
 
         folium.Marker(
             location=dest_coord,
-            popup=folium.Popup(
-                f"{row['destination']}<br>{row['distance_miles']:.1f} mi, {row['duration_hours']:.1f} hrs",
-                max_width=250
+            popup=folium.Popup(html, max_width=250
             ),
-            icon=folium.Icon(color='red', icon='flag')
+            icon=folium.Icon(color='red', icon='flag'),
+            tooltip=f"{row['destination']}"
         ).add_to(route_map)
 
     return route_map
@@ -69,7 +83,7 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
 if __name__ == "__main__":
     states_file = os.path.join(repo_root, 'data', 'states_master.csv')
     parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
-    home_state = 'PA'
+    home_state = 'CA'
     api_key = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
 
