@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6662fb0ac20666187aeac97091d869c1 {
+                #map_d2495e80f7280c246d92a592f7ff15a0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_6662fb0ac20666187aeac97091d869c1" ></div>
+            <div class="folium-map" id="map_d2495e80f7280c246d92a592f7ff15a0" ></div>
         
 </body>
 <script>
     
     
-            var map_6662fb0ac20666187aeac97091d869c1 = L.map(
-                "map_6662fb0ac20666187aeac97091d869c1",
+            var map_d2495e80f7280c246d92a592f7ff15a0 = L.map(
+                "map_d2495e80f7280c246d92a592f7ff15a0",
                 {
-                    center: [36.778261, -119.417932],
+                    center: [43.299428, -74.217933],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 5,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_68c4cb937a869b6a89587c6f8622c105 = L.tileLayer(
+            var tile_layer_9271a2635cc7d5ab68c01ebdf719a9a2 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,17 @@
             );
         
     
-            tile_layer_68c4cb937a869b6a89587c6f8622c105.addTo(map_6662fb0ac20666187aeac97091d869c1);
+            tile_layer_9271a2635cc7d5ab68c01ebdf719a9a2.addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var marker_b5693bf3ab3c933116527a1f595d09b4 = L.marker(
-                [36.778261, -119.417932],
+            var marker_9949795ae34c7cf5712d986c3fd660d0 = L.marker(
+                [43.299428, -74.217933],
                 {
 }
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var icon_70b04b7b6ae77b11dad85a3198c8b9d9 = L.AwesomeMarkers.icon(
+            var icon_bb5e680ddc9af35763403a7cc219d2ba = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -116,40 +116,50 @@
             );
         
     
-        var popup_a0a79332cdb0da34d6811486565c1ac3 = L.popup({
+        var popup_59530b3a479c91ebd1f3ca4657512527 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_e74c379e7c3854ec297482763db10856 = $(`<div id="html_e74c379e7c3854ec297482763db10856" style="width: 100.0%; height: 100.0%;">Start: CA</div>`)[0];
-                popup_a0a79332cdb0da34d6811486565c1ac3.setContent(html_e74c379e7c3854ec297482763db10856);
+                var html_4e48dcbddc7b43ab655e081c1b4c6fd5 = $(`<div id="html_4e48dcbddc7b43ab655e081c1b4c6fd5" style="width: 100.0%; height: 100.0%;">Start: NY</div>`)[0];
+                popup_59530b3a479c91ebd1f3ca4657512527.setContent(html_4e48dcbddc7b43ab655e081c1b4c6fd5);
             
         
 
-        marker_b5693bf3ab3c933116527a1f595d09b4.bindPopup(popup_a0a79332cdb0da34d6811486565c1ac3)
+        marker_9949795ae34c7cf5712d986c3fd660d0.bindPopup(popup_59530b3a479c91ebd1f3ca4657512527)
         ;
 
         
     
     
-                marker_b5693bf3ab3c933116527a1f595d09b4.setIcon(icon_70b04b7b6ae77b11dad85a3198c8b9d9);
+                marker_9949795ae34c7cf5712d986c3fd660d0.setIcon(icon_bb5e680ddc9af35763403a7cc219d2ba);
             
     
-            var poly_line_c69188d9774c4664091accf677eacb5e = L.polyline(
-                [[36.778261, -119.417932], [37.797, -122.4671]],
+            var poly_line_3fbdaa96131c5402795a622219f38bdd = L.polyline(
+                [[43.299428, -74.217933], [41.79697937, -73.94205557]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var marker_6a0c9446e44c640f71809ec11562042d = L.marker(
-                [37.797, -122.4671],
+            poly_line_3fbdaa96131c5402795a622219f38bdd.bindTooltip(
+                `<div>
+                     129.4 mi (2.5 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_12647b8b414f9c196b9cb83f6c7693d4 = L.marker(
+                [41.79697937, -73.94205557],
                 {
 }
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var icon_00f608aa8c8cb1526031612a882beabc = L.AwesomeMarkers.icon(
+            var icon_513161b9f53892ff2fc46045be7023bd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -160,304 +170,44 @@
             );
         
     
-        var popup_dc6d509a83979d58f6815831a6958f14 = L.popup({
-  "maxWidth": "100%",
+        var popup_436e1586c67677476e0099621e9d4456 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_221692e4425dcebffaef83e994f4185a = $(`<div id="html_221692e4425dcebffaef83e994f4185a" style="width: 100.0%; height: 100.0%;">Presidio of San Francisco</div>`)[0];
-                popup_dc6d509a83979d58f6815831a6958f14.setContent(html_221692e4425dcebffaef83e994f4185a);
+                var html_10b590e7d2f3748544f0b2b7921594c7 = $(`<div id="html_10b590e7d2f3748544f0b2b7921594c7" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_436e1586c67677476e0099621e9d4456.setContent(html_10b590e7d2f3748544f0b2b7921594c7);
             
         
 
-        marker_6a0c9446e44c640f71809ec11562042d.bindPopup(popup_dc6d509a83979d58f6815831a6958f14)
+        marker_12647b8b414f9c196b9cb83f6c7693d4.bindPopup(popup_436e1586c67677476e0099621e9d4456)
         ;
 
         
     
     
-                marker_6a0c9446e44c640f71809ec11562042d.setIcon(icon_00f608aa8c8cb1526031612a882beabc);
-            
-    
-            var poly_line_2718c3d95de633594acfdd156f1df704 = L.polyline(
-                [[37.797, -122.4671], [37.89658027, -122.5808047]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_65cb079ebb2227ef74f90a425ee51f51 = L.marker(
-                [37.89658027, -122.5808047],
+            marker_12647b8b414f9c196b9cb83f6c7693d4.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
                 {
-}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var icon_0a0e9f98eb1051eaee655629cba9ab42 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
+  "sticky": true,
 }
             );
         
     
-        var popup_1043b304db46d61db330efa6aeee927e = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_1644150afcd9da237a8bc25529a8c0f7 = $(`<div id="html_1644150afcd9da237a8bc25529a8c0f7" style="width: 100.0%; height: 100.0%;">Muir Woods National Monument</div>`)[0];
-                popup_1043b304db46d61db330efa6aeee927e.setContent(html_1644150afcd9da237a8bc25529a8c0f7);
-            
-        
-
-        marker_65cb079ebb2227ef74f90a425ee51f51.bindPopup(popup_1043b304db46d61db330efa6aeee927e)
-        ;
-
-        
-    
-    
-                marker_65cb079ebb2227ef74f90a425ee51f51.setIcon(icon_0a0e9f98eb1051eaee655629cba9ab42);
+                marker_12647b8b414f9c196b9cb83f6c7693d4.setIcon(icon_513161b9f53892ff2fc46045be7023bd);
             
     
-            var poly_line_3b18635b4bc7e3f88ab38e18e53bae43 = L.polyline(
-                [[37.89658027, -122.5808047], [38.2821653131, -111.247048378]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_94d89b6f862419bb120f026dbbd9bb95 = L.marker(
-                [38.2821653131, -111.247048378],
-                {
-}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var icon_03549b01b3e2360a4d54b90cb1827a4c = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_dd6861410c2291307b02f0e50c5e88dd = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_5201ad4303caddd0d0e7d49e0b06bb49 = $(`<div id="html_5201ad4303caddd0d0e7d49e0b06bb49" style="width: 100.0%; height: 100.0%;">Capitol Reef National Park</div>`)[0];
-                popup_dd6861410c2291307b02f0e50c5e88dd.setContent(html_5201ad4303caddd0d0e7d49e0b06bb49);
-            
-        
-
-        marker_94d89b6f862419bb120f026dbbd9bb95.bindPopup(popup_dd6861410c2291307b02f0e50c5e88dd)
-        ;
-
-        
-    
-    
-                marker_94d89b6f862419bb120f026dbbd9bb95.setIcon(icon_03549b01b3e2360a4d54b90cb1827a4c);
-            
-    
-            var poly_line_015a4e756f18fd039629d8fbf4fde66d = L.polyline(
-                [[38.2821653131, -111.247048378], [35.70727324, -109.5599515]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_47abd3d8cdf993a224882626fceca3c4 = L.marker(
-                [35.70727324, -109.5599515],
-                {
-}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var icon_d812a2664e60bea18141bde6b8e2969e = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_346d21627eeb89b15cf6b78f3a882c1f = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_f88567b8a4ab18134728997c8f00ade0 = $(`<div id="html_f88567b8a4ab18134728997c8f00ade0" style="width: 100.0%; height: 100.0%;">Hubbell Trading Post National Historic Site</div>`)[0];
-                popup_346d21627eeb89b15cf6b78f3a882c1f.setContent(html_f88567b8a4ab18134728997c8f00ade0);
-            
-        
-
-        marker_47abd3d8cdf993a224882626fceca3c4.bindPopup(popup_346d21627eeb89b15cf6b78f3a882c1f)
-        ;
-
-        
-    
-    
-                marker_47abd3d8cdf993a224882626fceca3c4.setIcon(icon_d812a2664e60bea18141bde6b8e2969e);
-            
-    
-            var poly_line_6000a60abf3091ec6d8830eb2122cca6 = L.polyline(
-                [[35.70727324, -109.5599515], [45.55633048, -107.4183614]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_6ee92e85e11c02c912a3182bb6e6884c = L.marker(
-                [45.55633048, -107.4183614],
-                {
-}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var icon_e7738247623c2644324160d97d6f28f0 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_86d892a6e2b316b5cee04a473b5cbe27 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_71ba3521d8b28ce3c367be8fbe5fe528 = $(`<div id="html_71ba3521d8b28ce3c367be8fbe5fe528" style="width: 100.0%; height: 100.0%;">Little Bighorn Battlefield National Monument</div>`)[0];
-                popup_86d892a6e2b316b5cee04a473b5cbe27.setContent(html_71ba3521d8b28ce3c367be8fbe5fe528);
-            
-        
-
-        marker_6ee92e85e11c02c912a3182bb6e6884c.bindPopup(popup_86d892a6e2b316b5cee04a473b5cbe27)
-        ;
-
-        
-    
-    
-                marker_6ee92e85e11c02c912a3182bb6e6884c.setIcon(icon_e7738247623c2644324160d97d6f28f0);
-            
-    
-            var poly_line_d1b1e53ed6ac2354fe2c396066f20067 = L.polyline(
-                [[45.55633048, -107.4183614], [47.1792308, -88.52275344]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_5a0106b7b451fb9a31128d9e51df9a29 = L.marker(
-                [47.1792308, -88.52275344],
-                {
-}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var icon_0667c556876787988c2e3b52bee6c925 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_1254ebeaaad57a8879597cfd3cedf349 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_1da8ab029f29e69434f687455f76770a = $(`<div id="html_1da8ab029f29e69434f687455f76770a" style="width: 100.0%; height: 100.0%;">Keweenaw National Historical Park</div>`)[0];
-                popup_1254ebeaaad57a8879597cfd3cedf349.setContent(html_1da8ab029f29e69434f687455f76770a);
-            
-        
-
-        marker_5a0106b7b451fb9a31128d9e51df9a29.bindPopup(popup_1254ebeaaad57a8879597cfd3cedf349)
-        ;
-
-        
-    
-    
-                marker_5a0106b7b451fb9a31128d9e51df9a29.setIcon(icon_0667c556876787988c2e3b52bee6c925);
-            
-    
-            var poly_line_519376148ea7e88b0418e71d643b5bbc = L.polyline(
-                [[47.1792308, -88.52275344], [39.93435005, -75.14398924]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_ad25611f4d727004d9ee40a67ef91959 = L.marker(
-                [39.93435005, -75.14398924],
-                {
-}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var icon_31aeba4753dfa514523e67c4907b3029 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_82100fc221d7c91f354f26ef60cc9a35 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_1b6ed4e7e00b898366b49c6ff4037e64 = $(`<div id="html_1b6ed4e7e00b898366b49c6ff4037e64" style="width: 100.0%; height: 100.0%;">Gloria Dei Church National Historic Site</div>`)[0];
-                popup_82100fc221d7c91f354f26ef60cc9a35.setContent(html_1b6ed4e7e00b898366b49c6ff4037e64);
-            
-        
-
-        marker_ad25611f4d727004d9ee40a67ef91959.bindPopup(popup_82100fc221d7c91f354f26ef60cc9a35)
-        ;
-
-        
-    
-    
-                marker_ad25611f4d727004d9ee40a67ef91959.setIcon(icon_31aeba4753dfa514523e67c4907b3029);
-            
-    
-            var poly_line_1cc100d8740a97ef07716ca599b5819f = L.polyline(
-                [[39.93435005, -75.14398924], [40.71452681, -74.00447358]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_c6840a76533a20590e1cecf2c8dc8725 = L.marker(
+            var marker_78e2486dd358265accf4e2b3bc57a413 = L.marker(
                 [40.71452681, -74.00447358],
                 {
 }
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var icon_5817138832162aadf96e050a5ec8975d = L.AwesomeMarkers.icon(
+            var icon_619a3acf06e7a94eb6c991049923d706 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -468,40 +218,44 @@
             );
         
     
-        var popup_36bf39102ac4376aac927821b3598e42 = L.popup({
-  "maxWidth": "100%",
+        var popup_7831883cc62f58b089225a5a2ae93e5d = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_c7e9087e114d476feac790c4f84637f2 = $(`<div id="html_c7e9087e114d476feac790c4f84637f2" style="width: 100.0%; height: 100.0%;">African Burial Ground National Monument</div>`)[0];
-                popup_36bf39102ac4376aac927821b3598e42.setContent(html_c7e9087e114d476feac790c4f84637f2);
+                var html_54951a667d24563101e8e074fd715bc5 = $(`<div id="html_54951a667d24563101e8e074fd715bc5" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_7831883cc62f58b089225a5a2ae93e5d.setContent(html_54951a667d24563101e8e074fd715bc5);
             
         
 
-        marker_c6840a76533a20590e1cecf2c8dc8725.bindPopup(popup_36bf39102ac4376aac927821b3598e42)
+        marker_78e2486dd358265accf4e2b3bc57a413.bindPopup(popup_7831883cc62f58b089225a5a2ae93e5d)
         ;
 
         
     
     
-                marker_c6840a76533a20590e1cecf2c8dc8725.setIcon(icon_5817138832162aadf96e050a5ec8975d);
+            marker_78e2486dd358265accf4e2b3bc57a413.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78e2486dd358265accf4e2b3bc57a413.setIcon(icon_619a3acf06e7a94eb6c991049923d706);
             
     
-            var poly_line_995159b0a6460c920c83ff35e1976bc4 = L.polyline(
-                [[40.71452681, -74.00447358], [38.19362603, -76.92079458]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_4eabbdcf6fa62da3b006044c0edaea48 = L.marker(
-                [38.19362603, -76.92079458],
+            var marker_a62b18922416e1d818aab352b0f7d570 = L.marker(
+                [47.17777274, -103.4300083],
                 {
 }
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var icon_d2ea930aa9103650ecef8441c94e715b = L.AwesomeMarkers.icon(
+            var icon_6d8d775ec3905708a6a5ab945d92e201 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -512,73 +266,284 @@
             );
         
     
-        var popup_40ac53be43dcdddf64292c69f9ae5162 = L.popup({
-  "maxWidth": "100%",
+        var popup_e2f3451b69c95aca5c706f074171384d = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_24bc43bcc3fd9c52b48d4a0b20eb948a = $(`<div id="html_24bc43bcc3fd9c52b48d4a0b20eb948a" style="width: 100.0%; height: 100.0%;">George Washington Birthplace National Monument</div>`)[0];
-                popup_40ac53be43dcdddf64292c69f9ae5162.setContent(html_24bc43bcc3fd9c52b48d4a0b20eb948a);
+                var html_1db2efa49127778677c1e6a7178fa19f = $(`<div id="html_1db2efa49127778677c1e6a7178fa19f" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_e2f3451b69c95aca5c706f074171384d.setContent(html_1db2efa49127778677c1e6a7178fa19f);
             
         
 
-        marker_4eabbdcf6fa62da3b006044c0edaea48.bindPopup(popup_40ac53be43dcdddf64292c69f9ae5162)
+        marker_a62b18922416e1d818aab352b0f7d570.bindPopup(popup_e2f3451b69c95aca5c706f074171384d)
         ;
 
         
     
     
-                marker_4eabbdcf6fa62da3b006044c0edaea48.setIcon(icon_d2ea930aa9103650ecef8441c94e715b);
-            
-    
-            tile_layer_68c4cb937a869b6a89587c6f8622c105.addTo(map_6662fb0ac20666187aeac97091d869c1);
+            marker_a62b18922416e1d818aab352b0f7d570.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
         
     
-                marker_b5693bf3ab3c933116527a1f595d09b4.setIcon(icon_70b04b7b6ae77b11dad85a3198c8b9d9);
+                marker_a62b18922416e1d818aab352b0f7d570.setIcon(icon_6d8d775ec3905708a6a5ab945d92e201);
             
     
-                marker_6a0c9446e44c640f71809ec11562042d.setIcon(icon_00f608aa8c8cb1526031612a882beabc);
-            
-    
-                marker_65cb079ebb2227ef74f90a425ee51f51.setIcon(icon_0a0e9f98eb1051eaee655629cba9ab42);
-            
-    
-                marker_94d89b6f862419bb120f026dbbd9bb95.setIcon(icon_03549b01b3e2360a4d54b90cb1827a4c);
-            
-    
-                marker_47abd3d8cdf993a224882626fceca3c4.setIcon(icon_d812a2664e60bea18141bde6b8e2969e);
-            
-    
-                marker_6ee92e85e11c02c912a3182bb6e6884c.setIcon(icon_e7738247623c2644324160d97d6f28f0);
-            
-    
-                marker_5a0106b7b451fb9a31128d9e51df9a29.setIcon(icon_0667c556876787988c2e3b52bee6c925);
-            
-    
-                marker_ad25611f4d727004d9ee40a67ef91959.setIcon(icon_31aeba4753dfa514523e67c4907b3029);
-            
-    
-                marker_c6840a76533a20590e1cecf2c8dc8725.setIcon(icon_5817138832162aadf96e050a5ec8975d);
-            
-    
-                marker_4eabbdcf6fa62da3b006044c0edaea48.setIcon(icon_d2ea930aa9103650ecef8441c94e715b);
-            
-    
-            var poly_line_90dadc28ab37ca47c09a92a87768d5f8 = L.polyline(
-                [[40.71452681, -74.00447358], [38.19362603, -76.92079458]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
-        
-    
-            var marker_d0302c52c71c0d71504c964787078a1b = L.marker(
-                [38.19362603, -76.92079458],
+            var marker_05d2d4f2d6dbfc409fb0ca7b06350d83 = L.marker(
+                [35.90700629, -105.0145185],
                 {
 }
-            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
         
     
-            var icon_96ead92ba2b3f203aeaf4aefa4669a76 = L.AwesomeMarkers.icon(
+            var icon_d471d5fa6a4ad3133aa5d3883f6f3466 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a16dc6e95db30a1a3f00b11428769488 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79fd82ec91c0de43e512a331acd722f7 = $(`<div id="html_79fd82ec91c0de43e512a331acd722f7" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_a16dc6e95db30a1a3f00b11428769488.setContent(html_79fd82ec91c0de43e512a331acd722f7);
+            
+        
+
+        marker_05d2d4f2d6dbfc409fb0ca7b06350d83.bindPopup(popup_a16dc6e95db30a1a3f00b11428769488)
+        ;
+
+        
+    
+    
+            marker_05d2d4f2d6dbfc409fb0ca7b06350d83.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05d2d4f2d6dbfc409fb0ca7b06350d83.setIcon(icon_d471d5fa6a4ad3133aa5d3883f6f3466);
+            
+    
+            var marker_a02346a7c94d3aafb620a5cc356dfa72 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_e6db197e24935f3e68c75a6500b0a2dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13899012d7794ef8d6ecd05e69fea86c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ba0f5576b6de93e044194877c33c1579 = $(`<div id="html_ba0f5576b6de93e044194877c33c1579" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_13899012d7794ef8d6ecd05e69fea86c.setContent(html_ba0f5576b6de93e044194877c33c1579);
+            
+        
+
+        marker_a02346a7c94d3aafb620a5cc356dfa72.bindPopup(popup_13899012d7794ef8d6ecd05e69fea86c)
+        ;
+
+        
+    
+    
+            marker_a02346a7c94d3aafb620a5cc356dfa72.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a02346a7c94d3aafb620a5cc356dfa72.setIcon(icon_e6db197e24935f3e68c75a6500b0a2dd);
+            
+    
+            var marker_40fb93bb40445d166c5a8bcb4e0f0beb = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_01718d9e984d6036a1b3682ede75af00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ea94e12b5e2a40fb593d775d419346a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0359e8c3cb79e91699a120eeb43f4175 = $(`<div id="html_0359e8c3cb79e91699a120eeb43f4175" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_2ea94e12b5e2a40fb593d775d419346a.setContent(html_0359e8c3cb79e91699a120eeb43f4175);
+            
+        
+
+        marker_40fb93bb40445d166c5a8bcb4e0f0beb.bindPopup(popup_2ea94e12b5e2a40fb593d775d419346a)
+        ;
+
+        
+    
+    
+            marker_40fb93bb40445d166c5a8bcb4e0f0beb.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40fb93bb40445d166c5a8bcb4e0f0beb.setIcon(icon_01718d9e984d6036a1b3682ede75af00);
+            
+    
+            var marker_ae77a09485bbddc2af7f93c6163e4301 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7df382360a7e199baae86f55f20c3932 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe7e2a073fe0a516ed1f9381043115cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6395041ce12bf0a37595d64549417d02 = $(`<div id="html_6395041ce12bf0a37595d64549417d02" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_fe7e2a073fe0a516ed1f9381043115cc.setContent(html_6395041ce12bf0a37595d64549417d02);
+            
+        
+
+        marker_ae77a09485bbddc2af7f93c6163e4301.bindPopup(popup_fe7e2a073fe0a516ed1f9381043115cc)
+        ;
+
+        
+    
+    
+            marker_ae77a09485bbddc2af7f93c6163e4301.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ae77a09485bbddc2af7f93c6163e4301.setIcon(icon_7df382360a7e199baae86f55f20c3932);
+            
+    
+            var marker_d62f59e0ac8f59a69296eb35a2f1e97d = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_222eccddf5fdfdb30343305754e3312b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2540dd392c9feb8f068d8d139c2b2754 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c52d74aa339bf836e1491e0a3eae2881 = $(`<div id="html_c52d74aa339bf836e1491e0a3eae2881" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_2540dd392c9feb8f068d8d139c2b2754.setContent(html_c52d74aa339bf836e1491e0a3eae2881);
+            
+        
+
+        marker_d62f59e0ac8f59a69296eb35a2f1e97d.bindPopup(popup_2540dd392c9feb8f068d8d139c2b2754)
+        ;
+
+        
+    
+    
+            marker_d62f59e0ac8f59a69296eb35a2f1e97d.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d62f59e0ac8f59a69296eb35a2f1e97d.setIcon(icon_222eccddf5fdfdb30343305754e3312b);
+            
+    
+            var marker_ddcaf4f816f942acd7617a990d30c7c7 = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_c15bfaf8d8e5bbbfa0d36b011ddaa344 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -589,24 +554,3618 @@
             );
         
     
-        var popup_d34bd6dbbdc777f6318782df46ac5391 = L.popup({
+        var popup_ad5996f75d361952fa44c65876e70406 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_b1d59fe74fb9da6702089e8b55e7b4c5 = $(`<div id="html_b1d59fe74fb9da6702089e8b55e7b4c5" style="width: 100.0%; height: 100.0%;">George Washington Birthplace National Monument<br>290.2 mi, 5.1 hrs</div>`)[0];
-                popup_d34bd6dbbdc777f6318782df46ac5391.setContent(html_b1d59fe74fb9da6702089e8b55e7b4c5);
+                var html_ca690fd099e7c6cb7a676357c92b0656 = $(`<div id="html_ca690fd099e7c6cb7a676357c92b0656" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Vanderbilt Mansion National Historic Site</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg" width="200"><br>         <em>Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.</em><br>         </div>         </div>`)[0];
+                popup_ad5996f75d361952fa44c65876e70406.setContent(html_ca690fd099e7c6cb7a676357c92b0656);
             
         
 
-        marker_d0302c52c71c0d71504c964787078a1b.bindPopup(popup_d34bd6dbbdc777f6318782df46ac5391)
+        marker_ddcaf4f816f942acd7617a990d30c7c7.bindPopup(popup_ad5996f75d361952fa44c65876e70406)
         ;
 
         
     
     
-                marker_d0302c52c71c0d71504c964787078a1b.setIcon(icon_96ead92ba2b3f203aeaf4aefa4669a76);
+            marker_ddcaf4f816f942acd7617a990d30c7c7.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ddcaf4f816f942acd7617a990d30c7c7.setIcon(icon_c15bfaf8d8e5bbbfa0d36b011ddaa344);
+            
+    
+            var poly_line_b76fbb16398962b33ae0f5bee792f4be = L.polyline(
+                [[41.79697937, -73.94205557], [40.71452681, -74.00447358]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_b76fbb16398962b33ae0f5bee792f4be.bindTooltip(
+                `<div>
+                     273.7 mi (4.6 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2dad37e7be7acac5fa287df9e631fa76 = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_5da17c18bd8e395843b6747ce3072920 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_705fc840d44c372094d2856392d352f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1e80d720557bca24d1f44226dd0c1fc = $(`<div id="html_e1e80d720557bca24d1f44226dd0c1fc" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_705fc840d44c372094d2856392d352f1.setContent(html_e1e80d720557bca24d1f44226dd0c1fc);
+            
+        
+
+        marker_2dad37e7be7acac5fa287df9e631fa76.bindPopup(popup_705fc840d44c372094d2856392d352f1)
+        ;
+
+        
+    
+    
+            marker_2dad37e7be7acac5fa287df9e631fa76.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2dad37e7be7acac5fa287df9e631fa76.setIcon(icon_5da17c18bd8e395843b6747ce3072920);
+            
+    
+            var marker_f4dec52a71d8b0bfc4c1455468a1e157 = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_9e6ce77ec6754940cbf12a7df482a534 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87c148879e63de27251813cdf4e8708e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_54927ee0088438226b7d330b8e82a1f6 = $(`<div id="html_54927ee0088438226b7d330b8e82a1f6" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_87c148879e63de27251813cdf4e8708e.setContent(html_54927ee0088438226b7d330b8e82a1f6);
+            
+        
+
+        marker_f4dec52a71d8b0bfc4c1455468a1e157.bindPopup(popup_87c148879e63de27251813cdf4e8708e)
+        ;
+
+        
+    
+    
+            marker_f4dec52a71d8b0bfc4c1455468a1e157.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4dec52a71d8b0bfc4c1455468a1e157.setIcon(icon_9e6ce77ec6754940cbf12a7df482a534);
+            
+    
+            var marker_f66b7702ac181be8a5a428fb06d63667 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_5ba6310059a0e286431adc6169da24f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bad72d082dfb35211ebc5b5734843a87 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5d5ba9509b227a819219db7c93068d6 = $(`<div id="html_a5d5ba9509b227a819219db7c93068d6" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_bad72d082dfb35211ebc5b5734843a87.setContent(html_a5d5ba9509b227a819219db7c93068d6);
+            
+        
+
+        marker_f66b7702ac181be8a5a428fb06d63667.bindPopup(popup_bad72d082dfb35211ebc5b5734843a87)
+        ;
+
+        
+    
+    
+            marker_f66b7702ac181be8a5a428fb06d63667.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f66b7702ac181be8a5a428fb06d63667.setIcon(icon_5ba6310059a0e286431adc6169da24f0);
+            
+    
+            var marker_60d821fb4a4f23999de7d0e53a46afc1 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_0be36458de186ec18b476f589f77d938 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d9951abdefad80b5cc51949cd19f649 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a7465d40ed57bfc6c2ce49c373911e6f = $(`<div id="html_a7465d40ed57bfc6c2ce49c373911e6f" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_5d9951abdefad80b5cc51949cd19f649.setContent(html_a7465d40ed57bfc6c2ce49c373911e6f);
+            
+        
+
+        marker_60d821fb4a4f23999de7d0e53a46afc1.bindPopup(popup_5d9951abdefad80b5cc51949cd19f649)
+        ;
+
+        
+    
+    
+            marker_60d821fb4a4f23999de7d0e53a46afc1.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60d821fb4a4f23999de7d0e53a46afc1.setIcon(icon_0be36458de186ec18b476f589f77d938);
+            
+    
+            var marker_0d13982f5a97a014097f8cb80fc45f1b = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_3e76294f3fd1ec7ed27725b9744e1607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6922d776b987af38e27781e6f4c39670 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_45a557063c8484341dfad1215e659a78 = $(`<div id="html_45a557063c8484341dfad1215e659a78" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_6922d776b987af38e27781e6f4c39670.setContent(html_45a557063c8484341dfad1215e659a78);
+            
+        
+
+        marker_0d13982f5a97a014097f8cb80fc45f1b.bindPopup(popup_6922d776b987af38e27781e6f4c39670)
+        ;
+
+        
+    
+    
+            marker_0d13982f5a97a014097f8cb80fc45f1b.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0d13982f5a97a014097f8cb80fc45f1b.setIcon(icon_3e76294f3fd1ec7ed27725b9744e1607);
+            
+    
+            var marker_2c9fa7543145a372ad2d768d19ed5416 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7bd472f66468715ac051050adac03134 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c53949f884240cdadb3d8dba023df54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95a274c50ff16ef1ad1f1fbc13f64386 = $(`<div id="html_95a274c50ff16ef1ad1f1fbc13f64386" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_4c53949f884240cdadb3d8dba023df54.setContent(html_95a274c50ff16ef1ad1f1fbc13f64386);
+            
+        
+
+        marker_2c9fa7543145a372ad2d768d19ed5416.bindPopup(popup_4c53949f884240cdadb3d8dba023df54)
+        ;
+
+        
+    
+    
+            marker_2c9fa7543145a372ad2d768d19ed5416.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c9fa7543145a372ad2d768d19ed5416.setIcon(icon_7bd472f66468715ac051050adac03134);
+            
+    
+            var marker_c311929beec960fa9a06e1da020b4fbe = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_6328cbd47ce88ee267c56018be545747 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db7021546bcc1484a03b64376162717b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1ebb2692f21f89859107af6c5b48585 = $(`<div id="html_c1ebb2692f21f89859107af6c5b48585" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_db7021546bcc1484a03b64376162717b.setContent(html_c1ebb2692f21f89859107af6c5b48585);
+            
+        
+
+        marker_c311929beec960fa9a06e1da020b4fbe.bindPopup(popup_db7021546bcc1484a03b64376162717b)
+        ;
+
+        
+    
+    
+            marker_c311929beec960fa9a06e1da020b4fbe.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c311929beec960fa9a06e1da020b4fbe.setIcon(icon_6328cbd47ce88ee267c56018be545747);
+            
+    
+            var marker_15515f00794b662cc363cc18c04bcc16 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_9f1aad17a9a6f8b012bccb3b495938b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_328d8fc7fad4bc5c3305b1a84504787e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dadfd4eceda1ac8d7a53f46a519e3f0e = $(`<div id="html_dadfd4eceda1ac8d7a53f46a519e3f0e" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_328d8fc7fad4bc5c3305b1a84504787e.setContent(html_dadfd4eceda1ac8d7a53f46a519e3f0e);
+            
+        
+
+        marker_15515f00794b662cc363cc18c04bcc16.bindPopup(popup_328d8fc7fad4bc5c3305b1a84504787e)
+        ;
+
+        
+    
+    
+            marker_15515f00794b662cc363cc18c04bcc16.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15515f00794b662cc363cc18c04bcc16.setIcon(icon_9f1aad17a9a6f8b012bccb3b495938b1);
+            
+    
+            var marker_a67f016b973187b5efdaa47e1206153f = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_cff8ba33ab1f372b6de1ce84ff6547e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb63cdefda7c3bcfd64e185b4bbb87fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ea37bc022b4bf19879a8378e83da426 = $(`<div id="html_1ea37bc022b4bf19879a8378e83da426" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>African Burial Ground National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg" width="200"><br>         <em>The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.</em><br>         </div>         </div>`)[0];
+                popup_eb63cdefda7c3bcfd64e185b4bbb87fe.setContent(html_1ea37bc022b4bf19879a8378e83da426);
+            
+        
+
+        marker_a67f016b973187b5efdaa47e1206153f.bindPopup(popup_eb63cdefda7c3bcfd64e185b4bbb87fe)
+        ;
+
+        
+    
+    
+            marker_a67f016b973187b5efdaa47e1206153f.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a67f016b973187b5efdaa47e1206153f.setIcon(icon_cff8ba33ab1f372b6de1ce84ff6547e4);
+            
+    
+            var poly_line_439aa3883afdf449a5130db6e6abc30c = L.polyline(
+                [[40.71452681, -74.00447358], [47.17777274, -103.4300083]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_439aa3883afdf449a5130db6e6abc30c.bindTooltip(
+                `<div>
+                     920.2 mi (13.9 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e024c0ea84b60309418f2ba37809fee0 = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_cd22092644783e298fa314d0e8036515 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62f1525841f5d68112bfefa8a8444354 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_895f0c3b5a57eee78bd246b2aaca5618 = $(`<div id="html_895f0c3b5a57eee78bd246b2aaca5618" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_62f1525841f5d68112bfefa8a8444354.setContent(html_895f0c3b5a57eee78bd246b2aaca5618);
+            
+        
+
+        marker_e024c0ea84b60309418f2ba37809fee0.bindPopup(popup_62f1525841f5d68112bfefa8a8444354)
+        ;
+
+        
+    
+    
+            marker_e024c0ea84b60309418f2ba37809fee0.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e024c0ea84b60309418f2ba37809fee0.setIcon(icon_cd22092644783e298fa314d0e8036515);
+            
+    
+            var marker_f15fa0db85386c5e18dd0ab0244acbac = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_2965aeb4dc638baad86514dcb848a8ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_586bf70943700990dcff1304b33f6db0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ccdc551f96f37338ec11c372b3f95b7 = $(`<div id="html_2ccdc551f96f37338ec11c372b3f95b7" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_586bf70943700990dcff1304b33f6db0.setContent(html_2ccdc551f96f37338ec11c372b3f95b7);
+            
+        
+
+        marker_f15fa0db85386c5e18dd0ab0244acbac.bindPopup(popup_586bf70943700990dcff1304b33f6db0)
+        ;
+
+        
+    
+    
+            marker_f15fa0db85386c5e18dd0ab0244acbac.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f15fa0db85386c5e18dd0ab0244acbac.setIcon(icon_2965aeb4dc638baad86514dcb848a8ff);
+            
+    
+            var marker_d5bf1e5b0b849619607cd19b24e3d6b9 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_2a112a0ebe5b395a13b899e4b568e320 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91c14bec8b43ec2152a4340123c0674c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68745060b4debe44f7e150b37f8092bd = $(`<div id="html_68745060b4debe44f7e150b37f8092bd" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_91c14bec8b43ec2152a4340123c0674c.setContent(html_68745060b4debe44f7e150b37f8092bd);
+            
+        
+
+        marker_d5bf1e5b0b849619607cd19b24e3d6b9.bindPopup(popup_91c14bec8b43ec2152a4340123c0674c)
+        ;
+
+        
+    
+    
+            marker_d5bf1e5b0b849619607cd19b24e3d6b9.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d5bf1e5b0b849619607cd19b24e3d6b9.setIcon(icon_2a112a0ebe5b395a13b899e4b568e320);
+            
+    
+            var marker_88099f96a40d069e98a5f02c0e819854 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_c777e5ca9426c647f4e6f5c0dfb0cd18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e3cb060bfec6586150ccdfe179740a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b0b28991b1f420f219050d5fca81bf67 = $(`<div id="html_b0b28991b1f420f219050d5fca81bf67" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_3e3cb060bfec6586150ccdfe179740a6.setContent(html_b0b28991b1f420f219050d5fca81bf67);
+            
+        
+
+        marker_88099f96a40d069e98a5f02c0e819854.bindPopup(popup_3e3cb060bfec6586150ccdfe179740a6)
+        ;
+
+        
+    
+    
+            marker_88099f96a40d069e98a5f02c0e819854.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88099f96a40d069e98a5f02c0e819854.setIcon(icon_c777e5ca9426c647f4e6f5c0dfb0cd18);
+            
+    
+            var marker_7c09fe219f6131e81950df68ad0ee47c = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_19cf042b11a81591dc9a1e469087035c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0e6421c7d848d8fbc7a477f772dd214 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d93be485cc857b5787418129e23fca3 = $(`<div id="html_4d93be485cc857b5787418129e23fca3" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_a0e6421c7d848d8fbc7a477f772dd214.setContent(html_4d93be485cc857b5787418129e23fca3);
+            
+        
+
+        marker_7c09fe219f6131e81950df68ad0ee47c.bindPopup(popup_a0e6421c7d848d8fbc7a477f772dd214)
+        ;
+
+        
+    
+    
+            marker_7c09fe219f6131e81950df68ad0ee47c.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7c09fe219f6131e81950df68ad0ee47c.setIcon(icon_19cf042b11a81591dc9a1e469087035c);
+            
+    
+            var marker_c11ae3779258f49f3b88bf1fcfb9166d = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_4c505fb55d2296c2ab94396e7e0ebad9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_571f5cf53996dfa36ab9d262bc0914fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4f72c549792c8d6240825b803bba1d4 = $(`<div id="html_e4f72c549792c8d6240825b803bba1d4" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_571f5cf53996dfa36ab9d262bc0914fb.setContent(html_e4f72c549792c8d6240825b803bba1d4);
+            
+        
+
+        marker_c11ae3779258f49f3b88bf1fcfb9166d.bindPopup(popup_571f5cf53996dfa36ab9d262bc0914fb)
+        ;
+
+        
+    
+    
+            marker_c11ae3779258f49f3b88bf1fcfb9166d.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c11ae3779258f49f3b88bf1fcfb9166d.setIcon(icon_4c505fb55d2296c2ab94396e7e0ebad9);
+            
+    
+            var marker_75677a0e3cb75f9cc0f8773d11c77d39 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_83f728a75a6fc12113ffb79f7dd33842 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5726cc27a294b7b9bac5cedd51b92b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f89215a781aa49fb611dfa5e603f6f18 = $(`<div id="html_f89215a781aa49fb611dfa5e603f6f18" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_f5726cc27a294b7b9bac5cedd51b92b7.setContent(html_f89215a781aa49fb611dfa5e603f6f18);
+            
+        
+
+        marker_75677a0e3cb75f9cc0f8773d11c77d39.bindPopup(popup_f5726cc27a294b7b9bac5cedd51b92b7)
+        ;
+
+        
+    
+    
+            marker_75677a0e3cb75f9cc0f8773d11c77d39.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75677a0e3cb75f9cc0f8773d11c77d39.setIcon(icon_83f728a75a6fc12113ffb79f7dd33842);
+            
+    
+            var marker_9d8310b7c6cdd2567c9bcb506849a0f6 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_b74109a9d230ab17711856772be12768 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5f02402cae656ec0a4053b79275b9f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2fb39c5d8af9793b126aa65b7b5e7ab = $(`<div id="html_a2fb39c5d8af9793b126aa65b7b5e7ab" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_e5f02402cae656ec0a4053b79275b9f6.setContent(html_a2fb39c5d8af9793b126aa65b7b5e7ab);
+            
+        
+
+        marker_9d8310b7c6cdd2567c9bcb506849a0f6.bindPopup(popup_e5f02402cae656ec0a4053b79275b9f6)
+        ;
+
+        
+    
+    
+            marker_9d8310b7c6cdd2567c9bcb506849a0f6.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d8310b7c6cdd2567c9bcb506849a0f6.setIcon(icon_b74109a9d230ab17711856772be12768);
+            
+    
+            var marker_2c9363d64ca691f1ebca3a4919433093 = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_6775211ba5a9fdd6643fb9a27ad342fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2b8b8d635a70de4279f56b99a6361ec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_97818a2d0ab43cca3750db5df7ae5606 = $(`<div id="html_97818a2d0ab43cca3750db5df7ae5606" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Theodore Roosevelt National Park</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_f2b8b8d635a70de4279f56b99a6361ec.setContent(html_97818a2d0ab43cca3750db5df7ae5606);
+            
+        
+
+        marker_2c9363d64ca691f1ebca3a4919433093.bindPopup(popup_f2b8b8d635a70de4279f56b99a6361ec)
+        ;
+
+        
+    
+    
+            marker_2c9363d64ca691f1ebca3a4919433093.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c9363d64ca691f1ebca3a4919433093.setIcon(icon_6775211ba5a9fdd6643fb9a27ad342fb);
+            
+    
+            var poly_line_58077fdd9b17be2d253ec5ca0cc30403 = L.polyline(
+                [[47.17777274, -103.4300083], [35.90700629, -105.0145185]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_58077fdd9b17be2d253ec5ca0cc30403.bindTooltip(
+                `<div>
+                     1252.7 mi (18.5 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c8f3de7b6481a9865ba53e0e3c68ddf = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_9d70bb3c247114d32f673d6c61cfc8b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44765409bbd3f4df4b63eaae450491c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9e05c2182a7a1740c19d6519ea3439e4 = $(`<div id="html_9e05c2182a7a1740c19d6519ea3439e4" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_44765409bbd3f4df4b63eaae450491c7.setContent(html_9e05c2182a7a1740c19d6519ea3439e4);
+            
+        
+
+        marker_8c8f3de7b6481a9865ba53e0e3c68ddf.bindPopup(popup_44765409bbd3f4df4b63eaae450491c7)
+        ;
+
+        
+    
+    
+            marker_8c8f3de7b6481a9865ba53e0e3c68ddf.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c8f3de7b6481a9865ba53e0e3c68ddf.setIcon(icon_9d70bb3c247114d32f673d6c61cfc8b6);
+            
+    
+            var marker_36680d8a217de8ceca0f5b00c149a91c = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_da7325a05c560b3755142b1b920edeb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75ac83024a0aea09005f8b9f0610f158 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f92da13a9732f5aedf9630ba0c97adc = $(`<div id="html_6f92da13a9732f5aedf9630ba0c97adc" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_75ac83024a0aea09005f8b9f0610f158.setContent(html_6f92da13a9732f5aedf9630ba0c97adc);
+            
+        
+
+        marker_36680d8a217de8ceca0f5b00c149a91c.bindPopup(popup_75ac83024a0aea09005f8b9f0610f158)
+        ;
+
+        
+    
+    
+            marker_36680d8a217de8ceca0f5b00c149a91c.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36680d8a217de8ceca0f5b00c149a91c.setIcon(icon_da7325a05c560b3755142b1b920edeb8);
+            
+    
+            var marker_a5ceb7e843a8857d0b5137e30a98f222 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_b063226fe63dda5a82d0254136d9ab54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f2ebbc7b41c32404b9326cd3a72d7ff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2f5941e0663b9ccd5fc06782091fafb = $(`<div id="html_e2f5941e0663b9ccd5fc06782091fafb" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_7f2ebbc7b41c32404b9326cd3a72d7ff.setContent(html_e2f5941e0663b9ccd5fc06782091fafb);
+            
+        
+
+        marker_a5ceb7e843a8857d0b5137e30a98f222.bindPopup(popup_7f2ebbc7b41c32404b9326cd3a72d7ff)
+        ;
+
+        
+    
+    
+            marker_a5ceb7e843a8857d0b5137e30a98f222.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5ceb7e843a8857d0b5137e30a98f222.setIcon(icon_b063226fe63dda5a82d0254136d9ab54);
+            
+    
+            var marker_912b194eb0192b6eda4285d0b8a80b4b = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_de605b97a1f1114d4d71a6b48bb539b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a26ce69d9babb8175cff5f597a87eeb4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27e4af6c7337688e4a91d7b8a00e7107 = $(`<div id="html_27e4af6c7337688e4a91d7b8a00e7107" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_a26ce69d9babb8175cff5f597a87eeb4.setContent(html_27e4af6c7337688e4a91d7b8a00e7107);
+            
+        
+
+        marker_912b194eb0192b6eda4285d0b8a80b4b.bindPopup(popup_a26ce69d9babb8175cff5f597a87eeb4)
+        ;
+
+        
+    
+    
+            marker_912b194eb0192b6eda4285d0b8a80b4b.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_912b194eb0192b6eda4285d0b8a80b4b.setIcon(icon_de605b97a1f1114d4d71a6b48bb539b2);
+            
+    
+            var marker_b6103a54c74b881968591b0adcf96def = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_213035f29bbaa3186054897b95a94af8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc0d70471d3cf1b02257a70d2b4f1d5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0c2acbc8b6b70aaa2ae2d7bc6173eb9 = $(`<div id="html_a0c2acbc8b6b70aaa2ae2d7bc6173eb9" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_cc0d70471d3cf1b02257a70d2b4f1d5b.setContent(html_a0c2acbc8b6b70aaa2ae2d7bc6173eb9);
+            
+        
+
+        marker_b6103a54c74b881968591b0adcf96def.bindPopup(popup_cc0d70471d3cf1b02257a70d2b4f1d5b)
+        ;
+
+        
+    
+    
+            marker_b6103a54c74b881968591b0adcf96def.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b6103a54c74b881968591b0adcf96def.setIcon(icon_213035f29bbaa3186054897b95a94af8);
+            
+    
+            var marker_3045170e5260aadea256a98274469b46 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_f6cb5c6e39ddd8bd843389ed306083cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5bb6ba1a516cc7c439b7174dab2a83a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9c8d496a78550ba8d32b8abd3cd3354b = $(`<div id="html_9c8d496a78550ba8d32b8abd3cd3354b" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_e5bb6ba1a516cc7c439b7174dab2a83a.setContent(html_9c8d496a78550ba8d32b8abd3cd3354b);
+            
+        
+
+        marker_3045170e5260aadea256a98274469b46.bindPopup(popup_e5bb6ba1a516cc7c439b7174dab2a83a)
+        ;
+
+        
+    
+    
+            marker_3045170e5260aadea256a98274469b46.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3045170e5260aadea256a98274469b46.setIcon(icon_f6cb5c6e39ddd8bd843389ed306083cc);
+            
+    
+            var marker_b4b2f2e0a3f0d747e5473deb4e133e22 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_ffc73826e33d6b4c9c834436ad799b64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdf23b3c1003e5ad8403f520e2d9223e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb84ab052fef823a30daa341cbbac330 = $(`<div id="html_fb84ab052fef823a30daa341cbbac330" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_cdf23b3c1003e5ad8403f520e2d9223e.setContent(html_fb84ab052fef823a30daa341cbbac330);
+            
+        
+
+        marker_b4b2f2e0a3f0d747e5473deb4e133e22.bindPopup(popup_cdf23b3c1003e5ad8403f520e2d9223e)
+        ;
+
+        
+    
+    
+            marker_b4b2f2e0a3f0d747e5473deb4e133e22.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4b2f2e0a3f0d747e5473deb4e133e22.setIcon(icon_ffc73826e33d6b4c9c834436ad799b64);
+            
+    
+            var marker_228b8696d382142e35e733352fd6d28a = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_276bacb6c11725f327223bfb3bd01c9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f09c0a2ce98dfa0616181ff49a55cecd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0eb2b51bd31e5e6e98623bcbe4185de9 = $(`<div id="html_0eb2b51bd31e5e6e98623bcbe4185de9" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_f09c0a2ce98dfa0616181ff49a55cecd.setContent(html_0eb2b51bd31e5e6e98623bcbe4185de9);
+            
+        
+
+        marker_228b8696d382142e35e733352fd6d28a.bindPopup(popup_f09c0a2ce98dfa0616181ff49a55cecd)
+        ;
+
+        
+    
+    
+            marker_228b8696d382142e35e733352fd6d28a.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_228b8696d382142e35e733352fd6d28a.setIcon(icon_276bacb6c11725f327223bfb3bd01c9b);
+            
+    
+            var marker_74212f17b243a43f24674513d47341ca = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_88ed17058689c486dd73ca125724c2de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b36b65559770e5e485dcb7e9d1a818a2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6ecf1f296c4f6461a72d7e39ec5230c = $(`<div id="html_b6ecf1f296c4f6461a72d7e39ec5230c" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fort Union National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_b36b65559770e5e485dcb7e9d1a818a2.setContent(html_b6ecf1f296c4f6461a72d7e39ec5230c);
+            
+        
+
+        marker_74212f17b243a43f24674513d47341ca.bindPopup(popup_b36b65559770e5e485dcb7e9d1a818a2)
+        ;
+
+        
+    
+    
+            marker_74212f17b243a43f24674513d47341ca.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74212f17b243a43f24674513d47341ca.setIcon(icon_88ed17058689c486dd73ca125724c2de);
+            
+    
+            var poly_line_206bcc1d7d0d5eaba9e70303f2989bb5 = L.polyline(
+                [[35.90700629, -105.0145185], [39.70817829, -83.89328575]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_206bcc1d7d0d5eaba9e70303f2989bb5.bindTooltip(
+                `<div>
+                     2397.0 mi (35.0 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09853a914cfdcf3abab3058bf0a418fb = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_e75f70297039342b3910dc8bb5a2298a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d47295811b3662e71ae4700c7335426e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_22792681dd7d39cc08f44edc08a8fe1a = $(`<div id="html_22792681dd7d39cc08f44edc08a8fe1a" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_d47295811b3662e71ae4700c7335426e.setContent(html_22792681dd7d39cc08f44edc08a8fe1a);
+            
+        
+
+        marker_09853a914cfdcf3abab3058bf0a418fb.bindPopup(popup_d47295811b3662e71ae4700c7335426e)
+        ;
+
+        
+    
+    
+            marker_09853a914cfdcf3abab3058bf0a418fb.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09853a914cfdcf3abab3058bf0a418fb.setIcon(icon_e75f70297039342b3910dc8bb5a2298a);
+            
+    
+            var marker_6fc53c1fa2bf4b46377f4d3b36660048 = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a7709fc871b72f28a638ad0a65f31ebf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebf96e2a54c109efc5a0e4e641bffb97 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23453b15399167d39498a1241194bda7 = $(`<div id="html_23453b15399167d39498a1241194bda7" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_ebf96e2a54c109efc5a0e4e641bffb97.setContent(html_23453b15399167d39498a1241194bda7);
+            
+        
+
+        marker_6fc53c1fa2bf4b46377f4d3b36660048.bindPopup(popup_ebf96e2a54c109efc5a0e4e641bffb97)
+        ;
+
+        
+    
+    
+            marker_6fc53c1fa2bf4b46377f4d3b36660048.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6fc53c1fa2bf4b46377f4d3b36660048.setIcon(icon_a7709fc871b72f28a638ad0a65f31ebf);
+            
+    
+            var marker_32bec31011dcfc69f39eddaecba24480 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_152dee72c33426da0e7b3e6bcdf15f4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86cf9545d30aeda5c262aae367f9a09c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ec0fbd473a45b4e006e723683fdcdd45 = $(`<div id="html_ec0fbd473a45b4e006e723683fdcdd45" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_86cf9545d30aeda5c262aae367f9a09c.setContent(html_ec0fbd473a45b4e006e723683fdcdd45);
+            
+        
+
+        marker_32bec31011dcfc69f39eddaecba24480.bindPopup(popup_86cf9545d30aeda5c262aae367f9a09c)
+        ;
+
+        
+    
+    
+            marker_32bec31011dcfc69f39eddaecba24480.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32bec31011dcfc69f39eddaecba24480.setIcon(icon_152dee72c33426da0e7b3e6bcdf15f4d);
+            
+    
+            var marker_5d9438e0f6a64ebaa7127bf9785cb5d9 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_ccede5d81f3ab8d43eb359b07af8cb43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21f611fe3ca9f70483a3690bd7d5befd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_023d4eb8d620d9b9e0d063fccc54d1af = $(`<div id="html_023d4eb8d620d9b9e0d063fccc54d1af" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_21f611fe3ca9f70483a3690bd7d5befd.setContent(html_023d4eb8d620d9b9e0d063fccc54d1af);
+            
+        
+
+        marker_5d9438e0f6a64ebaa7127bf9785cb5d9.bindPopup(popup_21f611fe3ca9f70483a3690bd7d5befd)
+        ;
+
+        
+    
+    
+            marker_5d9438e0f6a64ebaa7127bf9785cb5d9.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d9438e0f6a64ebaa7127bf9785cb5d9.setIcon(icon_ccede5d81f3ab8d43eb359b07af8cb43);
+            
+    
+            var marker_958b3aa20d2ae879d45746e63dc3b4a3 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a9813fdf2fa93e51ed4995db52b042d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42f2f0228088364d750e4601819acd59 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16e0315d80abde6e11320990d2fa6c1f = $(`<div id="html_16e0315d80abde6e11320990d2fa6c1f" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_42f2f0228088364d750e4601819acd59.setContent(html_16e0315d80abde6e11320990d2fa6c1f);
+            
+        
+
+        marker_958b3aa20d2ae879d45746e63dc3b4a3.bindPopup(popup_42f2f0228088364d750e4601819acd59)
+        ;
+
+        
+    
+    
+            marker_958b3aa20d2ae879d45746e63dc3b4a3.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_958b3aa20d2ae879d45746e63dc3b4a3.setIcon(icon_a9813fdf2fa93e51ed4995db52b042d6);
+            
+    
+            var marker_0f0387aa19fcef8f2fe76a1e17d245f7 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_2eb10c6b22818ee7ddf67434f4ef250b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ebc10c43b5d13eb3a7082151d9831d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_be034845b73b0fdf87e7c8aec0e8c118 = $(`<div id="html_be034845b73b0fdf87e7c8aec0e8c118" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_4ebc10c43b5d13eb3a7082151d9831d9.setContent(html_be034845b73b0fdf87e7c8aec0e8c118);
+            
+        
+
+        marker_0f0387aa19fcef8f2fe76a1e17d245f7.bindPopup(popup_4ebc10c43b5d13eb3a7082151d9831d9)
+        ;
+
+        
+    
+    
+            marker_0f0387aa19fcef8f2fe76a1e17d245f7.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f0387aa19fcef8f2fe76a1e17d245f7.setIcon(icon_2eb10c6b22818ee7ddf67434f4ef250b);
+            
+    
+            var marker_da1433b104f0c8125c06786d24f45e90 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_766354837df7598b54a721c3810dbcae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4f8409a3f8b22779ac8ec0896886f8e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b94be4a34959b3ccf357c067c059bb18 = $(`<div id="html_b94be4a34959b3ccf357c067c059bb18" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_f4f8409a3f8b22779ac8ec0896886f8e.setContent(html_b94be4a34959b3ccf357c067c059bb18);
+            
+        
+
+        marker_da1433b104f0c8125c06786d24f45e90.bindPopup(popup_f4f8409a3f8b22779ac8ec0896886f8e)
+        ;
+
+        
+    
+    
+            marker_da1433b104f0c8125c06786d24f45e90.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_da1433b104f0c8125c06786d24f45e90.setIcon(icon_766354837df7598b54a721c3810dbcae);
+            
+    
+            var marker_fe66077f7db55109e165b8fbf75ed2c4 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a59aa3579f68828f7971581ec1d4c94c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b79d73d69a87018e159f704081129909 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4f367e36aaa8d9a81e90449d278e079 = $(`<div id="html_a4f367e36aaa8d9a81e90449d278e079" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_b79d73d69a87018e159f704081129909.setContent(html_a4f367e36aaa8d9a81e90449d278e079);
+            
+        
+
+        marker_fe66077f7db55109e165b8fbf75ed2c4.bindPopup(popup_b79d73d69a87018e159f704081129909)
+        ;
+
+        
+    
+    
+            marker_fe66077f7db55109e165b8fbf75ed2c4.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fe66077f7db55109e165b8fbf75ed2c4.setIcon(icon_a59aa3579f68828f7971581ec1d4c94c);
+            
+    
+            var marker_e10fa4f350f120b49955a59c41106e55 = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_498848c62b12d21ef108545bf3f2cfa3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_491e44a94eb45d83ef3095482093f23b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_459f1797d833afa6ce974941c2f39d30 = $(`<div id="html_459f1797d833afa6ce974941c2f39d30" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Charles Young Buffalo Soldiers National Monument</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_491e44a94eb45d83ef3095482093f23b.setContent(html_459f1797d833afa6ce974941c2f39d30);
+            
+        
+
+        marker_e10fa4f350f120b49955a59c41106e55.bindPopup(popup_491e44a94eb45d83ef3095482093f23b)
+        ;
+
+        
+    
+    
+            marker_e10fa4f350f120b49955a59c41106e55.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e10fa4f350f120b49955a59c41106e55.setIcon(icon_498848c62b12d21ef108545bf3f2cfa3);
+            
+    
+            var poly_line_a9bd6faf744f5ba7030ae8c68d2e15ab = L.polyline(
+                [[39.70817829, -83.89328575], [38.9128, -76.9434]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_a9bd6faf744f5ba7030ae8c68d2e15ab.bindTooltip(
+                `<div>
+                     464.9 mi (7.3 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_88d5f2a450b4bbde262cf5e6117f55ed = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_9e3908ef0229ce53158b4e662d171dd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34ff405bdedddcd770926ff167b8be62 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6b2ce178f62f113f5b637279dd86086 = $(`<div id="html_f6b2ce178f62f113f5b637279dd86086" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_34ff405bdedddcd770926ff167b8be62.setContent(html_f6b2ce178f62f113f5b637279dd86086);
+            
+        
+
+        marker_88d5f2a450b4bbde262cf5e6117f55ed.bindPopup(popup_34ff405bdedddcd770926ff167b8be62)
+        ;
+
+        
+    
+    
+            marker_88d5f2a450b4bbde262cf5e6117f55ed.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_88d5f2a450b4bbde262cf5e6117f55ed.setIcon(icon_9e3908ef0229ce53158b4e662d171dd6);
+            
+    
+            var marker_8dcdbd90593b50270969496063168c7e = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7a206a3b69896d7d7c9778c9a1ae94fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4d260ee7af1a4503a99f9049d941966 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5f4223bcbfd1d99d7b34b8ff653f8762 = $(`<div id="html_5f4223bcbfd1d99d7b34b8ff653f8762" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_b4d260ee7af1a4503a99f9049d941966.setContent(html_5f4223bcbfd1d99d7b34b8ff653f8762);
+            
+        
+
+        marker_8dcdbd90593b50270969496063168c7e.bindPopup(popup_b4d260ee7af1a4503a99f9049d941966)
+        ;
+
+        
+    
+    
+            marker_8dcdbd90593b50270969496063168c7e.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8dcdbd90593b50270969496063168c7e.setIcon(icon_7a206a3b69896d7d7c9778c9a1ae94fe);
+            
+    
+            var marker_fdeddbbbe68b8eee6baeb7b5a8655689 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_0b6a5d647763f4730732677dcc54eb3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c7842af6065a32cfc2976d3c7b7ae0e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93951cbedd3f6fc8330bea277222a587 = $(`<div id="html_93951cbedd3f6fc8330bea277222a587" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_8c7842af6065a32cfc2976d3c7b7ae0e.setContent(html_93951cbedd3f6fc8330bea277222a587);
+            
+        
+
+        marker_fdeddbbbe68b8eee6baeb7b5a8655689.bindPopup(popup_8c7842af6065a32cfc2976d3c7b7ae0e)
+        ;
+
+        
+    
+    
+            marker_fdeddbbbe68b8eee6baeb7b5a8655689.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdeddbbbe68b8eee6baeb7b5a8655689.setIcon(icon_0b6a5d647763f4730732677dcc54eb3b);
+            
+    
+            var marker_e86f4de357c1eda255af690922812a6f = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a6db3ad3ea00b283431111d5ef5df003 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc2a2a1605ae29fd47a7846f46d4789f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c7dd5cf0a4fb27e27c8ecbcbe234bbb4 = $(`<div id="html_c7dd5cf0a4fb27e27c8ecbcbe234bbb4" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_bc2a2a1605ae29fd47a7846f46d4789f.setContent(html_c7dd5cf0a4fb27e27c8ecbcbe234bbb4);
+            
+        
+
+        marker_e86f4de357c1eda255af690922812a6f.bindPopup(popup_bc2a2a1605ae29fd47a7846f46d4789f)
+        ;
+
+        
+    
+    
+            marker_e86f4de357c1eda255af690922812a6f.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e86f4de357c1eda255af690922812a6f.setIcon(icon_a6db3ad3ea00b283431111d5ef5df003);
+            
+    
+            var marker_c657c731ea7d4d46f9eb5344cb6f1186 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a508e9deaa9ed056a9bbdbef5ab43fe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a591f3cb66cfceff47dce821629ea8cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_41504a8745d08f6133a2a573ca250168 = $(`<div id="html_41504a8745d08f6133a2a573ca250168" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_a591f3cb66cfceff47dce821629ea8cc.setContent(html_41504a8745d08f6133a2a573ca250168);
+            
+        
+
+        marker_c657c731ea7d4d46f9eb5344cb6f1186.bindPopup(popup_a591f3cb66cfceff47dce821629ea8cc)
+        ;
+
+        
+    
+    
+            marker_c657c731ea7d4d46f9eb5344cb6f1186.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c657c731ea7d4d46f9eb5344cb6f1186.setIcon(icon_a508e9deaa9ed056a9bbdbef5ab43fe0);
+            
+    
+            var marker_a0b2752f6580b843da4468de6ab9bf15 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_001244b09fcea20e5b1e1b33be889ce9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c1db497851cc668c603cd70d33c8baa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_053154362fbdcd8a8914d868af4a36ec = $(`<div id="html_053154362fbdcd8a8914d868af4a36ec" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_8c1db497851cc668c603cd70d33c8baa.setContent(html_053154362fbdcd8a8914d868af4a36ec);
+            
+        
+
+        marker_a0b2752f6580b843da4468de6ab9bf15.bindPopup(popup_8c1db497851cc668c603cd70d33c8baa)
+        ;
+
+        
+    
+    
+            marker_a0b2752f6580b843da4468de6ab9bf15.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a0b2752f6580b843da4468de6ab9bf15.setIcon(icon_001244b09fcea20e5b1e1b33be889ce9);
+            
+    
+            var marker_812c381ed91cc0e0e152757c12d42728 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7139274e0b691575a76348933fb55e7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3c7b368d589a3379db00e84a039d00c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f26bdf8d260fc3ed74bce8cf4f6d064b = $(`<div id="html_f26bdf8d260fc3ed74bce8cf4f6d064b" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_a3c7b368d589a3379db00e84a039d00c.setContent(html_f26bdf8d260fc3ed74bce8cf4f6d064b);
+            
+        
+
+        marker_812c381ed91cc0e0e152757c12d42728.bindPopup(popup_a3c7b368d589a3379db00e84a039d00c)
+        ;
+
+        
+    
+    
+            marker_812c381ed91cc0e0e152757c12d42728.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_812c381ed91cc0e0e152757c12d42728.setIcon(icon_7139274e0b691575a76348933fb55e7e);
+            
+    
+            var marker_349187e6ee975aee4a724eb6cafc2f8c = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_18eea0709e6c284adfda6c1d47e487ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d470a25508230ba127c84a87cd219f70 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d69277e92203647f93b83241c77635c2 = $(`<div id="html_d69277e92203647f93b83241c77635c2" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_d470a25508230ba127c84a87cd219f70.setContent(html_d69277e92203647f93b83241c77635c2);
+            
+        
+
+        marker_349187e6ee975aee4a724eb6cafc2f8c.bindPopup(popup_d470a25508230ba127c84a87cd219f70)
+        ;
+
+        
+    
+    
+            marker_349187e6ee975aee4a724eb6cafc2f8c.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_349187e6ee975aee4a724eb6cafc2f8c.setIcon(icon_18eea0709e6c284adfda6c1d47e487ae);
+            
+    
+            var marker_6ce0182558098bc63a77525de224802c = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_440ab4e023ff893a7bd2e1d73c929c34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a73658c0966b08cc2d3d513316f1c327 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1a5df484300d09f55069a203e7edbe8d = $(`<div id="html_1a5df484300d09f55069a203e7edbe8d" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Kenilworth Park & Aquatic Gardens</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg" width="200"><br>         <em>Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying "come join."</em><br>         </div>         </div>`)[0];
+                popup_a73658c0966b08cc2d3d513316f1c327.setContent(html_1a5df484300d09f55069a203e7edbe8d);
+            
+        
+
+        marker_6ce0182558098bc63a77525de224802c.bindPopup(popup_a73658c0966b08cc2d3d513316f1c327)
+        ;
+
+        
+    
+    
+            marker_6ce0182558098bc63a77525de224802c.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ce0182558098bc63a77525de224802c.setIcon(icon_440ab4e023ff893a7bd2e1d73c929c34);
+            
+    
+            var poly_line_187c3884231c2a718f73f46f926a637e = L.polyline(
+                [[38.9128, -76.9434], [37.85982543, -122.6007386]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_187c3884231c2a718f73f46f926a637e.bindTooltip(
+                `<div>
+                     221.3 mi (3.6 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a7dc6b4ee7da6e97fcb2c3106a096904 = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7d4c9fcca10b284a76000e5998500f35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_173e05ac44662349299b3ee1598fb628 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e7e7c35ff4c2c484fc8ab6b2d2fb513c = $(`<div id="html_e7e7c35ff4c2c484fc8ab6b2d2fb513c" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_173e05ac44662349299b3ee1598fb628.setContent(html_e7e7c35ff4c2c484fc8ab6b2d2fb513c);
+            
+        
+
+        marker_a7dc6b4ee7da6e97fcb2c3106a096904.bindPopup(popup_173e05ac44662349299b3ee1598fb628)
+        ;
+
+        
+    
+    
+            marker_a7dc6b4ee7da6e97fcb2c3106a096904.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7dc6b4ee7da6e97fcb2c3106a096904.setIcon(icon_7d4c9fcca10b284a76000e5998500f35);
+            
+    
+            var marker_8c17db988edc895978bea3d158a34a61 = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_b3b53f446e072c2a958b562f309d4efc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0057a03f20d723465a2685faa3808503 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62eb3fb706d59e9692a98ed18efc688c = $(`<div id="html_62eb3fb706d59e9692a98ed18efc688c" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_0057a03f20d723465a2685faa3808503.setContent(html_62eb3fb706d59e9692a98ed18efc688c);
+            
+        
+
+        marker_8c17db988edc895978bea3d158a34a61.bindPopup(popup_0057a03f20d723465a2685faa3808503)
+        ;
+
+        
+    
+    
+            marker_8c17db988edc895978bea3d158a34a61.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c17db988edc895978bea3d158a34a61.setIcon(icon_b3b53f446e072c2a958b562f309d4efc);
+            
+    
+            var marker_3e07ffcdaa63e10a158f05cb3e868287 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_e027e063dd9a8359207e08d539723c46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d2a1010316e3e76ab1323e176e05e6e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee68dbb1d656a3418679d9e7b124fe55 = $(`<div id="html_ee68dbb1d656a3418679d9e7b124fe55" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_0d2a1010316e3e76ab1323e176e05e6e.setContent(html_ee68dbb1d656a3418679d9e7b124fe55);
+            
+        
+
+        marker_3e07ffcdaa63e10a158f05cb3e868287.bindPopup(popup_0d2a1010316e3e76ab1323e176e05e6e)
+        ;
+
+        
+    
+    
+            marker_3e07ffcdaa63e10a158f05cb3e868287.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e07ffcdaa63e10a158f05cb3e868287.setIcon(icon_e027e063dd9a8359207e08d539723c46);
+            
+    
+            var marker_7530cbd7ddfc133e74c59059a10762e9 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_cc75c461f5bdf32d350dfe05f2545d18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f113a55901dc9c02c26901d584a5782 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ad2d001a074a2b2a7eace1464841c166 = $(`<div id="html_ad2d001a074a2b2a7eace1464841c166" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_9f113a55901dc9c02c26901d584a5782.setContent(html_ad2d001a074a2b2a7eace1464841c166);
+            
+        
+
+        marker_7530cbd7ddfc133e74c59059a10762e9.bindPopup(popup_9f113a55901dc9c02c26901d584a5782)
+        ;
+
+        
+    
+    
+            marker_7530cbd7ddfc133e74c59059a10762e9.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7530cbd7ddfc133e74c59059a10762e9.setIcon(icon_cc75c461f5bdf32d350dfe05f2545d18);
+            
+    
+            var marker_d29f189274784794656e6ad7db01bf90 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_01afeee8c55dc779168ca23fc78483c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_902e2dd56c17aff8ddc66a4f307172f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6e892ba9db0af41f0b9b2b171b706fc = $(`<div id="html_f6e892ba9db0af41f0b9b2b171b706fc" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_902e2dd56c17aff8ddc66a4f307172f1.setContent(html_f6e892ba9db0af41f0b9b2b171b706fc);
+            
+        
+
+        marker_d29f189274784794656e6ad7db01bf90.bindPopup(popup_902e2dd56c17aff8ddc66a4f307172f1)
+        ;
+
+        
+    
+    
+            marker_d29f189274784794656e6ad7db01bf90.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d29f189274784794656e6ad7db01bf90.setIcon(icon_01afeee8c55dc779168ca23fc78483c3);
+            
+    
+            var marker_d2bcc19383abe950eeb4dd9d788a30b2 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_b7abf742fb32eb5b470b3051681dac54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b84e655266ce693a9eb4608f9d4ba6fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74cfa4fa48a7c7f1a9c973964fdb3fa9 = $(`<div id="html_74cfa4fa48a7c7f1a9c973964fdb3fa9" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_b84e655266ce693a9eb4608f9d4ba6fe.setContent(html_74cfa4fa48a7c7f1a9c973964fdb3fa9);
+            
+        
+
+        marker_d2bcc19383abe950eeb4dd9d788a30b2.bindPopup(popup_b84e655266ce693a9eb4608f9d4ba6fe)
+        ;
+
+        
+    
+    
+            marker_d2bcc19383abe950eeb4dd9d788a30b2.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d2bcc19383abe950eeb4dd9d788a30b2.setIcon(icon_b7abf742fb32eb5b470b3051681dac54);
+            
+    
+            var marker_eb77ea91d7f1d6f94bf33a433f897980 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a4890d5b2feebf44b9f92b423102f2e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d81399129de4788722c5d124036dffb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d529990dce737b279c66a9f3e537012 = $(`<div id="html_0d529990dce737b279c66a9f3e537012" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_9d81399129de4788722c5d124036dffb.setContent(html_0d529990dce737b279c66a9f3e537012);
+            
+        
+
+        marker_eb77ea91d7f1d6f94bf33a433f897980.bindPopup(popup_9d81399129de4788722c5d124036dffb)
+        ;
+
+        
+    
+    
+            marker_eb77ea91d7f1d6f94bf33a433f897980.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb77ea91d7f1d6f94bf33a433f897980.setIcon(icon_a4890d5b2feebf44b9f92b423102f2e2);
+            
+    
+            var marker_663cad42bd0fea2481afaec6729a2589 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_2c426181eb8a7c22f351bcf0650972c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e474c6c94d1971239be88df44df3fd69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d6f121a26d394708d6a32159878151ba = $(`<div id="html_d6f121a26d394708d6a32159878151ba" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_e474c6c94d1971239be88df44df3fd69.setContent(html_d6f121a26d394708d6a32159878151ba);
+            
+        
+
+        marker_663cad42bd0fea2481afaec6729a2589.bindPopup(popup_e474c6c94d1971239be88df44df3fd69)
+        ;
+
+        
+    
+    
+            marker_663cad42bd0fea2481afaec6729a2589.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_663cad42bd0fea2481afaec6729a2589.setIcon(icon_2c426181eb8a7c22f351bcf0650972c4);
+            
+    
+            var marker_a73658d6221375a584732b81c2df5240 = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_a294868a2d2837bbd74e2aac30c9b84a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86ce697dee4e5f9e22eecf7f06245ed5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd95f1f76c4f42abf968c43118601a1e = $(`<div id="html_fd95f1f76c4f42abf968c43118601a1e" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Golden Gate National Recreation Area</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_86ce697dee4e5f9e22eecf7f06245ed5.setContent(html_fd95f1f76c4f42abf968c43118601a1e);
+            
+        
+
+        marker_a73658d6221375a584732b81c2df5240.bindPopup(popup_86ce697dee4e5f9e22eecf7f06245ed5)
+        ;
+
+        
+    
+    
+            marker_a73658d6221375a584732b81c2df5240.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a73658d6221375a584732b81c2df5240.setIcon(icon_a294868a2d2837bbd74e2aac30c9b84a);
+            
+    
+            var poly_line_ab926f86b4fffab12fcf3111d69c0374 = L.polyline(
+                [[37.85982543, -122.6007386], [43.88037021, -103.4525186]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_ab926f86b4fffab12fcf3111d69c0374.bindTooltip(
+                `<div>
+                     95.8 mi (2.0 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a3977036b2c0021ccd737c9b354ff69 = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_ac5b945ff6440d699b25fe99cc6956ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bf7f70dd92e32bf511e80fb7e28cc14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93d65e13b4b964ca012f6bd1b1011a69 = $(`<div id="html_93d65e13b4b964ca012f6bd1b1011a69" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_2bf7f70dd92e32bf511e80fb7e28cc14.setContent(html_93d65e13b4b964ca012f6bd1b1011a69);
+            
+        
+
+        marker_4a3977036b2c0021ccd737c9b354ff69.bindPopup(popup_2bf7f70dd92e32bf511e80fb7e28cc14)
+        ;
+
+        
+    
+    
+            marker_4a3977036b2c0021ccd737c9b354ff69.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a3977036b2c0021ccd737c9b354ff69.setIcon(icon_ac5b945ff6440d699b25fe99cc6956ac);
+            
+    
+            var marker_0ce2300dadecd30f78708100aec02d94 = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_373120d50a243dc62d0572231f610a10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c164443fa7341e10b4d56b3564ee34f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d30c9a853b8e795a761ec6736f7d0397 = $(`<div id="html_d30c9a853b8e795a761ec6736f7d0397" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_c164443fa7341e10b4d56b3564ee34f7.setContent(html_d30c9a853b8e795a761ec6736f7d0397);
+            
+        
+
+        marker_0ce2300dadecd30f78708100aec02d94.bindPopup(popup_c164443fa7341e10b4d56b3564ee34f7)
+        ;
+
+        
+    
+    
+            marker_0ce2300dadecd30f78708100aec02d94.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ce2300dadecd30f78708100aec02d94.setIcon(icon_373120d50a243dc62d0572231f610a10);
+            
+    
+            var marker_7053a1b50d2af4dcb6942b20005c49b9 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_0c181bcff40eb3d4e4c42e232db5bccb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf009d79011dcab01c38289ed393b2b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a61d23e8c3f96c10b69054000c6a5ae6 = $(`<div id="html_a61d23e8c3f96c10b69054000c6a5ae6" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_bf009d79011dcab01c38289ed393b2b2.setContent(html_a61d23e8c3f96c10b69054000c6a5ae6);
+            
+        
+
+        marker_7053a1b50d2af4dcb6942b20005c49b9.bindPopup(popup_bf009d79011dcab01c38289ed393b2b2)
+        ;
+
+        
+    
+    
+            marker_7053a1b50d2af4dcb6942b20005c49b9.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7053a1b50d2af4dcb6942b20005c49b9.setIcon(icon_0c181bcff40eb3d4e4c42e232db5bccb);
+            
+    
+            var marker_ad3be97082e5941c92a1856f88b01f45 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_d7249e3c2dffaace04237e1c88987bfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f468e797ed56ae29d85e78944fe0e6c2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d68701e8a3eed558acab7c2a7becf796 = $(`<div id="html_d68701e8a3eed558acab7c2a7becf796" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_f468e797ed56ae29d85e78944fe0e6c2.setContent(html_d68701e8a3eed558acab7c2a7becf796);
+            
+        
+
+        marker_ad3be97082e5941c92a1856f88b01f45.bindPopup(popup_f468e797ed56ae29d85e78944fe0e6c2)
+        ;
+
+        
+    
+    
+            marker_ad3be97082e5941c92a1856f88b01f45.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad3be97082e5941c92a1856f88b01f45.setIcon(icon_d7249e3c2dffaace04237e1c88987bfe);
+            
+    
+            var marker_fac363367603ac0366ec9fe8a7109289 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_4b71d8cd78bdda278eb75e6e1eec9fb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e73069cce7a017b45591bbcd8fb216a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b18d2a4ebc409453fcad10db6e2bfd1 = $(`<div id="html_2b18d2a4ebc409453fcad10db6e2bfd1" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_3e73069cce7a017b45591bbcd8fb216a.setContent(html_2b18d2a4ebc409453fcad10db6e2bfd1);
+            
+        
+
+        marker_fac363367603ac0366ec9fe8a7109289.bindPopup(popup_3e73069cce7a017b45591bbcd8fb216a)
+        ;
+
+        
+    
+    
+            marker_fac363367603ac0366ec9fe8a7109289.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fac363367603ac0366ec9fe8a7109289.setIcon(icon_4b71d8cd78bdda278eb75e6e1eec9fb2);
+            
+    
+            var marker_74811709de69cd579c089c398d7969a4 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_061d691da62810e50e0dddd6d17d213b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8aff55dfe2b800dd7fcf9d7e80cfb40 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c19725dd9a84c0f7b6b6e569d5153e1a = $(`<div id="html_c19725dd9a84c0f7b6b6e569d5153e1a" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_d8aff55dfe2b800dd7fcf9d7e80cfb40.setContent(html_c19725dd9a84c0f7b6b6e569d5153e1a);
+            
+        
+
+        marker_74811709de69cd579c089c398d7969a4.bindPopup(popup_d8aff55dfe2b800dd7fcf9d7e80cfb40)
+        ;
+
+        
+    
+    
+            marker_74811709de69cd579c089c398d7969a4.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74811709de69cd579c089c398d7969a4.setIcon(icon_061d691da62810e50e0dddd6d17d213b);
+            
+    
+            var marker_4146f14cfbd138e00320f903ff9e8f76 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7d86604d7eef3825812ca7341879d1b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd8dc3074ec922c022b10a13ac77d267 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d10cc18fd1dd11355ab8ad249675c8f6 = $(`<div id="html_d10cc18fd1dd11355ab8ad249675c8f6" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_bd8dc3074ec922c022b10a13ac77d267.setContent(html_d10cc18fd1dd11355ab8ad249675c8f6);
+            
+        
+
+        marker_4146f14cfbd138e00320f903ff9e8f76.bindPopup(popup_bd8dc3074ec922c022b10a13ac77d267)
+        ;
+
+        
+    
+    
+            marker_4146f14cfbd138e00320f903ff9e8f76.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4146f14cfbd138e00320f903ff9e8f76.setIcon(icon_7d86604d7eef3825812ca7341879d1b0);
+            
+    
+            var marker_ee1dc62f9e98a13d63aebc9309291938 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_0f5d6862b3fa441bce8af9a5311f793e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_967b3963cc860e987e5a2533f61f9cdb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92df3f9c2a11eaf36624fced6b730ed8 = $(`<div id="html_92df3f9c2a11eaf36624fced6b730ed8" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_967b3963cc860e987e5a2533f61f9cdb.setContent(html_92df3f9c2a11eaf36624fced6b730ed8);
+            
+        
+
+        marker_ee1dc62f9e98a13d63aebc9309291938.bindPopup(popup_967b3963cc860e987e5a2533f61f9cdb)
+        ;
+
+        
+    
+    
+            marker_ee1dc62f9e98a13d63aebc9309291938.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee1dc62f9e98a13d63aebc9309291938.setIcon(icon_0f5d6862b3fa441bce8af9a5311f793e);
+            
+    
+            var marker_c6ba8eb4ca71bf0009f0725d9532bbe7 = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_76a738e63e02c7b555f58387e06b4d50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4abc11257ff77c9f437dbe9a1c19afe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8d9a245b837c0ac09fa455c6aba6ea44 = $(`<div id="html_8d9a245b837c0ac09fa455c6aba6ea44" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Mount Rushmore National Memorial</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_c4abc11257ff77c9f437dbe9a1c19afe.setContent(html_8d9a245b837c0ac09fa455c6aba6ea44);
+            
+        
+
+        marker_c6ba8eb4ca71bf0009f0725d9532bbe7.bindPopup(popup_c4abc11257ff77c9f437dbe9a1c19afe)
+        ;
+
+        
+    
+    
+            marker_c6ba8eb4ca71bf0009f0725d9532bbe7.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6ba8eb4ca71bf0009f0725d9532bbe7.setIcon(icon_76a738e63e02c7b555f58387e06b4d50);
+            
+    
+            var poly_line_2a5a9d3034d0134757f65dec779662f4 = L.polyline(
+                [[43.88037021, -103.4525186], [40.69668638, -73.00013462]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            poly_line_2a5a9d3034d0134757f65dec779662f4.bindTooltip(
+                `<div>
+                     650.1 mi (10.0 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_110f696b09836807109fa1d9d786c6d3 = L.marker(
+                [41.79697937, -73.94205557],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_3c9d24273946bd899290af84df1fc4dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_411a88e110d7563304cc1f4c6527ad4b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e232c603570d3eae03a3410d5ae4d52c = $(`<div id="html_e232c603570d3eae03a3410d5ae4d52c" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_411a88e110d7563304cc1f4c6527ad4b.setContent(html_e232c603570d3eae03a3410d5ae4d52c);
+            
+        
+
+        marker_110f696b09836807109fa1d9d786c6d3.bindPopup(popup_411a88e110d7563304cc1f4c6527ad4b)
+        ;
+
+        
+    
+    
+            marker_110f696b09836807109fa1d9d786c6d3.bindTooltip(
+                `<div>
+                     Vanderbilt Mansion National Historic Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_110f696b09836807109fa1d9d786c6d3.setIcon(icon_3c9d24273946bd899290af84df1fc4dd);
+            
+    
+            var marker_093f278b1948e8096d9ea8d8db9689d1 = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_b32d73ba0085c97682ca84b98c9fd481 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10507e85780ff69ca0c40a9ccd07aad2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f163ee26f0f5ce46e9104d0fce8e0e9 = $(`<div id="html_9f163ee26f0f5ce46e9104d0fce8e0e9" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_10507e85780ff69ca0c40a9ccd07aad2.setContent(html_9f163ee26f0f5ce46e9104d0fce8e0e9);
+            
+        
+
+        marker_093f278b1948e8096d9ea8d8db9689d1.bindPopup(popup_10507e85780ff69ca0c40a9ccd07aad2)
+        ;
+
+        
+    
+    
+            marker_093f278b1948e8096d9ea8d8db9689d1.bindTooltip(
+                `<div>
+                     African Burial Ground National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_093f278b1948e8096d9ea8d8db9689d1.setIcon(icon_b32d73ba0085c97682ca84b98c9fd481);
+            
+    
+            var marker_79d00da0e3eeda6074b9bba713fb4fc4 = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_8c97e2dd27832808dd60786cb1c7054d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f3e41a9cf0c5210712c8efccc5a4566 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a386d8c9d6fabc5f593589bf63d5ea1 = $(`<div id="html_5a386d8c9d6fabc5f593589bf63d5ea1" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_5f3e41a9cf0c5210712c8efccc5a4566.setContent(html_5a386d8c9d6fabc5f593589bf63d5ea1);
+            
+        
+
+        marker_79d00da0e3eeda6074b9bba713fb4fc4.bindPopup(popup_5f3e41a9cf0c5210712c8efccc5a4566)
+        ;
+
+        
+    
+    
+            marker_79d00da0e3eeda6074b9bba713fb4fc4.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79d00da0e3eeda6074b9bba713fb4fc4.setIcon(icon_8c97e2dd27832808dd60786cb1c7054d);
+            
+    
+            var marker_0fab999d146db20ab0e23964782d2f66 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_9305eab6480c8be6b1ceaaac2b26efdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75c189a4e8567b813856f393b14d40c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e93e89a5769b8b55c9d44b5107742ed3 = $(`<div id="html_e93e89a5769b8b55c9d44b5107742ed3" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_75c189a4e8567b813856f393b14d40c1.setContent(html_e93e89a5769b8b55c9d44b5107742ed3);
+            
+        
+
+        marker_0fab999d146db20ab0e23964782d2f66.bindPopup(popup_75c189a4e8567b813856f393b14d40c1)
+        ;
+
+        
+    
+    
+            marker_0fab999d146db20ab0e23964782d2f66.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fab999d146db20ab0e23964782d2f66.setIcon(icon_9305eab6480c8be6b1ceaaac2b26efdd);
+            
+    
+            var marker_14d5c4d75a37eb3ef74a6477c1ebb8b6 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_d75de8482d01abf517f2518feddd3ad4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05c434d777a7e9e7800cc795b5dc925e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a49beb0bc197d64b257cb2976c6b4e26 = $(`<div id="html_a49beb0bc197d64b257cb2976c6b4e26" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_05c434d777a7e9e7800cc795b5dc925e.setContent(html_a49beb0bc197d64b257cb2976c6b4e26);
+            
+        
+
+        marker_14d5c4d75a37eb3ef74a6477c1ebb8b6.bindPopup(popup_05c434d777a7e9e7800cc795b5dc925e)
+        ;
+
+        
+    
+    
+            marker_14d5c4d75a37eb3ef74a6477c1ebb8b6.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14d5c4d75a37eb3ef74a6477c1ebb8b6.setIcon(icon_d75de8482d01abf517f2518feddd3ad4);
+            
+    
+            var marker_a8594f9cbb0ecabdd16fe3b4eed7f1c9 = L.marker(
+                [38.9128, -76.9434],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_7d5a3d6d16a216c290dcbc44b9163053 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_535d48d561cac5a733f95106e414d2ed = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11c030fb31b1d7a8dc495425c73569fd = $(`<div id="html_11c030fb31b1d7a8dc495425c73569fd" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_535d48d561cac5a733f95106e414d2ed.setContent(html_11c030fb31b1d7a8dc495425c73569fd);
+            
+        
+
+        marker_a8594f9cbb0ecabdd16fe3b4eed7f1c9.bindPopup(popup_535d48d561cac5a733f95106e414d2ed)
+        ;
+
+        
+    
+    
+            marker_a8594f9cbb0ecabdd16fe3b4eed7f1c9.bindTooltip(
+                `<div>
+                     Kenilworth Park & Aquatic Gardens
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a8594f9cbb0ecabdd16fe3b4eed7f1c9.setIcon(icon_7d5a3d6d16a216c290dcbc44b9163053);
+            
+    
+            var marker_259b08f13f15695d839d5b5b819bfc40 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_40a3414679adb48f4ccdb8fbd2aa4802 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9844730397cd4d7eb4049e524709bbc8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a9d4750400bb0125bdae90716d8ce81 = $(`<div id="html_5a9d4750400bb0125bdae90716d8ce81" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_9844730397cd4d7eb4049e524709bbc8.setContent(html_5a9d4750400bb0125bdae90716d8ce81);
+            
+        
+
+        marker_259b08f13f15695d839d5b5b819bfc40.bindPopup(popup_9844730397cd4d7eb4049e524709bbc8)
+        ;
+
+        
+    
+    
+            marker_259b08f13f15695d839d5b5b819bfc40.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_259b08f13f15695d839d5b5b819bfc40.setIcon(icon_40a3414679adb48f4ccdb8fbd2aa4802);
+            
+    
+            var marker_aba4823a09ae0987382a73126c715a40 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_779e6a40bdc231e4eeb8c9de971e27ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb8ff072f2399faa1bd21d6fe0d085d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0d964ec15a92765a2e80aad4c0de115 = $(`<div id="html_a0d964ec15a92765a2e80aad4c0de115" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_bb8ff072f2399faa1bd21d6fe0d085d9.setContent(html_a0d964ec15a92765a2e80aad4c0de115);
+            
+        
+
+        marker_aba4823a09ae0987382a73126c715a40.bindPopup(popup_bb8ff072f2399faa1bd21d6fe0d085d9)
+        ;
+
+        
+    
+    
+            marker_aba4823a09ae0987382a73126c715a40.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aba4823a09ae0987382a73126c715a40.setIcon(icon_779e6a40bdc231e4eeb8c9de971e27ec);
+            
+    
+            var marker_393f3da63ca74b54ee752365b1f7537f = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_d2495e80f7280c246d92a592f7ff15a0);
+        
+    
+            var icon_541a03fa9ee76394ea3fe0858afee557 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9fa44ba16a09d9abb15f949b3731c59 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6e3480445e9c5283f148481dbd30d58 = $(`<div id="html_c6e3480445e9c5283f148481dbd30d58" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3>Fire Island National Seashore</h3><br>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_f9fa44ba16a09d9abb15f949b3731c59.setContent(html_c6e3480445e9c5283f148481dbd30d58);
+            
+        
+
+        marker_393f3da63ca74b54ee752365b1f7537f.bindPopup(popup_f9fa44ba16a09d9abb15f949b3731c59)
+        ;
+
+        
+    
+    
+            marker_393f3da63ca74b54ee752365b1f7537f.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_393f3da63ca74b54ee752365b1f7537f.setIcon(icon_541a03fa9ee76394ea3fe0858afee557);
             
 </script>
 </html>
