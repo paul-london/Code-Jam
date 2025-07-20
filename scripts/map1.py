@@ -28,13 +28,16 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
 
     route_map = folium.Map(location=home_coord, zoom_start=5)
 
+    # Add home marker
     folium.Marker(
         location=home_coord,
         popup=f"Start: {home_state}",
         icon=folium.Icon(color='green', icon='home')
     ).add_to(route_map)
 
-    for _, row in legs_df.iterrows():
+    # Draw routes and markers
+    for i, (idx, row) in enumerate(legs_df.iterrows()):
+        # Get source coordinates (from state or park)
         if row['source'] == home_state:
             source_coord = states_df.loc[
                 states_df['abbreviation'] == home_state, ['latitude', 'longitude']
@@ -44,24 +47,26 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
                 parks_df['name'] == row['source'], ['latitude', 'longitude']
             ].values[0].tolist()
 
+        # Get destination coordinates
         dest_coord = parks_df.loc[
             parks_df['name'] == row['destination'], ['latitude', 'longitude']
         ].values[0].tolist()
 
-        # Pull park descriptions and image URLs from parks_file
+        # Get description and image
         park_info = parks_df[parks_df['name'] == row['destination']].iloc[0]
         img_url = park_info['image_url']
         description = park_info['description']
 
-        # HTML for popup with image + description
+        # Generate HTML for popup
         html = f"""
         <div style="width:220px">
-        <h3>{row['destination']}</h3><br>
+        <h3 style="font-size:16px; margin-bottom:5px;">{row['destination']}</h3>
         <img src="{img_url}" width="200"><br>
         <em>{description}</em><br>
         </div>
         """
 
+        # Add polyline for leg
         folium.PolyLine(
             locations=[source_coord, dest_coord],
             color='blue',
@@ -70,16 +75,14 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
             tooltip=f"{row['distance_miles']:.1f} mi ({row['duration_hours']:.1f} hrs)"
         ).add_to(route_map)
 
-        for i, (idx, row) in enumerate(legs_df.iterrows()):
-            icon = folium.Icon(color='red', icon='flag') if i == len(legs_df) - 1 else folium.Icon(color='red', icon='info-sign')
-            
-            dest_coord = parks_df.loc[parks_df['name'] == row['destination'], ['latitude', 'longitude']].values[0].tolist()
-            folium.Marker(
-                location=dest_coord,
-                popup=folium.Popup(html, max_width=250),
-                icon=icon,
-                tooltip=f"{row['destination']}"
-            ).add_to(route_map)
+        # Add marker with flag if last stop
+        icon = folium.Icon(color='red', icon='flag') if i == len(legs_df) - 1 else folium.Icon(color='red', icon='info-sign')
+        folium.Marker(
+            location=dest_coord,
+            popup=folium.Popup(html, max_width=250),
+            icon=icon,
+            tooltip=f"{row['destination']}"
+        ).add_to(route_map)
 
     return route_map
 
