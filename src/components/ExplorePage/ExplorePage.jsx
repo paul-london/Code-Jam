@@ -1,8 +1,11 @@
 import "./ExplorePage.jsx";
 
-function Explore() {
+function Explore({ onClose }) {
   return (
     <div className="explore">
+      <button onClick={onClose} className="explore__close-btn">
+        &times;
+      </button>
       <h4 className="explore__title">
         Are you ready for the adventure of a life time?
       </h4>
