@@ -61,8 +61,8 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
     return route_map
 
 if __name__ == "__main__":
-    parks_file = '/Users/priti/Documents/GitHub/Code-Jam/data/parks_w.csv'
-    states_file = '/Users/priti/Documents/GitHub/Code-Jam/data/states_master.csv'
+    parks_file = '../data/parks_w.csv'
+    states_file = '../data/states_master.csv'
     home_state = 'PA'
     api_key ='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
