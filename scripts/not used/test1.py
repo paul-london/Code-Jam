@@ -1,121 +1,151 @@
 import pandas as pd
 import numpy as np
-import time
 import googlemaps
-import ast
-import warnings
+import time
+import os
 
-warnings.filterwarnings('ignore')
+def precompute_park_distances(parks_df, gmaps, dist_file='park_distance_matrix.npy', dur_file='park_duration_matrix.npy', names_file='park_names.npy'):
+    if os.path.exists(dist_file) and os.path.exists(dur_file) and os.path.exists(names_file):
+        print("Loading precomputed park-to-park distance matrices...")
+        distance_matrix = np.load(dist_file)
+        duration_matrix = np.load(dur_file)
+        park_names = np.load(names_file, allow_pickle=True).tolist()
+        return distance_matrix, duration_matrix, park_names
 
-# Load data
-parks_subset = pd.read_csv('/Users/priti/Documents/GitHub/Code-Jam/data/parks_w.csv')  # path to your 9 parks
-states_master = pd.read_csv('//Users/priti/Documents/GitHub/Code-Jam/data/states_master.csv')  # should have 'abbreviation' and 'coordinates'
+    print("Precomputing park-to-park distances (this may take several minutes)...")
+    parks = parks_df['name'].tolist()
+    coords = parks_df['coordinates'].tolist()
+    n = len(parks)
 
-# Google Maps API key
-api_key_g = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
-gmaps = googlemaps.Client(key=api_key_g)
+    distance_matrix = np.zeros((n, n))
+    duration_matrix = np.zeros((n, n))
 
-def VacationRoute(home_state):
-    # 1. Get coordinates from string to tuple
-    coords_str = states_master.loc[
-        states_master['abbreviation'] == home_state, 'coordinates'
-    ].values[0]
-    home_state_coords = ast.literal_eval(coords_str)  # now a real tuple (lat, lon)
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                distance_matrix[i, j] = 0
+                duration_matrix[i, j] = 0
+            else:
+                result = gmaps.distance_matrix(
+                    origins=[coords[i]],
+                    destinations=[coords[j]],
+                    mode='driving',
+                    units='imperial'
+                )
+                element = result['rows'][0]['elements'][0]
+                if element['status'] == 'OK':
+                    distance_matrix[i, j] = element['distance']['value'] / 1609.34
+                    duration_matrix[i, j] = element['duration']['value'] / 3600
+                else:
+                    distance_matrix[i, j] = np.inf
+                    duration_matrix[i, j] = np.inf
+                time.sleep(1)
 
-    # 2. Prepare dataframe with home state at top
-    parks_subset_gnn = parks_subset[['name', 'latitude', 'longitude']].reset_index(drop=True)
-    home_state_row = pd.DataFrame(
-        [[home_state, home_state_coords[0], home_state_coords[1]]],
-        columns=['name', 'latitude', 'longitude']
-    )
-    parks_with_home = pd.concat((home_state_row, parks_subset_gnn), ignore_index=True)
+    np.save(dist_file, distance_matrix)
+    np.save(dur_file, duration_matrix)
+    np.save(names_file, np.array(parks))
+    print("Precomputation done and saved.")
+    return distance_matrix, duration_matrix, parks
 
-    # 3. Set up origin and destination dictionaries
-    origin_home = {
-        parks_with_home['name'][0]: (parks_with_home['latitude'][0], parks_with_home['longitude'][0])
-    }
-    destinations = {
-        name: (lat, lon)
-        for name, lat, lon in zip(
-            parks_with_home['name'][1:], 
-            parks_with_home['latitude'][1:], 
-            parks_with_home['longitude'][1:]
+def compute_home_to_parks(home_coord, parks_coords, gmaps):
+    distances = []
+    durations = []
+    for dest in parks_coords:
+        result = gmaps.distance_matrix(
+            origins=[home_coord],
+            destinations=[dest],
+            mode='driving',
+            units='imperial'
         )
-    }
+        element = result['rows'][0]['elements'][0]
+        if element['status'] == 'OK':
+            distances.append(element['distance']['value'] / 1609.34)
+            durations.append(element['duration']['value'] / 3600)
+        else:
+            distances.append(np.inf)
+            durations.append(np.inf)
+        time.sleep(1)
+    return np.array(distances), np.array(durations)
 
-    # 4. Call Google Maps API for travel distances
-    def GoogleMaps(origins, destinations):
-        travel_array = np.zeros((len(origins) * len(destinations), 4), dtype=object)
-        i = 0
-        for origin_name, origin_coords in origins.items():
-            for dest_name, dest_coords in destinations.items():
-                if origin_name == dest_name:
-                    continue
-                try:
-                    result = gmaps.distance_matrix(
-                        origins=[origin_coords],
-                        destinations=[dest_coords],
-                        mode='driving'
-                    )
-                    element = result['rows'][0]['elements'][0]
-                    if element['status'] == 'OK':
-                        distance_meters = element['distance']['value']
-                        duration_seconds = element['duration']['value']
-                        travel_array[i] = [
-                            origin_name,
-                            dest_name,
-                            np.round(distance_meters / 1609.344, 2),  # miles
-                            np.round(duration_seconds / 3600, 2)      # hours
-                        ]
-                        print(f"{origin_name} → {dest_name} = {travel_array[i][2]} mi ({travel_array[i][3]} hrs)")
-                        i += 1
-                        time.sleep(0.05)
-                except Exception as e:
-                    print(f"Error fetching distance from {origin_name} to {dest_name}: {e}")
-        return travel_array
+def VacationRouteWithSavedMatrix(home_state):
+    # --- Hardcoded paths and API key ---
+    states_file = '/Users/priti/Documents/GitHub/Code-Jam/data/states_master.csv'
+    parks_file = '/Users/priti/Documents/GitHub/Code-Jam/data/parks_w.csv'
+    api_key = 'YOUR_API_KEY_HERE'  # Replace with your actual key
 
-    travel_array = GoogleMaps(origin_home, destinations)
+    # --- Load and prepare data ---
+    states_master = pd.read_csv(states_file)
+    parks_w = pd.read_csv(parks_file)
 
-    # 5. Build distance matrix for GNN
-    park_list = list(parks_with_home['name'])  # includes home state
-    park_indices = {name: idx for idx, name in enumerate(park_list)}
-    n = len(park_list)
-    gnn_matrix = np.full((n, n), np.inf)
+    states_master['coordinates'] = list(zip(states_master['latitude'], states_master['longitude']))
+    parks_w['coordinates'] = list(zip(parks_w['latitude'], parks_w['longitude']))
 
-    for row in travel_array:
-        origin, destination, dist_mi, _ = row
-        i = park_indices[origin]
-        j = park_indices[destination]
-        gnn_matrix[i][j] = dist_mi
+    home_coord = states_master.loc[states_master['abbreviation'] == home_state, 'coordinates'].values[0]
 
-    # 6. Greedy Nearest Neighbor algorithm
-    def greedy_nearest_neighbor(matrix, start=0):
-        n = matrix.shape[0]
-        visited = [False] * n
-        route = [start]
-        visited[start] = True
-        current = start
+    gmaps = googlemaps.Client(key=api_key)
 
-        for _ in range(n - 1):
-            nearest = None
-            nearest_dist = float('inf')
-            for i in range(n):
-                if not visited[i] and matrix[current][i] < nearest_dist:
-                    nearest = i
-                    nearest_dist = matrix[current][i]
-            if nearest is not None:
-                route.append(nearest)
-                visited[nearest] = True
-                current = nearest
-        return route
+    # --- Load or compute park-to-park matrices ---
+    distance_matrix, duration_matrix, parks = precompute_park_distances(parks_w, gmaps)
 
-    # 7. Get the optimal route (indices → names)
-    route_indices = greedy_nearest_neighbor(gnn_matrix, start=0)
-    optimal_route = [park_list[i] for i in route_indices]
+    # --- Compute home to all parks ---
+    home_to_parks_dist, home_to_parks_dur = compute_home_to_parks(home_coord, parks_w['coordinates'].tolist(), gmaps)
 
-    return optimal_route
+    visited = set()
+    route_indices = []
+    current_index = -1  # Start from home
 
-route = VacationRoute("PA")
-print("\nOptimal Roadtrip Route:")
-for i, stop in enumerate(route):
-    print(f"{i+1}. {stop}")
+    legs_info = []
+
+    while len(visited) < len(parks):
+        min_distance = float('inf')
+        next_index = None
+        next_duration = None
+
+        for i in range(len(parks)):
+            if i in visited:
+                continue
+            if current_index == -1:
+                dist = home_to_parks_dist[i]
+                dur = home_to_parks_dur[i]
+            else:
+                dist = distance_matrix[current_index, i]
+                dur = duration_matrix[current_index, i]
+
+            if dist < min_distance:
+                min_distance = dist
+                next_index = i
+                next_duration = dur
+
+        if next_index is None:
+            print("No more reachable parks.")
+            break
+
+        from_loc = home_state if current_index == -1 else parks[current_index]
+        to_loc = parks[next_index]
+        print(f"{from_loc} → {to_loc} = {min_distance:.2f} mi ({next_duration:.2f} hrs)")
+
+        legs_info.append({
+            'source': from_loc,
+            'destination': to_loc,
+            'distance_miles': round(min_distance, 2),
+            'duration_hours': round(next_duration, 2)
+        })
+
+        visited.add(next_index)
+        route_indices.append(next_index)
+        current_index = next_index
+
+    print("\nOptimal Roadtrip Route:")
+    print("1.", home_state)
+    for idx, park_i in enumerate(route_indices, start=2):
+        print(f"{idx}. {parks[park_i]}")
+
+    # Return both the route legs and home-to-parks distances for plotting
+    legs_df = pd.DataFrame(legs_info)
+    home_distance_array = np.vstack((home_to_parks_dist, home_to_parks_dur)).T
+
+    return legs_df, home_distance_array
+
+# Example usage
+legs_df, home_distance_array = VacationRouteWithSavedMatrix('PA')
+print(legs_df)

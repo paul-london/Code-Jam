@@ -86,15 +86,14 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
     travel_array_w = np.load('C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/arrays/travel_array_w.npy', allow_pickle=True)
     distance_matrix = travel_array_w[:, 2:3]
     duration_matrix = travel_array_w[:, 3:4]
-    parks_file = pd.read_csv(parks_file)
-    parks = parks_file['name']
-
+    
     # Get all unique parks (origins and destinations)
     all_parks = list(set(travel_array_w[:, 0]) | set(travel_array_w[:, 1]))
     all_parks.sort()  # keep consistent order
 
     # Map park names to indices
     park_indices = {park: idx for idx, park in enumerate(all_parks)}
+    parks = all_parks
 
     n = len(all_parks)
     distance_matrix = np.full((n, n), np.inf)
@@ -168,11 +167,13 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
     return legs_df
 
 # Example usage
-legs_df = VacationRoute(
-    home_state='PA',
-    states_file='C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/states_master.csv',
-    parks_file='C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/parks_w.csv',
-    api_key='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
- )
+#legs_df = VacationRoute(
+#    home_state='PA',
+#    states_file='C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/states_master.csv',
+#    parks_file='C:/Users/palon/Desktop/GitHub Repository/Code-Jam/data/parks_w.csv',
+#    api_key='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
+# )
 
 print(legs_df)
+
+
