@@ -1,8 +1,114 @@
-.modal {
-  visibility: hidden;
-  border: 1px solid black;
+.explore {
+  position: absolute;
+  left: 89px;
+  bottom: 18px;
+  background: linear-gradient(to bottom right, #f5f9ff, #dfeeff);
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  text-align: center;
 }
 
-.modal_is_open {
-  visibility: visible;
+.explore__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.explore__title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.explore__paragraph {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.explore__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore__label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.explore__input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 250px;
+  transition: border 0.3s ease;
+}
+
+.explore__input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.explore__submit-btn {
+  margin-top: 16px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore__submit-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.explore__submit-btn:active {
+  background-color: #2471a3;
+  transform: scale(0.98);
+}
+
+.explore__car-animation {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.car {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  animation: drive 6s linear infinite;
+}
+
+@keyframes drive {
+  0% {
+    left: -100px;
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    left: 100%;
+    transform: scaleX(1);
+  }
 }

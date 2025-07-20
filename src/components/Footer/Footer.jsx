@@ -39,7 +39,7 @@ function Footer() {
             </a>
           </div>
           <div className="footer__credits">
-            <p className="footer__author">Thato Anderson (SWE)</p>
+            <p className="footer__author">Lily Thato Anderson (SWE)</p>
             <a
               href="https://github.com/Thato-A"
               className="footer__author-link"

@@ -1,0 +1,136 @@
+.timeline {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.timeline__header {
+  position: relative;
+}
+
+.timeline__banner {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.timeline__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 8px;
+}
+
+.timeline__title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.timeline__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.timeline__indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.timeline__number {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timeline__line {
+  flex-grow: 1;
+  width: 2px;
+  background-color: #ccc;
+  margin-top: 2px;
+}
+
+.timeline__card {
+  background-color: #f9f9f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.timeline__image {
+  width: 100px;
+  height: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.timeline__info {
+  flex-grow: 1;
+}
+
+.timeline__park-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.timeline__location {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.timeline__details {
+  font-size: 0.8rem;
+  color: #333;
+  display: flex;
+  gap: 10px;
+}
+
+.timeline__expand {
+  font-size: 1.2rem;
+  color: #888;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.itinerary-panel {
+  position: absolute;
+  left: 96px;
+  bottom: 27px;
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.itinerary-panel--open {
+  right: 0;
+}

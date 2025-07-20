@@ -1,3 +1,8 @@
+.plan-trip {
+  position: relative;
+  padding: 20px 8px 100px;
+}
+
 .plan-trip__heading {
   display: flex;
   justify-content: center;

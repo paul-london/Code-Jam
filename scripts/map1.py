@@ -1,9 +1,14 @@
+import os
 import folium
 import pandas as pd
 from test4 import VacationRoute
 
+# Get repo root relative to this script's location (two levels up here)
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+states_file = os.path.join(repo_root, 'data', 'states_master.csv')
+parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
+
 def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
-    # Get route legs using greedy nearest neighbor algorithm
     legs_df = VacationRoute(
         home_state=home_state,
         states_file=states_file,
@@ -11,32 +16,29 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
         api_key=api_key
     )
 
-    # Read coordinates for parks and states
     parks_df = pd.read_csv(parks_file)
     states_df = pd.read_csv(states_file)
 
     parks_df['coordinates'] = list(zip(parks_df['latitude'], parks_df['longitude']))
     states_df['coordinates'] = list(zip(states_df['latitude'], states_df['longitude']))
 
-    # Get home coordinates
     home_coord = states_df.loc[
         states_df['abbreviation'] == home_state, ['latitude', 'longitude']
     ].values[0].tolist()
 
-    # Create base map
     route_map = folium.Map(location=home_coord, zoom_start=5)
 
-    # Add home marker
     folium.Marker(
         location=home_coord,
         popup=f"Start: {home_state}",
         icon=folium.Icon(color='green', icon='home')
     ).add_to(route_map)
 
-    # Plot each leg of the route
     for _, row in legs_df.iterrows():
         if row['source'] == home_state:
-            source_coord = home_coord
+            source_coord = states_df.loc[
+                states_df['abbreviation'] == home_state, ['latitude', 'longitude']
+            ].values[0].tolist()
         else:
             source_coord = parks_df.loc[
                 parks_df['name'] == row['source'], ['latitude', 'longitude']
@@ -46,50 +48,46 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
             parks_df['name'] == row['destination'], ['latitude', 'longitude']
         ].values[0].tolist()
 
-        # Add line between source and destination
+        # Pull park descriptions and image URLs from parks_file
+        park_info = parks_df[parks_df['name'] == row['destination']].iloc[0]
+        img_url = park_info['image_url']
+        description = park_info['description']
+
+        # HTML for popup with image + description
+        html = f"""
+        <div style="width:220px">
+        <h3>{row['destination']}</h3><br>
+        <img src="{img_url}" width="200"><br>
+        <em>{description}</em><br>
+        </div>
+        """
+
         folium.PolyLine(
             locations=[source_coord, dest_coord],
             color='blue',
             weight=3,
-            opacity=0.7
+            opacity=0.7,
+            tooltip=f"{row['distance_miles']:.1f} mi ({row['duration_hours']:.1f} hrs)"
         ).add_to(route_map)
 
-        # Add marker at destination
-        folium.Marker(
-            location=dest_coord,
-            popup=row['destination'],
-            icon=folium.Icon(color='red', icon='info-sign')
-        ).add_to(route_map)
-
-    # Save map to HTML file
-    output_file = f"roadtrip_route_{home_state}.html"
-    route_map.save(output_file)
-    print(f"Map saved as: {output_file}")
-
-
-    folium.PolyLine(
-            locations=[source_coord, dest_coord],
-            color='blue',
-            weight=3,
-            opacity=0.7
-        ).add_to(route_map)
-
-    folium.Marker(
-            location=dest_coord,
-            popup=folium.Popup(
-                f"{row['destination']}<br>{row['distance_miles']:.1f} mi, {row['duration_hours']:.1f} hrs",
-                max_width=250
-            ),
-            icon=folium.Icon(color='red', icon='flag')
-        ).add_to(route_map)
+        for i, (idx, row) in enumerate(legs_df.iterrows()):
+            icon = folium.Icon(color='red', icon='flag') if i == len(legs_df) - 1 else folium.Icon(color='red', icon='info-sign')
+            
+            dest_coord = parks_df.loc[parks_df['name'] == row['destination'], ['latitude', 'longitude']].values[0].tolist()
+            folium.Marker(
+                location=dest_coord,
+                popup=folium.Popup(html, max_width=250),
+                icon=icon,
+                tooltip=f"{row['destination']}"
+            ).add_to(route_map)
 
     return route_map
 
 if __name__ == "__main__":
-    parks_file = '/Users/priti/Documents/GitHub/Code-Jam/data/parks_w.csv'
-    states_file = '/Users/priti/Documents/GitHub/Code-Jam/data/states_master.csv'
-    home_state = 'CA' # Example home state
-    api_key ='AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
+    states_file = os.path.join(repo_root, 'data', 'states_master.csv')
+    parks_file = os.path.join(repo_root, 'data', 'parks_w.csv')
+    home_state = 'NY'
+    api_key = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
 
     route_map = plot_route_on_map(parks_file, states_file, home_state, api_key)

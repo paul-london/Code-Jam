@@ -1,8 +1,11 @@
-import "./ExplorePage.jsx";
+import "./ExplorePage.css";
 
-function Explore() {
+function Explore({ onClose }) {
   return (
-    <div className="explore modal">
+    <div className="explore">
+      <button onClick={onClose} className="explore__close-btn">
+        &times;
+      </button>
       <h4 className="explore__title">
         Are you ready for the adventure of a life time?
       </h4>
@@ -65,7 +68,13 @@ function Explore() {
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
+          <button type="submit" className="explore__submit-btn">
+            Go
+          </button>
         </form>
+        <div className="explore__car-animation">
+          <img src="src/assets/car.jpeg" alt="Driving car" className="car" />
+        </div>
       </div>
     </div>
   );
