@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ef676ceff14460f295dd3420f28fc65d {
+                #map_6662fb0ac20666187aeac97091d869c1 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_ef676ceff14460f295dd3420f28fc65d" ></div>
+            <div class="folium-map" id="map_6662fb0ac20666187aeac97091d869c1" ></div>
         
 </body>
 <script>
     
     
-            var map_ef676ceff14460f295dd3420f28fc65d = L.map(
-                "map_ef676ceff14460f295dd3420f28fc65d",
+            var map_6662fb0ac20666187aeac97091d869c1 = L.map(
+                "map_6662fb0ac20666187aeac97091d869c1",
                 {
-                    center: [41.203322, -77.194525],
+                    center: [36.778261, -119.417932],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 5,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_2136e5466934e84c1c2cfcd90c425061 = L.tileLayer(
+            var tile_layer_68c4cb937a869b6a89587c6f8622c105 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,17 @@
             );
         
     
-            tile_layer_2136e5466934e84c1c2cfcd90c425061.addTo(map_ef676ceff14460f295dd3420f28fc65d);
+            tile_layer_68c4cb937a869b6a89587c6f8622c105.addTo(map_6662fb0ac20666187aeac97091d869c1);
         
     
-            var marker_b0c11a94b3c2b4fa509061c2248f517a = L.marker(
-                [41.203322, -77.194525],
+            var marker_b5693bf3ab3c933116527a1f595d09b4 = L.marker(
+                [36.778261, -119.417932],
                 {
 }
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
         
     
-            var icon_adfd036a2557172ae3ab846b8aef1e80 = L.AwesomeMarkers.icon(
+            var icon_70b04b7b6ae77b11dad85a3198c8b9d9 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -116,392 +116,469 @@
             );
         
     
-        var popup_2715cbcfd5f423decd7005a5a3577bf2 = L.popup({
+        var popup_a0a79332cdb0da34d6811486565c1ac3 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_8fa48782525844e948f39e12e5fe8922 = $(`<div id="html_8fa48782525844e948f39e12e5fe8922" style="width: 100.0%; height: 100.0%;">Start: PA</div>`)[0];
-                popup_2715cbcfd5f423decd7005a5a3577bf2.setContent(html_8fa48782525844e948f39e12e5fe8922);
+                var html_e74c379e7c3854ec297482763db10856 = $(`<div id="html_e74c379e7c3854ec297482763db10856" style="width: 100.0%; height: 100.0%;">Start: CA</div>`)[0];
+                popup_a0a79332cdb0da34d6811486565c1ac3.setContent(html_e74c379e7c3854ec297482763db10856);
             
         
 
-        marker_b0c11a94b3c2b4fa509061c2248f517a.bindPopup(popup_2715cbcfd5f423decd7005a5a3577bf2)
+        marker_b5693bf3ab3c933116527a1f595d09b4.bindPopup(popup_a0a79332cdb0da34d6811486565c1ac3)
         ;
 
         
     
     
-                marker_b0c11a94b3c2b4fa509061c2248f517a.setIcon(icon_adfd036a2557172ae3ab846b8aef1e80);
+                marker_b5693bf3ab3c933116527a1f595d09b4.setIcon(icon_70b04b7b6ae77b11dad85a3198c8b9d9);
             
     
-            var poly_line_24d9611c2ce109e4355ede86f2d49231 = L.polyline(
-                [[41.203322, -77.194525], [39.93435005, -75.14398924]],
+            var poly_line_c69188d9774c4664091accf677eacb5e = L.polyline(
+                [[36.778261, -119.417932], [37.797, -122.4671]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
         
     
-            var marker_6c8b054eb1526e64512781de1fafc969 = L.marker(
-                [39.93435005, -75.14398924],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_25de08775e7affb93f73d96f2a06f5f5 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_04c9cc0521bb08486c97dbc86c3a8bcc = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_ad463de1073f89f7f9d8119c0228ac0a = $(`<div id="html_ad463de1073f89f7f9d8119c0228ac0a" style="width: 100.0%; height: 100.0%;">Gloria Dei Church National Historic Site<br>199.8 mi, 3.2 hrs</div>`)[0];
-                popup_04c9cc0521bb08486c97dbc86c3a8bcc.setContent(html_ad463de1073f89f7f9d8119c0228ac0a);
-            
-        
-
-        marker_6c8b054eb1526e64512781de1fafc969.bindPopup(popup_04c9cc0521bb08486c97dbc86c3a8bcc)
-        ;
-
-        
-    
-    
-                marker_6c8b054eb1526e64512781de1fafc969.setIcon(icon_25de08775e7affb93f73d96f2a06f5f5);
-            
-    
-            var poly_line_4fa6f44ef8b4b10113412facad933e96 = L.polyline(
-                [[39.93435005, -75.14398924], [40.71452681, -74.00447358]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_b30da952dde4b3ff325887d2e10029a4 = L.marker(
-                [40.71452681, -74.00447358],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_4787970a1e7316d3f0dae91786b46b6b = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_53950914d1f866fc5c407eaf877e6c3d = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_113c3a2d0a342574f22d96f88a460e9f = $(`<div id="html_113c3a2d0a342574f22d96f88a460e9f" style="width: 100.0%; height: 100.0%;">African Burial Ground National Monument<br>93.8 mi, 1.6 hrs</div>`)[0];
-                popup_53950914d1f866fc5c407eaf877e6c3d.setContent(html_113c3a2d0a342574f22d96f88a460e9f);
-            
-        
-
-        marker_b30da952dde4b3ff325887d2e10029a4.bindPopup(popup_53950914d1f866fc5c407eaf877e6c3d)
-        ;
-
-        
-    
-    
-                marker_b30da952dde4b3ff325887d2e10029a4.setIcon(icon_4787970a1e7316d3f0dae91786b46b6b);
-            
-    
-            var poly_line_772a7ceeb59d77a4e48aca4379449fe0 = L.polyline(
-                [[40.71452681, -74.00447358], [38.19362603, -76.92079458]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_a13f641d411e87b69235dd63f657ed48 = L.marker(
-                [38.19362603, -76.92079458],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_2570837de0b57127a084b10c51905f17 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_a76bc7940f2d25d8b160ebf97ff8699e = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_c0d691e5440ca68160a65f7bae92fc04 = $(`<div id="html_c0d691e5440ca68160a65f7bae92fc04" style="width: 100.0%; height: 100.0%;">George Washington Birthplace National Monument<br>290.2 mi, 5.1 hrs</div>`)[0];
-                popup_a76bc7940f2d25d8b160ebf97ff8699e.setContent(html_c0d691e5440ca68160a65f7bae92fc04);
-            
-        
-
-        marker_a13f641d411e87b69235dd63f657ed48.bindPopup(popup_a76bc7940f2d25d8b160ebf97ff8699e)
-        ;
-
-        
-    
-    
-                marker_a13f641d411e87b69235dd63f657ed48.setIcon(icon_2570837de0b57127a084b10c51905f17);
-            
-    
-            var poly_line_e64e71df256de4b2485e58476eaf0f6a = L.polyline(
-                [[38.19362603, -76.92079458], [47.1792308, -88.52275344]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_f4a9f89ab407ad0db78964f41b634fef = L.marker(
-                [47.1792308, -88.52275344],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_bf34ae9c8c80821c6fbd4b021ca99dd3 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e624fac034138f00dc8dcff33228afaa = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_dafc2931f79b9f0c4a476b12142dd3f8 = $(`<div id="html_dafc2931f79b9f0c4a476b12142dd3f8" style="width: 100.0%; height: 100.0%;">Keweenaw National Historical Park<br>1146.0 mi, 17.7 hrs</div>`)[0];
-                popup_e624fac034138f00dc8dcff33228afaa.setContent(html_dafc2931f79b9f0c4a476b12142dd3f8);
-            
-        
-
-        marker_f4a9f89ab407ad0db78964f41b634fef.bindPopup(popup_e624fac034138f00dc8dcff33228afaa)
-        ;
-
-        
-    
-    
-                marker_f4a9f89ab407ad0db78964f41b634fef.setIcon(icon_bf34ae9c8c80821c6fbd4b021ca99dd3);
-            
-    
-            var poly_line_bf3a86ef9d9e462699bddf00ddfca7e0 = L.polyline(
-                [[47.1792308, -88.52275344], [45.55633048, -107.4183614]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_7cb5f432beb9e8ca39dcce1ca548d8cb = L.marker(
-                [45.55633048, -107.4183614],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_0861e7a94709a9b75f342cee6897f08a = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_67246cdddd8db4e9325012ed8a44c3e9 = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_976712cd20c25488d68941451955a3aa = $(`<div id="html_976712cd20c25488d68941451955a3aa" style="width: 100.0%; height: 100.0%;">Little Bighorn Battlefield National Monument<br>1059.8 mi, 16.7 hrs</div>`)[0];
-                popup_67246cdddd8db4e9325012ed8a44c3e9.setContent(html_976712cd20c25488d68941451955a3aa);
-            
-        
-
-        marker_7cb5f432beb9e8ca39dcce1ca548d8cb.bindPopup(popup_67246cdddd8db4e9325012ed8a44c3e9)
-        ;
-
-        
-    
-    
-                marker_7cb5f432beb9e8ca39dcce1ca548d8cb.setIcon(icon_0861e7a94709a9b75f342cee6897f08a);
-            
-    
-            var poly_line_4089ba3eabe06d89414026060d80a1cf = L.polyline(
-                [[45.55633048, -107.4183614], [38.2821653131, -111.247048378]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_7f7842d2f8eb12adf0aa7d60a1927735 = L.marker(
-                [38.2821653131, -111.247048378],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_8b3e74dc8ea3d1b76040cc765cbf7683 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_3705f965e9748a4664de40ef44cf64dc = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_d54212377e972433f1671bb84dae9c9b = $(`<div id="html_d54212377e972433f1671bb84dae9c9b" style="width: 100.0%; height: 100.0%;">Capitol Reef National Park<br>797.1 mi, 12.0 hrs</div>`)[0];
-                popup_3705f965e9748a4664de40ef44cf64dc.setContent(html_d54212377e972433f1671bb84dae9c9b);
-            
-        
-
-        marker_7f7842d2f8eb12adf0aa7d60a1927735.bindPopup(popup_3705f965e9748a4664de40ef44cf64dc)
-        ;
-
-        
-    
-    
-                marker_7f7842d2f8eb12adf0aa7d60a1927735.setIcon(icon_8b3e74dc8ea3d1b76040cc765cbf7683);
-            
-    
-            var poly_line_bd04f72e97f9d82f7eb986ce4da0aa2c = L.polyline(
-                [[38.2821653131, -111.247048378], [35.70727324, -109.5599515]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_6ee4894704abe974d8e148465c80e8d2 = L.marker(
-                [35.70727324, -109.5599515],
-                {
-}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var icon_c3eb11955d388b4d1469ffca97d0f256 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "flag",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_60220f38d37b29ec1ec0b756b1771e21 = L.popup({
-  "maxWidth": 250,
-});
-
-        
-            
-                var html_63cb5666b886ce4d0b639513eaec00d5 = $(`<div id="html_63cb5666b886ce4d0b639513eaec00d5" style="width: 100.0%; height: 100.0%;">Hubbell Trading Post National Historic Site<br>313.6 mi, 5.3 hrs</div>`)[0];
-                popup_60220f38d37b29ec1ec0b756b1771e21.setContent(html_63cb5666b886ce4d0b639513eaec00d5);
-            
-        
-
-        marker_6ee4894704abe974d8e148465c80e8d2.bindPopup(popup_60220f38d37b29ec1ec0b756b1771e21)
-        ;
-
-        
-    
-    
-                marker_6ee4894704abe974d8e148465c80e8d2.setIcon(icon_c3eb11955d388b4d1469ffca97d0f256);
-            
-    
-            var poly_line_1b6fd2cced1e7470500a15c9d639aaaf = L.polyline(
-                [[35.70727324, -109.5599515], [37.797, -122.4671]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
-        
-    
-            var marker_ed7e1520390f566965814854616d7072 = L.marker(
+            var marker_6a0c9446e44c640f71809ec11562042d = L.marker(
                 [37.797, -122.4671],
                 {
 }
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
         
     
-            var icon_9b0ea18355e29a264177dc7612a948b3 = L.AwesomeMarkers.icon(
+            var icon_00f608aa8c8cb1526031612a882beabc = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
-  "icon": "flag",
+  "icon": "info-sign",
   "prefix": "glyphicon",
   "extraClasses": "fa-rotate-0",
 }
             );
         
     
-        var popup_a3024e388937d765e5da25e31cb43fc3 = L.popup({
-  "maxWidth": 250,
+        var popup_dc6d509a83979d58f6815831a6958f14 = L.popup({
+  "maxWidth": "100%",
 });
 
         
             
-                var html_41f43802906f281e1f8ed1c50f4da66d = $(`<div id="html_41f43802906f281e1f8ed1c50f4da66d" style="width: 100.0%; height: 100.0%;">Presidio of San Francisco<br>906.7 mi, 14.1 hrs</div>`)[0];
-                popup_a3024e388937d765e5da25e31cb43fc3.setContent(html_41f43802906f281e1f8ed1c50f4da66d);
+                var html_221692e4425dcebffaef83e994f4185a = $(`<div id="html_221692e4425dcebffaef83e994f4185a" style="width: 100.0%; height: 100.0%;">Presidio of San Francisco</div>`)[0];
+                popup_dc6d509a83979d58f6815831a6958f14.setContent(html_221692e4425dcebffaef83e994f4185a);
             
         
 
-        marker_ed7e1520390f566965814854616d7072.bindPopup(popup_a3024e388937d765e5da25e31cb43fc3)
+        marker_6a0c9446e44c640f71809ec11562042d.bindPopup(popup_dc6d509a83979d58f6815831a6958f14)
         ;
 
         
     
     
-                marker_ed7e1520390f566965814854616d7072.setIcon(icon_9b0ea18355e29a264177dc7612a948b3);
+                marker_6a0c9446e44c640f71809ec11562042d.setIcon(icon_00f608aa8c8cb1526031612a882beabc);
             
     
-            var poly_line_f63bb7eef81a45cf8c9966a0449f9b5e = L.polyline(
+            var poly_line_2718c3d95de633594acfdd156f1df704 = L.polyline(
                 [[37.797, -122.4671], [37.89658027, -122.5808047]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
         
     
-            var marker_2dfebabce5dbf0f159afb3f2a92902ce = L.marker(
+            var marker_65cb079ebb2227ef74f90a425ee51f51 = L.marker(
                 [37.89658027, -122.5808047],
                 {
 }
-            ).addTo(map_ef676ceff14460f295dd3420f28fc65d);
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
         
     
-            var icon_57bdc85e299d832b5cca02e736c09ea7 = L.AwesomeMarkers.icon(
+            var icon_0a0e9f98eb1051eaee655629cba9ab42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1043b304db46d61db330efa6aeee927e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1644150afcd9da237a8bc25529a8c0f7 = $(`<div id="html_1644150afcd9da237a8bc25529a8c0f7" style="width: 100.0%; height: 100.0%;">Muir Woods National Monument</div>`)[0];
+                popup_1043b304db46d61db330efa6aeee927e.setContent(html_1644150afcd9da237a8bc25529a8c0f7);
+            
+        
+
+        marker_65cb079ebb2227ef74f90a425ee51f51.bindPopup(popup_1043b304db46d61db330efa6aeee927e)
+        ;
+
+        
+    
+    
+                marker_65cb079ebb2227ef74f90a425ee51f51.setIcon(icon_0a0e9f98eb1051eaee655629cba9ab42);
+            
+    
+            var poly_line_3b18635b4bc7e3f88ab38e18e53bae43 = L.polyline(
+                [[37.89658027, -122.5808047], [38.2821653131, -111.247048378]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_94d89b6f862419bb120f026dbbd9bb95 = L.marker(
+                [38.2821653131, -111.247048378],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_03549b01b3e2360a4d54b90cb1827a4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6861410c2291307b02f0e50c5e88dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5201ad4303caddd0d0e7d49e0b06bb49 = $(`<div id="html_5201ad4303caddd0d0e7d49e0b06bb49" style="width: 100.0%; height: 100.0%;">Capitol Reef National Park</div>`)[0];
+                popup_dd6861410c2291307b02f0e50c5e88dd.setContent(html_5201ad4303caddd0d0e7d49e0b06bb49);
+            
+        
+
+        marker_94d89b6f862419bb120f026dbbd9bb95.bindPopup(popup_dd6861410c2291307b02f0e50c5e88dd)
+        ;
+
+        
+    
+    
+                marker_94d89b6f862419bb120f026dbbd9bb95.setIcon(icon_03549b01b3e2360a4d54b90cb1827a4c);
+            
+    
+            var poly_line_015a4e756f18fd039629d8fbf4fde66d = L.polyline(
+                [[38.2821653131, -111.247048378], [35.70727324, -109.5599515]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_47abd3d8cdf993a224882626fceca3c4 = L.marker(
+                [35.70727324, -109.5599515],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_d812a2664e60bea18141bde6b8e2969e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_346d21627eeb89b15cf6b78f3a882c1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f88567b8a4ab18134728997c8f00ade0 = $(`<div id="html_f88567b8a4ab18134728997c8f00ade0" style="width: 100.0%; height: 100.0%;">Hubbell Trading Post National Historic Site</div>`)[0];
+                popup_346d21627eeb89b15cf6b78f3a882c1f.setContent(html_f88567b8a4ab18134728997c8f00ade0);
+            
+        
+
+        marker_47abd3d8cdf993a224882626fceca3c4.bindPopup(popup_346d21627eeb89b15cf6b78f3a882c1f)
+        ;
+
+        
+    
+    
+                marker_47abd3d8cdf993a224882626fceca3c4.setIcon(icon_d812a2664e60bea18141bde6b8e2969e);
+            
+    
+            var poly_line_6000a60abf3091ec6d8830eb2122cca6 = L.polyline(
+                [[35.70727324, -109.5599515], [45.55633048, -107.4183614]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_6ee92e85e11c02c912a3182bb6e6884c = L.marker(
+                [45.55633048, -107.4183614],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_e7738247623c2644324160d97d6f28f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86d892a6e2b316b5cee04a473b5cbe27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71ba3521d8b28ce3c367be8fbe5fe528 = $(`<div id="html_71ba3521d8b28ce3c367be8fbe5fe528" style="width: 100.0%; height: 100.0%;">Little Bighorn Battlefield National Monument</div>`)[0];
+                popup_86d892a6e2b316b5cee04a473b5cbe27.setContent(html_71ba3521d8b28ce3c367be8fbe5fe528);
+            
+        
+
+        marker_6ee92e85e11c02c912a3182bb6e6884c.bindPopup(popup_86d892a6e2b316b5cee04a473b5cbe27)
+        ;
+
+        
+    
+    
+                marker_6ee92e85e11c02c912a3182bb6e6884c.setIcon(icon_e7738247623c2644324160d97d6f28f0);
+            
+    
+            var poly_line_d1b1e53ed6ac2354fe2c396066f20067 = L.polyline(
+                [[45.55633048, -107.4183614], [47.1792308, -88.52275344]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_5a0106b7b451fb9a31128d9e51df9a29 = L.marker(
+                [47.1792308, -88.52275344],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_0667c556876787988c2e3b52bee6c925 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1254ebeaaad57a8879597cfd3cedf349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1da8ab029f29e69434f687455f76770a = $(`<div id="html_1da8ab029f29e69434f687455f76770a" style="width: 100.0%; height: 100.0%;">Keweenaw National Historical Park</div>`)[0];
+                popup_1254ebeaaad57a8879597cfd3cedf349.setContent(html_1da8ab029f29e69434f687455f76770a);
+            
+        
+
+        marker_5a0106b7b451fb9a31128d9e51df9a29.bindPopup(popup_1254ebeaaad57a8879597cfd3cedf349)
+        ;
+
+        
+    
+    
+                marker_5a0106b7b451fb9a31128d9e51df9a29.setIcon(icon_0667c556876787988c2e3b52bee6c925);
+            
+    
+            var poly_line_519376148ea7e88b0418e71d643b5bbc = L.polyline(
+                [[47.1792308, -88.52275344], [39.93435005, -75.14398924]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_ad25611f4d727004d9ee40a67ef91959 = L.marker(
+                [39.93435005, -75.14398924],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_31aeba4753dfa514523e67c4907b3029 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82100fc221d7c91f354f26ef60cc9a35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b6ed4e7e00b898366b49c6ff4037e64 = $(`<div id="html_1b6ed4e7e00b898366b49c6ff4037e64" style="width: 100.0%; height: 100.0%;">Gloria Dei Church National Historic Site</div>`)[0];
+                popup_82100fc221d7c91f354f26ef60cc9a35.setContent(html_1b6ed4e7e00b898366b49c6ff4037e64);
+            
+        
+
+        marker_ad25611f4d727004d9ee40a67ef91959.bindPopup(popup_82100fc221d7c91f354f26ef60cc9a35)
+        ;
+
+        
+    
+    
+                marker_ad25611f4d727004d9ee40a67ef91959.setIcon(icon_31aeba4753dfa514523e67c4907b3029);
+            
+    
+            var poly_line_1cc100d8740a97ef07716ca599b5819f = L.polyline(
+                [[39.93435005, -75.14398924], [40.71452681, -74.00447358]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_c6840a76533a20590e1cecf2c8dc8725 = L.marker(
+                [40.71452681, -74.00447358],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_5817138832162aadf96e050a5ec8975d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36bf39102ac4376aac927821b3598e42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7e9087e114d476feac790c4f84637f2 = $(`<div id="html_c7e9087e114d476feac790c4f84637f2" style="width: 100.0%; height: 100.0%;">African Burial Ground National Monument</div>`)[0];
+                popup_36bf39102ac4376aac927821b3598e42.setContent(html_c7e9087e114d476feac790c4f84637f2);
+            
+        
+
+        marker_c6840a76533a20590e1cecf2c8dc8725.bindPopup(popup_36bf39102ac4376aac927821b3598e42)
+        ;
+
+        
+    
+    
+                marker_c6840a76533a20590e1cecf2c8dc8725.setIcon(icon_5817138832162aadf96e050a5ec8975d);
+            
+    
+            var poly_line_995159b0a6460c920c83ff35e1976bc4 = L.polyline(
+                [[40.71452681, -74.00447358], [38.19362603, -76.92079458]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_4eabbdcf6fa62da3b006044c0edaea48 = L.marker(
+                [38.19362603, -76.92079458],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_d2ea930aa9103650ecef8441c94e715b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40ac53be43dcdddf64292c69f9ae5162 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24bc43bcc3fd9c52b48d4a0b20eb948a = $(`<div id="html_24bc43bcc3fd9c52b48d4a0b20eb948a" style="width: 100.0%; height: 100.0%;">George Washington Birthplace National Monument</div>`)[0];
+                popup_40ac53be43dcdddf64292c69f9ae5162.setContent(html_24bc43bcc3fd9c52b48d4a0b20eb948a);
+            
+        
+
+        marker_4eabbdcf6fa62da3b006044c0edaea48.bindPopup(popup_40ac53be43dcdddf64292c69f9ae5162)
+        ;
+
+        
+    
+    
+                marker_4eabbdcf6fa62da3b006044c0edaea48.setIcon(icon_d2ea930aa9103650ecef8441c94e715b);
+            
+    
+            tile_layer_68c4cb937a869b6a89587c6f8622c105.addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+                marker_b5693bf3ab3c933116527a1f595d09b4.setIcon(icon_70b04b7b6ae77b11dad85a3198c8b9d9);
+            
+    
+                marker_6a0c9446e44c640f71809ec11562042d.setIcon(icon_00f608aa8c8cb1526031612a882beabc);
+            
+    
+                marker_65cb079ebb2227ef74f90a425ee51f51.setIcon(icon_0a0e9f98eb1051eaee655629cba9ab42);
+            
+    
+                marker_94d89b6f862419bb120f026dbbd9bb95.setIcon(icon_03549b01b3e2360a4d54b90cb1827a4c);
+            
+    
+                marker_47abd3d8cdf993a224882626fceca3c4.setIcon(icon_d812a2664e60bea18141bde6b8e2969e);
+            
+    
+                marker_6ee92e85e11c02c912a3182bb6e6884c.setIcon(icon_e7738247623c2644324160d97d6f28f0);
+            
+    
+                marker_5a0106b7b451fb9a31128d9e51df9a29.setIcon(icon_0667c556876787988c2e3b52bee6c925);
+            
+    
+                marker_ad25611f4d727004d9ee40a67ef91959.setIcon(icon_31aeba4753dfa514523e67c4907b3029);
+            
+    
+                marker_c6840a76533a20590e1cecf2c8dc8725.setIcon(icon_5817138832162aadf96e050a5ec8975d);
+            
+    
+                marker_4eabbdcf6fa62da3b006044c0edaea48.setIcon(icon_d2ea930aa9103650ecef8441c94e715b);
+            
+    
+            var poly_line_90dadc28ab37ca47c09a92a87768d5f8 = L.polyline(
+                [[40.71452681, -74.00447358], [38.19362603, -76.92079458]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var marker_d0302c52c71c0d71504c964787078a1b = L.marker(
+                [38.19362603, -76.92079458],
+                {
+}
+            ).addTo(map_6662fb0ac20666187aeac97091d869c1);
+        
+    
+            var icon_96ead92ba2b3f203aeaf4aefa4669a76 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -512,24 +589,24 @@
             );
         
     
-        var popup_d3199670cb7468b236d0cc4f0a0cdb2c = L.popup({
+        var popup_d34bd6dbbdc777f6318782df46ac5391 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_b7b43ea1e94d4622a3042b6557e61ca1 = $(`<div id="html_b7b43ea1e94d4622a3042b6557e61ca1" style="width: 100.0%; height: 100.0%;">Muir Woods National Monument<br>14.6 mi, 0.6 hrs</div>`)[0];
-                popup_d3199670cb7468b236d0cc4f0a0cdb2c.setContent(html_b7b43ea1e94d4622a3042b6557e61ca1);
+                var html_b1d59fe74fb9da6702089e8b55e7b4c5 = $(`<div id="html_b1d59fe74fb9da6702089e8b55e7b4c5" style="width: 100.0%; height: 100.0%;">George Washington Birthplace National Monument<br>290.2 mi, 5.1 hrs</div>`)[0];
+                popup_d34bd6dbbdc777f6318782df46ac5391.setContent(html_b1d59fe74fb9da6702089e8b55e7b4c5);
             
         
 
-        marker_2dfebabce5dbf0f159afb3f2a92902ce.bindPopup(popup_d3199670cb7468b236d0cc4f0a0cdb2c)
+        marker_d0302c52c71c0d71504c964787078a1b.bindPopup(popup_d34bd6dbbdc777f6318782df46ac5391)
         ;
 
         
     
     
-                marker_2dfebabce5dbf0f159afb3f2a92902ce.setIcon(icon_57bdc85e299d832b5cca02e736c09ea7);
+                marker_d0302c52c71c0d71504c964787078a1b.setIcon(icon_96ead92ba2b3f203aeaf4aefa4669a76);
             
 </script>
 </html>
