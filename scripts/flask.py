@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from map import plot_route_on_map  # import your function
+from scripts.map import plot_route_on_map  # import your function
 
 app = Flask(__name__)
 
