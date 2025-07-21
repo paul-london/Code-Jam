@@ -1,15 +1,27 @@
 [
   {
-    "source":"PA",
-    "destination":"Charles Young Buffalo Soldiers National Monument",
-    "distance_miles":436.06,
-    "duration_hours":6.62
+    "source":"CA",
+    "destination":"Golden Gate National Recreation Area",
+    "distance_miles":230.06,
+    "duration_hours":3.83
   },
   {
-    "source":"Charles Young Buffalo Soldiers National Monument",
+    "source":"Golden Gate National Recreation Area",
+    "destination":"Fort Union National Monument",
+    "distance_miles":1253.43,
+    "duration_hours":18.49
+  },
+  {
+    "source":"Fort Union National Monument",
+    "destination":"Big Bend National Park",
+    "distance_miles":552.62,
+    "duration_hours":8.89
+  },
+  {
+    "source":"Big Bend National Park",
     "destination":"Mount Rushmore National Memorial",
-    "distance_miles":1249.2,
-    "duration_hours":18.09
+    "distance_miles":1159.98,
+    "duration_hours":18.19
   },
   {
     "source":"Mount Rushmore National Memorial",
@@ -25,27 +37,15 @@
   },
   {
     "source":"Zion National Park",
-    "destination":"Big Bend National Park",
+    "destination":"Charles Young Buffalo Soldiers National Monument",
     "distance_miles":270.15,
     "duration_hours":4.58
   },
   {
-    "source":"Big Bend National Park",
-    "destination":"Fort Union National Monument",
-    "distance_miles":547.37,
-    "duration_hours":8.92
-  },
-  {
-    "source":"Fort Union National Monument",
-    "destination":"Golden Gate National Recreation Area",
-    "distance_miles":1252.73,
-    "duration_hours":18.47
-  },
-  {
-    "source":"Golden Gate National Recreation Area",
+    "source":"Charles Young Buffalo Soldiers National Monument",
     "destination":"Everglades National Park",
-    "distance_miles":2397.01,
-    "duration_hours":35.0
+    "distance_miles":1523.49,
+    "duration_hours":22.54
   },
   {
     "source":"Everglades National Park",

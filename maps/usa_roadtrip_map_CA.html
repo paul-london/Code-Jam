@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53674128e60c8031ca70ff1fb08839d1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_53674128e60c8031ca70ff1fb08839d1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_53674128e60c8031ca70ff1fb08839d1 = L.map(
+                "map_53674128e60c8031ca70ff1fb08839d1",
+                {
+                    center: [36.778261, -119.417932],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_17ca911d02f70f8df058eddb0f3e7e4a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_17ca911d02f70f8df058eddb0f3e7e4a.addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var marker_a7a4b2294697fe9489cd0041c68ac2f3 = L.marker(
+                [36.778261, -119.417932],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_824fcd3a7b6980a66718f49c85e96682 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa0affd6c48372cbb0d0cfa54adb9a27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2faab0d65cad7443391e7dbca592796 = $(`<div id="html_e2faab0d65cad7443391e7dbca592796" style="width: 100.0%; height: 100.0%;">Start: CA</div>`)[0];
+                popup_aa0affd6c48372cbb0d0cfa54adb9a27.setContent(html_e2faab0d65cad7443391e7dbca592796);
+            
+        
+
+        marker_a7a4b2294697fe9489cd0041c68ac2f3.bindPopup(popup_aa0affd6c48372cbb0d0cfa54adb9a27)
+        ;
+
+        
+    
+    
+                marker_a7a4b2294697fe9489cd0041c68ac2f3.setIcon(icon_824fcd3a7b6980a66718f49c85e96682);
+            
+    
+            var poly_line_d01fd4e43d22de7e49ac720a9295c776 = L.polyline(
+                [[36.778261, -119.417932], [37.85982543, -122.6007386]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_d01fd4e43d22de7e49ac720a9295c776.bindTooltip(
+                `<div>
+                     230.1 mi (3.8 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a59b663c5e6539455f6612d517712f8 = L.marker(
+                [37.85982543, -122.6007386],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_6b179663c60e3c4fdc71ad710c76b7ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16577fe16c2cbabf25010e25dd2d1045 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_192fcf6c05aa09e0b67a35e01dbfa136 = $(`<div id="html_192fcf6c05aa09e0b67a35e01dbfa136" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Golden Gate National Recreation Area</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg" width="200"><br><br>         <em>Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.</em><br>         </div>         </div>`)[0];
+                popup_16577fe16c2cbabf25010e25dd2d1045.setContent(html_192fcf6c05aa09e0b67a35e01dbfa136);
+            
+        
+
+        marker_6a59b663c5e6539455f6612d517712f8.bindPopup(popup_16577fe16c2cbabf25010e25dd2d1045)
+        ;
+
+        
+    
+    
+            marker_6a59b663c5e6539455f6612d517712f8.bindTooltip(
+                `<div>
+                     Golden Gate National Recreation Area
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a59b663c5e6539455f6612d517712f8.setIcon(icon_6b179663c60e3c4fdc71ad710c76b7ee);
+            
+    
+            var poly_line_7863fbe0e58325b4657407a819e36b62 = L.polyline(
+                [[37.85982543, -122.6007386], [35.90700629, -105.0145185]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_7863fbe0e58325b4657407a819e36b62.bindTooltip(
+                `<div>
+                     1253.4 mi (18.5 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a19b07646a117593bbfc81e73b439742 = L.marker(
+                [35.90700629, -105.0145185],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_dd5a58e331d088473ed5c21c80db6f3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88342f8558b97a1649fbf399e6f3a069 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_91edf7e6bb2bd16389a6e74d8202d124 = $(`<div id="html_91edf7e6bb2bd16389a6e74d8202d124" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Fort Union National Monument</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg" width="200"><br><br>         <em>Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.</em><br>         </div>         </div>`)[0];
+                popup_88342f8558b97a1649fbf399e6f3a069.setContent(html_91edf7e6bb2bd16389a6e74d8202d124);
+            
+        
+
+        marker_a19b07646a117593bbfc81e73b439742.bindPopup(popup_88342f8558b97a1649fbf399e6f3a069)
+        ;
+
+        
+    
+    
+            marker_a19b07646a117593bbfc81e73b439742.bindTooltip(
+                `<div>
+                     Fort Union National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a19b07646a117593bbfc81e73b439742.setIcon(icon_dd5a58e331d088473ed5c21c80db6f3a);
+            
+    
+            var poly_line_868cd0dea5e8a46113493f86be6ac1ce = L.polyline(
+                [[35.90700629, -105.0145185], [29.29817767, -103.2297897]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_868cd0dea5e8a46113493f86be6ac1ce.bindTooltip(
+                `<div>
+                     552.6 mi (8.9 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_92360e2309410a85b1efe8d4eef10ff6 = L.marker(
+                [29.29817767, -103.2297897],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_2d333c98ad18b8fa7460f0c68153c1f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae441520566d66476e20c6b8dee53fe6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9799bb2ab45d7e425f3e95801cbb4290 = $(`<div id="html_9799bb2ab45d7e425f3e95801cbb4290" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Big Bend National Park</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/8BF8356B-BB63-76A4-19F5296EF94C96B4.jpg" width="200"><br><br>         <em>There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and species diversity is the best in the country. This magical place is Big Bend...</em><br>         </div>         </div>`)[0];
+                popup_ae441520566d66476e20c6b8dee53fe6.setContent(html_9799bb2ab45d7e425f3e95801cbb4290);
+            
+        
+
+        marker_92360e2309410a85b1efe8d4eef10ff6.bindPopup(popup_ae441520566d66476e20c6b8dee53fe6)
+        ;
+
+        
+    
+    
+            marker_92360e2309410a85b1efe8d4eef10ff6.bindTooltip(
+                `<div>
+                     Big Bend National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92360e2309410a85b1efe8d4eef10ff6.setIcon(icon_2d333c98ad18b8fa7460f0c68153c1f9);
+            
+    
+            var poly_line_1f5782f8f42a1f6999a71f02ef76c738 = L.polyline(
+                [[29.29817767, -103.2297897], [43.88037021, -103.4525186]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_1f5782f8f42a1f6999a71f02ef76c738.bindTooltip(
+                `<div>
+                     1160.0 mi (18.2 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_71bfbd769de9a22e631762c24f66b217 = L.marker(
+                [43.88037021, -103.4525186],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_893c17dde75fc6321e987317781d464c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3e484059429ee8531ba4c10bf0d2ad2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1ce3cd6400e21c12f3ad714d01603d95 = $(`<div id="html_1ce3cd6400e21c12f3ad714d01603d95" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Mount Rushmore National Memorial</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg" width="200"><br><br>         <em>Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.</em><br>         </div>         </div>`)[0];
+                popup_c3e484059429ee8531ba4c10bf0d2ad2.setContent(html_1ce3cd6400e21c12f3ad714d01603d95);
+            
+        
+
+        marker_71bfbd769de9a22e631762c24f66b217.bindPopup(popup_c3e484059429ee8531ba4c10bf0d2ad2)
+        ;
+
+        
+    
+    
+            marker_71bfbd769de9a22e631762c24f66b217.bindTooltip(
+                `<div>
+                     Mount Rushmore National Memorial
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71bfbd769de9a22e631762c24f66b217.setIcon(icon_893c17dde75fc6321e987317781d464c);
+            
+    
+            var poly_line_f3e997359208a372388a9c867b89bace = L.polyline(
+                [[43.88037021, -103.4525186], [47.17777274, -103.4300083]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_f3e997359208a372388a9c867b89bace.bindTooltip(
+                `<div>
+                     273.7 mi (4.6 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f0a4bd0cf1e77f5983da41dc8775a54a = L.marker(
+                [47.17777274, -103.4300083],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_ff2d4b234606dac9495777d8913965d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae83c5cf786c178dee1898d90ef0c5f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8aafab261d06b1c2d411a2906486d1b3 = $(`<div id="html_8aafab261d06b1c2d411a2906486d1b3" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Theodore Roosevelt National Park</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg" width="200"><br><br>         <em>When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.</em><br>         </div>         </div>`)[0];
+                popup_ae83c5cf786c178dee1898d90ef0c5f8.setContent(html_8aafab261d06b1c2d411a2906486d1b3);
+            
+        
+
+        marker_f0a4bd0cf1e77f5983da41dc8775a54a.bindPopup(popup_ae83c5cf786c178dee1898d90ef0c5f8)
+        ;
+
+        
+    
+    
+            marker_f0a4bd0cf1e77f5983da41dc8775a54a.bindTooltip(
+                `<div>
+                     Theodore Roosevelt National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0a4bd0cf1e77f5983da41dc8775a54a.setIcon(icon_ff2d4b234606dac9495777d8913965d0);
+            
+    
+            var poly_line_84df7b8c4db7bd7d7e595f1b00f3408f = L.polyline(
+                [[47.17777274, -103.4300083], [37.29839254, -113.0265138]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_84df7b8c4db7bd7d7e595f1b00f3408f.bindTooltip(
+                `<div>
+                     270.1 mi (4.6 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf19e3decf696573c6daa03eb613b166 = L.marker(
+                [37.29839254, -113.0265138],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_0cd63b8271983cba66c46b75f88d32e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c167d3b99e518eeae2e6ec0beb70ff79 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_61d23c8b52e8e79874a62fa93b868501 = $(`<div id="html_61d23c8b52e8e79874a62fa93b868501" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Zion National Park</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg" width="200"><br><br>         <em>Follow the paths where people have walked for thousands of years. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience the tall, stretching walls of a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present-day adventures.</em><br>         </div>         </div>`)[0];
+                popup_c167d3b99e518eeae2e6ec0beb70ff79.setContent(html_61d23c8b52e8e79874a62fa93b868501);
+            
+        
+
+        marker_bf19e3decf696573c6daa03eb613b166.bindPopup(popup_c167d3b99e518eeae2e6ec0beb70ff79)
+        ;
+
+        
+    
+    
+            marker_bf19e3decf696573c6daa03eb613b166.bindTooltip(
+                `<div>
+                     Zion National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf19e3decf696573c6daa03eb613b166.setIcon(icon_0cd63b8271983cba66c46b75f88d32e8);
+            
+    
+            var poly_line_6e35bf3bbb297513c7f2a35af2876135 = L.polyline(
+                [[37.29839254, -113.0265138], [39.70817829, -83.89328575]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_6e35bf3bbb297513c7f2a35af2876135.bindTooltip(
+                `<div>
+                     270.1 mi (4.6 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_372b37617d2d3d3839d14d7d4e984892 = L.marker(
+                [39.70817829, -83.89328575],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_149545bfd7c48bb4542cca5358cae715 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3fb75a7ba7bdf1ecc82123c0f57a816 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_83aa7cc51b62f2e8616cd6e78a9fc2af = $(`<div id="html_83aa7cc51b62f2e8616cd6e78a9fc2af" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Charles Young Buffalo Soldiers National Monument</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg" width="200"><br><br>         <em>Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.</em><br>         </div>         </div>`)[0];
+                popup_e3fb75a7ba7bdf1ecc82123c0f57a816.setContent(html_83aa7cc51b62f2e8616cd6e78a9fc2af);
+            
+        
+
+        marker_372b37617d2d3d3839d14d7d4e984892.bindPopup(popup_e3fb75a7ba7bdf1ecc82123c0f57a816)
+        ;
+
+        
+    
+    
+            marker_372b37617d2d3d3839d14d7d4e984892.bindTooltip(
+                `<div>
+                     Charles Young Buffalo Soldiers National Monument
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_372b37617d2d3d3839d14d7d4e984892.setIcon(icon_149545bfd7c48bb4542cca5358cae715);
+            
+    
+            var poly_line_34bc6fb31e9673aaf80e8f3e51a82a63 = L.polyline(
+                [[39.70817829, -83.89328575], [25.37294225, -80.88200301]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_34bc6fb31e9673aaf80e8f3e51a82a63.bindTooltip(
+                `<div>
+                     1523.5 mi (22.5 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98190556517f117992ae547437bab3c3 = L.marker(
+                [25.37294225, -80.88200301],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_fd5e7a2f1239a81a5fc0af40c908fe62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d5c561506004139cd0e282fcbbcc43a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_255f4cde179ea96bb92292ec7d097c78 = $(`<div id="html_255f4cde179ea96bb92292ec7d097c78" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Everglades National Park</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/17EC840E-9926-2E09-F2DD47A282915BBB.jpg" width="200"><br><br>         <em>Established in 1947 as the first national park created for its biodiversity, Everglades National Park protects 1.5 million acres of wetland, forest, and marine habitats and the native plants and animals that call it home. With several international designations, the park provides a major source of drinking water for local residents of South Florida and recreational opportunities for all.</em><br>         </div>         </div>`)[0];
+                popup_4d5c561506004139cd0e282fcbbcc43a.setContent(html_255f4cde179ea96bb92292ec7d097c78);
+            
+        
+
+        marker_98190556517f117992ae547437bab3c3.bindPopup(popup_4d5c561506004139cd0e282fcbbcc43a)
+        ;
+
+        
+    
+    
+            marker_98190556517f117992ae547437bab3c3.bindTooltip(
+                `<div>
+                     Everglades National Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_98190556517f117992ae547437bab3c3.setIcon(icon_fd5e7a2f1239a81a5fc0af40c908fe62);
+            
+    
+            var poly_line_8f3304cbdd18294befa49c42057c8419 = L.polyline(
+                [[25.37294225, -80.88200301], [40.69668638, -73.00013462]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            poly_line_8f3304cbdd18294befa49c42057c8419.bindTooltip(
+                `<div>
+                     1293.8 mi (18.9 hrs)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1f6835ed3faee2562f082cde67fcd9d9 = L.marker(
+                [40.69668638, -73.00013462],
+                {
+}
+            ).addTo(map_53674128e60c8031ca70ff1fb08839d1);
+        
+    
+            var icon_e2a93a7b7ee2a6cd9738f811435e58c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52fae1af6a33409e9cca813cb6642fe7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a99e54596348e410f9f1d90ae33579b0 = $(`<div id="html_a99e54596348e410f9f1d90ae33579b0" style="width: 100.0%; height: 100.0%;">         <div style="width:220px">         <h3 style="font-size:16px; margin-bottom:5px;">Fire Island National Seashore</h3>         <img src="https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg" width="200"><br><br>         <em>Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.</em><br>         </div>         </div>`)[0];
+                popup_52fae1af6a33409e9cca813cb6642fe7.setContent(html_a99e54596348e410f9f1d90ae33579b0);
+            
+        
+
+        marker_1f6835ed3faee2562f082cde67fcd9d9.bindPopup(popup_52fae1af6a33409e9cca813cb6642fe7)
+        ;
+
+        
+    
+    
+            marker_1f6835ed3faee2562f082cde67fcd9d9.bindTooltip(
+                `<div>
+                     Fire Island National Seashore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f6835ed3faee2562f082cde67fcd9d9.setIcon(icon_e2a93a7b7ee2a6cd9738f811435e58c0);
+            
+</script>
+</html>
