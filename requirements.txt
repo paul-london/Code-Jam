@@ -1,11 +1,14 @@
 # Core Python packages
 numpy
 pandas
+flask
 
 # Visualization
 matplotlib
 seaborn
 plotly
+folium
+googlemaps
 
 # Jupyter & Notebook support
 jupyter
