@@ -2,7 +2,8 @@ import os
 from flask import Flask, request, jsonify, send_from_directory
 from scripts.map import plot_route_on_map
 
-app = Flask(__name__, static_folder='dist', static_url_path='')
+static_path = os.path.abspath('dist')
+app = Flask(__name__, static_folder=static_path, static_url_path='')
 
 # Serve React frontend
 @app.route('/')
