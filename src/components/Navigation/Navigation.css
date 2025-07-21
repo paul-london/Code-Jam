@@ -27,3 +27,20 @@
   padding: 0 50px;
   margin: 20px 0 8px;
 }
+
+.nav__link {
+  color: #005f73;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #0a9396;
+  text-decoration: underline;
+  outline: none;
+}
