@@ -1,18 +1,32 @@
-from flask import Flask, request, jsonify
-from scripts.map import plot_route_on_map  # import your function
+import os
+from flask import Flask, request, jsonify, send_from_directory
+from scripts.map import plot_route_on_map
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='dist')
 
-@app.route('/', methods=['GET', 'POST'])
+# Serve React frontend
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_react(path):
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
+# API endpoint for dropdown selection (POST)
+@app.route('/api/map', methods=['POST'])
 def create_map():
     data = request.get_json()
     home_state = data.get("state")
-
-    # Call your existing function
     plot_route_on_map(home_state)
+    # Return URL of generated map file
+    return jsonify({"url": "/maps/usa_roadtrip_map.html"})
 
-    # Return file path to React (for iframe)
-    return jsonify({"url": f"../usa_roadtrip_map.html"})
+# Serve generated map files (GET)
+@app.route('/maps/<path:filename>')
+def serve_maps(filename):
+    # Adjust the path as needed; '../maps' means folder parallel to your Flask app folder
+    return send_from_directory('../maps', filename)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -223,5 +223,5 @@ if __name__ == "__main__":
 
 
     route_map = plot_route_on_map(parks_file, states_file, home_state, api_key)
-    route_map.save("usa_roadtrip_map.html")
+    route_map.save(os.path.join(repo_root, 'maps', 'usa_roadtrip_map.html'))
     print("✅ Map saved as 'usa_roadtrip_map.html'. Open it in your browser.")

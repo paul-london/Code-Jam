@@ -1,10 +1,12 @@
+# API
+flask
+
 # Deployment
 gunicorn
 
 # Core Python packages
 numpy
 pandas
-flask
 
 # Visualization
 matplotlib
@@ -16,25 +18,3 @@ googlemaps
 # Jupyter & Notebook support
 jupyter
 ipykernel
-
-# Machine Learning / Modeling
-scikit-learn
-xgboost
-
-# Data validation / pipeline tools (optional but useful)
-pydantic
-joblib
-
-# Linting & Code Quality (optional, for engineers)
-flake8
-black
-
-# Project Structure Tools (optional)
-python-dotenv
-
-# Web framework (if you later make an API)
-fastapi
-uvicorn
-
-# Version pinning (optional but recommended for stability)
-# Example: pandas==2.1.0
