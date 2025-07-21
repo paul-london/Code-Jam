@@ -3,7 +3,7 @@ from scripts.map import plot_route_on_map  # import your function
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET', 'POST'])
 def create_map():
     data = request.get_json()
     home_state = data.get("state")
