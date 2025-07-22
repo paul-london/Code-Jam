@@ -2,11 +2,11 @@ import PlanTrip from "../PlanTrip/PlanTrip";
 import Featured from "../Featured/Featured";
 import Tips from "../TripTips/TripTips";
 
-function Main({ planRef, parksRef, tipsRef }) {
+function Main({ planRef, parksRef, tipsRef, selectedState, setSelectedState }) {
   return (
     <main className="main">
       <section ref={planRef} id="plan">
-        <PlanTrip />
+        <PlanTrip selectedState={selectedState} setSelectedState={setSelectedState} />
       </section>
 
       <section ref={parksRef} id="parks">
