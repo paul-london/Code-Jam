@@ -5,10 +5,11 @@ import Itinerary from "../Itinerary/Itinerary";
 import MapView from "../Map/MapView";
 import "./PlanTrip.css";
 
-const PlanTrip = ({ selectedState, setSelectedState }) => {
+const PlanTrip = () => {
   const [activePanel, setActivePanel] = useState("");
   const [showExplore, setShowExplore] = useState(false);
   const [showItinerary, setShowItinerary] = useState(false);
+  const [selectedState, setSelectedState] = useState("");
   const [submittedState, setSubmittedState] = useState("");
   const [route, setRoute] = useState([]);
 
