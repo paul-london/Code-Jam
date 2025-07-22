@@ -1,13 +1,16 @@
 {
-  "name": "code-jam",
+  "name": "Park-Hopper-Routes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github/paul-london/Park-Hopper-Routes",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
