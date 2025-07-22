@@ -79,3 +79,20 @@
 .medium-priority .priority {
   background-color: #6c757d;
 }
+
+.walking-person {
+  width: 50px;
+  position: absolute;
+  top: 80px; /* adjust */
+  left: 10px; /* adjust */
+  animation: walkPath 10s linear infinite;
+}
+
+@keyframes walkPath {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(500px);
+  }
+}

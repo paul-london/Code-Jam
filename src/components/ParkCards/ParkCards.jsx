@@ -6,24 +6,27 @@ function Cards() {
       <ul className="cards__container">
         <li className="card">
           <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
+            src="src/assets/parkimages/Golden_Gate_National_Recreation_Area.jpg"
+            alt="Golden Gate"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
+              <h3 className="card__title">Golden Gate National</h3>
+              <span className="card__badge">🗓️ May - October</span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 San Franciso, Califonia</p>
 
             <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
+              Experience a park so rich it supports 19 distinct ecosystems with
+              over 2,000 plant and animal species. Go for a hike, enjoy a vista,
+              have a picnic or learn about the centuries of overlapping history
+              from California\u2019s indigenous cultures, Spanish colonialism,
+              the Mexican Republic, US military expansion and the growth of San
+              Francisco. All of this and more awaits you, so get out and find
+              your park.
             </p>
 
             <div className="card__highlights">
@@ -36,24 +39,26 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
+            src="src/assets/parkimages/Charles_Young_Buffalo_Soldiers_National_Monument.jpg"
+            alt="Charles Young National"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
+              <h3 className="card__title">Charles Young Buffalo National</h3>
+              <span className="card__badge">🗓️ Year round</span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 Wilberforce, Ohio</p>
 
             <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
+              Throughout his life, Charles Young overcame countless obstacles in
+              his ascent to prominence. In spite of overt racism and stifling
+              inequality, Young rose through the military ranks to become one of
+              the most respected leaders of his time. A well-rounded man with a
+              steadfast devotion to duty, Young led by example and inspired a
+              generation of new leaders.
             </p>
 
             <div className="card__highlights">
@@ -66,24 +71,27 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
+            src="src/assets/parkimages/Fire_Island_National_Seashore.jpg"
+            alt="Fire Island National Seashore"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
+              <h3 className="card__title">Fire Island National Seashore</h3>
+              <span className="card__badge">🗓️ June - September</span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 Ocean Beach, New York</p>
 
             <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
+              Immerse yourself in an enchanting collage of coastal life and
+              history. Rhythmic waves, high dunes, ancient maritime forests,
+              historic landmarks and glimpses of wildlife, Fire Island has been
+              a special place for diverse plants, animals and people for
+              centuries. Far from the pressure of nearby big-city life, dynamic
+              barrier island beaches offer solitude, camaraderie, and spiritual
+              renewal.
             </p>
 
             <div className="card__highlights">
@@ -96,24 +104,26 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
+            src="src/assets/parkimages/Theodore_Roosevelt_National_Park.jpg"
+            alt="Theodore Roosevelt National Park"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
+              <h3 className="card__title">Theodore Roosevelt National Park</h3>
+              <span className="card__badge">🗓️ May - September</span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 Medora, North Dakota</p>
 
             <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
+              When Theodore Roosevelt came to Dakota Territory to hunt bison in
+              1883, he was a skinny, young, spectacled dude from New York. He
+              could not have imagined how his adventure in this remote and
+              unfamiliar place would forever alter the course of the nation. The
+              rugged landscape and strenuous life that TR experienced here would
+              help shape a conservation policy that we still benefit from today.
             </p>
 
             <div className="card__highlights">
@@ -126,24 +136,26 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
+            src="src/assets/parkimages/Kenilworth_Park__Aquatic_Gardens.jpg"
+            alt="Kenilworth Park & Aquatic Gardens"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
+              <h3 className="card__title">Kenilworth Park & Aquatic Gardens</h3>
+              <span className="card__badge">🗓️ June - August</span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 Washionton,DC</p>
 
             <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
+              Deep within Kenilworth lies an oasis, hidden behind trees and
+              cattails. It's a place where beavers build their homes and turtles
+              sleep on logs. Lotus blooms rise from the muck and lilies sit on
+              the water. The wind dances with the dragonflies, rustling through
+              the trees, carrying the song of the birds until it brushes across
+              your face, fading to a whisper, saying \"come join.\"
             </p>
 
             <div className="card__highlights">
@@ -156,114 +168,27 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
+            src="src/assets/parkimages/Mount_Rushmore_National_Memorial.jpg"
+            alt="Mount Rushmore National Memorial"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
+              <h3 className="card__title">Mount Rushmore National </h3>
+              <span className="card__badge">🗓️ May, September - October</span>
             </div>
 
-            <p className="card__location">📍 Tennessee, North Carolina</p>
+            <p className="card__location">📍 Keystone, South Dakota</p>
 
             <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
-            </p>
-
-            <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
-            </div>
-          </div>
-        </li>
-
-        <li className="card">
-          <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
-            className="card__image"
-          />
-
-          <div className="card__content">
-            <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
-            </div>
-
-            <p className="card__location">📍 Tennessee, North Carolina</p>
-
-            <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
-            </p>
-
-            <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
-            </div>
-          </div>
-        </li>
-
-        <li className="card">
-          <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
-            className="card__image"
-          />
-
-          <div className="card__content">
-            <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
-            </div>
-
-            <p className="card__location">📍 Tennessee, North Carolina</p>
-
-            <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
-            </p>
-
-            <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
-            </div>
-          </div>
-        </li>
-
-        <li className="card">
-          <img
-            src="src/assets/Mountain-clouds.jpg"
-            alt="Great Smoky Mountains"
-            className="card__image"
-          />
-
-          <div className="card__content">
-            <div className="card__heading">
-              <h3 className="card__title">Great Smoky Mountains</h3>
-              <span className="card__badge">
-                🗓️ April - May, September - October
-              </span>
-            </div>
-
-            <p className="card__location">📍 Tennessee, North Carolina</p>
-
-            <p className="card__description">
-              America's most visited national park, famous for its misty
-              mountains, diverse wildlife, and Appalachian culture.
+              Majestic figures of George Washington, Thomas Jefferson, Theodore
+              Roosevelt and Abraham Lincoln, surrounded by the beauty of the
+              Black Hills of South Dakota, tell the story of the birth, growth,
+              development and preservation of this country. From the history of
+              the first inhabitants to the diversity of America today, Mount
+              Rushmore brings visitors face to face with the rich heritage we
+              all share.
             </p>
 
             <div className="card__highlights">
