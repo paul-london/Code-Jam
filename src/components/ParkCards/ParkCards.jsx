@@ -6,7 +6,7 @@ function Cards() {
       <ul className="cards__container">
         <li className="card">
           <img
-            src="/images/parkimages/Golden-gate.jpeg"
+            src="/Park-Hopper-Routes/images/parkimages/Golden-gate.jpeg"
             alt="Golden Gate"
             className="card__image"
           />
@@ -39,7 +39,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/images/parkimages/Charles-young-park.jpeg"
+            src="/Park-Hopper-Routes/images/parkimages/Charles-young-park.jpeg"
             alt="Charles Young National"
             className="card__image"
           />
@@ -71,7 +71,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/images/parkimages/Fire-island-national.jpeg"
+            src="/Park-Hopper-Routes/images/parkimages/Fire-island-national.jpeg"
             alt="Fire Island National Seashore"
             className="card__image"
           />
@@ -108,7 +108,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/images/parkimages/Theodore-national-park.jpeg"
+            src="/Park-Hopper-Routes/images/parkimages/Theodore-national-park.jpeg"
             alt="Theodore Roosevelt National Park"
             className="card__image"
           />
@@ -146,7 +146,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/images/parkimages/Kenilwork-park.jpeg"
+            src="/Park-Hopper-Routes/images/parkimages/Kenilwork-park.jpeg"
             alt="Kenilworth Park & Aquatic Gardens"
             className="card__image"
           />
@@ -182,7 +182,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/images/parkimages/Mount-rushmore-park.jpeg"
+            src="/Park-Hopper-Routes/images/parkimages/Mount-rushmore-park.jpeg"
             alt="Mount Rushmore National Memorial"
             className="card__image"
           />
