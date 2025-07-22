@@ -69,9 +69,20 @@ def VacationRoute(home_state, states_file, parks_file, api_key):
         duration_matrix[i, j] = float(dur)
 
     # Make sure order matches 'parks = all_parks'
-    park_coords_ordered = [
-        parks_subset.loc[parks_subset['name'] == park, 'coordinates'].values[0] for park in parks
-        ]
+    # Manually fixed coordinated from notebook
+    park_coords_manual = {
+    "Everglades National Park": (25.4686, -80.4776),
+    "Fire Island National Seashore": (40.7551, -72.9878),
+    "Zion National Park": (37.2594, -112.9507),
+    }
+    park_coords_ordered = []
+    for park in parks:
+        if park in park_coords_manual:
+            park_coords_ordered.append(park_coords_manual[park])
+        else:
+            coord = parks_subset.loc[parks_subset['name'] == park, 'coordinates'].values[0]
+            park_coords_ordered.append(coord)
+            
     home_to_parks_dist, home_to_parks_dur = compute_home_to_parks(
         home_coord, park_coords_ordered, gmaps
         )
