@@ -218,10 +218,12 @@ def plot_route_on_map(parks_file, states_file, home_state, api_key='NA'):
 if __name__ == "__main__":
     states_file = os.path.join(repo_root, 'data', 'states_master.csv')
     parks_file = os.path.join(repo_root, 'data', 'parks_subset.csv')
-    home_state = 'PA'
+    home_states_list = ['FL','KS', 'NY', 'PA', 'VA', 'CA']
     api_key = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
 
-
-    route_map = plot_route_on_map(parks_file, states_file, home_state, api_key)
-    route_map.save(os.path.join(repo_root, 'maps', 'usa_roadtrip_map.html'))
-    print("✅ Map saved as 'usa_roadtrip_map.html'. Open it in your browser.")
+    for state in home_states_list:
+        print(f"🔄 Generating map for {state}...")
+        route_map = plot_route_on_map(parks_file, states_file, state, api_key)
+        output_path = os.path.join(repo_root, 'maps', f'usa_roadtrip_map_{state}.html')
+        route_map.save(output_path)
+        print(f"✅ Map for {state} saved as 'usa_roadtrip_map_{state}.html'.")

@@ -5,6 +5,7 @@ function Explore({
   onStateSelected,
   selectedState,
   setSelectedState,
+  onSubmit,
 }) {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,7 +45,11 @@ function Explore({
             <option value="PA">Pennsylvania</option>
             <option value="VA">Virginia</option>
           </select>
-          <button type="submit" className="explore__submit-btn">
+          <button
+            type="submit"
+            className="explore__submit-btn"
+            onClick={onSubmit}
+          >
             Go
           </button>
         </form>

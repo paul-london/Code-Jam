@@ -7,6 +7,7 @@
 // } from "react-leaflet";
 // import L from "leaflet";
 // import "leaflet/dist/leaflet.css";
+import { useState, useEffect } from "react";
 import "./MapView.css";
 
 // const greenIcon = new L.Icon({
@@ -54,17 +55,56 @@ import "./MapView.css";
 
 // export default MapView;
 
-const MapView = () => {
+function MapView({ selectedState }) {
+  const [loading, setLoading] = useState(true);
+
+  let mapFile = "blank_us_map.html";
+
+  if (selectedState === "CA") {
+    mapFile = "usa_roadtrip_map_CA.html";
+  } else if (selectedState === "VA") {
+    mapFile = "usa_roadtrip_map_VA.html";
+  } else if (selectedState === "FL") {
+    mapFile = "usa_roadtrip_map_FL.html";
+  } else if (selectedState === "NY") {
+    mapFile = "usa_roadtrip_map_NY.html";
+  } else if (selectedState === "KS") {
+    mapFile = "usa_roadtrip_map_KS.html";
+  } else if (selectedState === "PA") {
+    mapFile = "usa_roadtrip_map_PA.html";
+  }
+
+  useEffect(() => {
+    setLoading(true); // show spinner right away on state change
+
+    const timer = setTimeout(() => {
+      setLoading(false); // hide spinner after 5 seconds
+    }, 8000);
+
+    return () => clearTimeout(timer); // clean up if user switches states quickly
+  }, [selectedState]);
+
   return (
-    <div className="map">
-      <iframe
-        title="Folium Map"
-        src="/usa_roadtrip_map.html"
-        style={{ width: "100%", height: "100%", border: "none" }}
-      />
+    <div>
+      {loading && (
+        <div className="spinner-overlay">
+          <div className="spinner" />
+          <p className="spinner__paragraph">Fetching Route...</p>
+          <img src="src/assets/car.jpeg" alt="Driving car" className="car" />
+        </div>
+      )}
+
+      <div className="map">
+        <iframe
+          title="Folium Map"
+          src={`maps/${mapFile}`}
+          style={{ width: "100%", height: "100%", border: "none" }}
+          onLoad={() => setLoading(false)}
+        />
+      </div>
     </div>
   );
-};
+}
 
 // export default MapView;
 

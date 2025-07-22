@@ -62,9 +62,9 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
+              <span className="highlight">Youngsholm</span>
+              <span className="highlight">Buffalo Soldiers Legacy</span>
+              <span className="highlight">Guided Tours & Ranger Programs</span>
             </div>
           </div>
         </li>
@@ -95,9 +95,13 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
+              <span className="highlight">
+                Maltese Cross Cabin & Elkhorn Ranch Site
+              </span>
+              <span className="highlight">
+                Spectacular Badlands & Scenic Drives
+              </span>
+              <span className="highlight">Wildlife & Geologic Wonders</span>
             </div>
           </div>
         </li>
@@ -127,9 +131,15 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
+              <span className="highlight">
+                Three Successive Fort Sites & Santa Fe Trail Ruts
+              </span>
+              <span className="highlight">
+                Major Civil‑War‑Era Supply Depot
+              </span>
+              <span className="highlight">
+                Guided & Self‑Guided Trails with Ranger Programs
+              </span>
             </div>
           </div>
         </li>
@@ -159,9 +169,13 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
+              <span className="highlight">Fire Island Lighthouse</span>
+              <span className="highlight">
+                Sunken Forest & Otis Pike Wilderness
+              </span>
+              <span className="highlight">
+                Secluded Beaches & Vibrant Communities
+              </span>
             </div>
           </div>
         </li>
@@ -179,6 +193,7 @@ function Cards() {
               <span className="card__badge">🗓️ May, September - October</span>
             </div>
 
+            <p className="card__location">📍 Keystone, South Dakota</p>
             <p className="card__location">📍 Keystone, South Dakota</p>
 
             <p className="card__description">

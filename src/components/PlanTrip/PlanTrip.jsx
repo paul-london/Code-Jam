@@ -10,11 +10,17 @@ const PlanTrip = () => {
   const [showExplore, setShowExplore] = useState(false);
   const [showItinerary, setShowItinerary] = useState(false);
   const [selectedState, setSelectedState] = useState("");
+  const [submittedState, setSubmittedState] = useState("");
   const [route, setRoute] = useState([]);
 
   const handleStateSelected = (stateCode) => {
     console.log("Selected State:", stateCode);
     setSelectedState(stateCode);
+  };
+
+  const handleExploreSubmit = () => {
+    setSubmittedState(selectedState);
+    setShowExplore(false);
   };
 
   const openExplore = () => {
@@ -58,6 +64,7 @@ const PlanTrip = () => {
               selectedState={selectedState}
               setSelectedState={setSelectedState}
               onStateSelected={handleStateSelected}
+              onSubmit={handleExploreSubmit}
             />
           </div>
         )}
@@ -73,7 +80,7 @@ const PlanTrip = () => {
         )}
 
         <MapView
-          selectedState={selectedState}
+          selectedState={submittedState}
           route={route}
           setRoute={setRoute}
         />

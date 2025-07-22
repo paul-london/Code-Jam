@@ -2,12 +2,20 @@ import PlanTrip from "../PlanTrip/PlanTrip";
 import Featured from "../Featured/Featured";
 import Tips from "../TripTips/TripTips";
 
-function Main() {
+function Main({ planRef, parksRef, tipsRef }) {
   return (
     <main className="main">
-      <PlanTrip />
-      <Featured />
-      <Tips />
+      <section ref={planRef} id="plan">
+        <PlanTrip />
+      </section>
+
+      <section ref={parksRef} id="parks">
+        <Featured />
+      </section>
+
+      <section ref={tipsRef} id="tips">
+        <Tips />
+      </section>
     </main>
   );
 }

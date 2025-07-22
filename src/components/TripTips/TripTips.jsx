@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./TripTips.css";
-import Hiker from "../../assets/hiker.jpeg";
 
 function Tips() {
   const [activeTab, setActiveTab] = useState("Planning");
@@ -8,7 +7,6 @@ function Tips() {
   return (
     <div className="tips">
       <div className="tips__container">
-        <img src={Hiker} alt="Walking person" className="walking-person" />
         <h2 className="tips__title">Essential Travel Tips</h2>
         <p className="tips__paragraph">
           Make the most of your national park road trip with expert advice on

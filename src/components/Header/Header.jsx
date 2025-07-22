@@ -1,10 +1,14 @@
 import Navigation from "../Navigation/Navigation";
 import Intro from "../Intro/Intro";
 
-function Header() {
+function Header({ onScrollToPlan, onScrollToParks, onScrollToTips }) {
   return (
     <header className="header">
-      <Navigation />
+      <Navigation
+        onScrollToPlan={onScrollToPlan}
+        onScrollToParks={onScrollToParks}
+        onScrollToTips={onScrollToTips}
+      />
       <Intro />
     </header>
   );

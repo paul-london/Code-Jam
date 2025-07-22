@@ -4,7 +4,7 @@ import googlemaps
 import numpy as np
 
 # Create necessary dataframes
-parks_subset = pd.read_csv('../data/parks_w.csv')
+parks_subset = pd.read_csv('../data/parks_subset.csv')
 
 # Initialize Google Maps API client
 api_key_g = 'AIzaSyBsZE5PsKrO7cQP1vUILx4j9HMCdPK3x_g'
@@ -51,7 +51,7 @@ for origin_name, origin_coords in origins.items():
 
         print(f"{origin_name} → {dest_name} = {np.round((distance_meters/1609.344),2)} mi ({np.round((duration_seconds/3600),2)} hrs)") # convert to miles and hours
 
-        time.sleep(1)  # Pause to avoid API rate limits
+        time.sleep(0.5)  # Pause to avoid API rate limits
 
 
 
@@ -60,4 +60,4 @@ print("\nTravel Matrix:")
 print(travel_array)
 
 # Save array
-np.save('../data/arrays/travel_array.npy', travel_array)
+np.save('../data/arrays/travel_array_subset.npy', travel_array)
