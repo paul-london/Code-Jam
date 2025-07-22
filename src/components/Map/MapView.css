@@ -1,11 +1,10 @@
 .map {
-  width: 100%;        /* full width of container */
-  max-width: 900px;   /* optional max width so it doesn't get too wide on big screens */
-  height: 600px;      /* bigger height for better visibility */
-  margin: 20px auto;  /* center horizontally and add vertical spacing */
-  border: 1px solid #ccc;  
-  box-sizing: border-box;
-  overflow: visible
+  height: 430px;
+  width: 750px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  outline-style: none;
 }
 
 .spinner-overlay {
