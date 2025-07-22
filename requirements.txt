@@ -1,8 +1,10 @@
 # API
+
 flask
 
 # Deployment
-gunicorn
+# gunicorn
+streamlit
 
 # Core Python packages
 numpy
