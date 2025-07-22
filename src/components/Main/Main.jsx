@@ -6,7 +6,7 @@ function Main({ planRef, parksRef, tipsRef, selectedState, setSelectedState }) {
   return (
     <main className="main">
       <section ref={planRef} id="plan">
-        <PlanTrip />
+        <PlanTrip selectedState={selectedState} setSelectedState={setSelectedState} />
       </section>
 
       <section ref={parksRef} id="parks">

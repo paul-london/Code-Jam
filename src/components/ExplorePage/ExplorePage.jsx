@@ -11,6 +11,7 @@ function Explore({
     e.preventDefault();
     if (selectedState) {
       onStateSelected(selectedState);
+      onSubmit();
     }
   };
 
@@ -48,7 +49,6 @@ function Explore({
           <button
             type="submit"
             className="explore__submit-btn"
-            onClick={onSubmit}
           >
             Go
           </button>
