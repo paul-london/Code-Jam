@@ -194,7 +194,6 @@ function Cards() {
             </div>
 
             <p className="card__location">📍 Keystone, South Dakota</p>
-            <p className="card__location">📍 Keystone, South Dakota</p>
 
             <p className="card__description">
               Majestic figures of George Washington, Thomas Jefferson, Theodore
