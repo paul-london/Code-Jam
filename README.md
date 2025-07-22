@@ -5,6 +5,7 @@ A collaborative project between TripleTen Data Science and Software Engineering 
 ## 🚀 Project Overview
 
 The goal of this project is to build a lightweight, functional tool that:
+
 - Plans a vacation through a selection of National Parks based on the user's preferences
 - Applies a route optimization algorithm to minimize travel distance (Greedy Nearest Neighbor)
 - Displays the determined travel route on an interactive map
@@ -21,19 +22,18 @@ This tool could serve use cases in delivery services, travel planning, field tec
 
 ## 🧠 Technologies
 
-- Programming Language: `Python` / `JavaScript` / `Node.js` *(decide based on group skillset)*
+- Programming Language: `Python` / `JavaScript` / `REACT`
 - Algorithm: Greedy Nearest Neighbor
 
 ## 🧑‍🤝‍🧑 Team Members
 
-| Name            | Role                 |
-|-----------------|----------------------|
-| Austin               | Software Engineering    |
-| Lily              | Software Engineering       |
-| Matthew               | Software Engineering   |
-| Paul               | Data Science              |
-| Priti               | Data Science             |
-
+| Name    | Role                 |
+| ------- | -------------------- |
+| Lily    | Software Engineering |
+| Matthew | Software Engineering |
+| Vanessa | Software Engineering |
+| Paul    | Data Science         |
+| Priti   | Data Science         |
 
 ## 📁 Project Structure (Tentative)
 
@@ -58,17 +58,17 @@ route-optimization-mvp/
 
 ## 🗓️ Timeline
 
-| Phase           | Milestone                    | Target Date |
-|----------------|-------------------------------|-------------|
-| 📌 Planning     | Define scope & algorithm  | 7/17/2025        |
-| 🔧 Development  | Build core features           | 7/20/2025        |
-| 🧪 Testing       | Deployment, Submission            | 7/21/2025         |
-| 🚀 Launch        | Presentation                | 7/22/2025         |
+| Phase          | Milestone                | Target Date |
+| -------------- | ------------------------ | ----------- |
+| 📌 Planning    | Define scope & algorithm | 7/17/2025   |
+| 🔧 Development | Build core features      | 7/20/2025   |
+| 🧪 Testing     | Deployment, Submission   | 7/21/2025   |
+| 🚀 Launch      | Presentation             | 7/22/2025   |
 
 ## 📝 Notes
 
 - Algorithm selection and trade-offs will be discussed as a group.
-- Aim to build something that *works*, then iterate and optimize.
+- Aim to build something that _works_, then iterate and optimize.
 - Keep code modular and readable for team collaboration.
 
 ## 📬 Contact & Communication
