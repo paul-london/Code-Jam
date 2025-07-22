@@ -46,15 +46,12 @@ function Explore({
             <option value="PA">Pennsylvania</option>
             <option value="VA">Virginia</option>
           </select>
-          <button
-            type="submit"
-            className="explore__submit-btn"
-          >
+          <button type="submit" className="explore__submit-btn">
             Go
           </button>
         </form>
         <div className="explore__car-animation">
-          <img src="src/assets/car.jpeg" alt="Driving car" className="car" />
+          <img src="doc/assets/car.jpeg" alt="Driving car" className="car" />
         </div>
       </div>
     </div>

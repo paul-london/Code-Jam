@@ -6,7 +6,7 @@ function Cards() {
       <ul className="cards__container">
         <li className="card">
           <img
-            src="src/assets/Golden-gate.jpeg"
+            src="doc/assets/Golden-gate.jpeg"
             alt="Golden Gate"
             className="card__image"
           />
@@ -39,7 +39,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Charles-young-park.jpeg"
+            src="doc/assets/Charles-young-park.jpeg"
             alt="Charles Young National"
             className="card__image"
           />
@@ -71,7 +71,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Fire-island-national.jpeg"
+            src="doc/assets/Fire-island-national.jpeg"
             alt="Fire Island National Seashore"
             className="card__image"
           />
@@ -108,7 +108,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Theodore-national-park.jpeg"
+            src="doc/assets/Theodore-national-park.jpeg"
             alt="Theodore Roosevelt National Park"
             className="card__image"
           />
@@ -146,7 +146,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Kenilwork-park.jpeg"
+            src="doc/assets/Kenilwork-park.jpeg"
             alt="Kenilworth Park & Aquatic Gardens"
             className="card__image"
           />
@@ -182,7 +182,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="src/assets/Mount-rushmore-park.jpeg"
+            src="doc/assets/Mount-rushmore-park.jpeg"
             alt="Mount Rushmore National Memorial"
             className="card__image"
           />
