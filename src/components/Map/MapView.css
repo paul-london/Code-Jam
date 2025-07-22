@@ -5,6 +5,7 @@
   margin: 20px auto;  /* center horizontally and add vertical spacing */
   border: 1px solid #ccc;  
   box-sizing: border-box;
+  overflow: visible
 }
 
 .spinner-overlay {
