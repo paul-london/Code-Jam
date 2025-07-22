@@ -97,7 +97,7 @@ function MapView({ selectedState }) {
       <div className="map">
         <iframe
           title="Folium Map"
-          src={`/Park-Hopper-Routes/${mapFile}`}
+          src={`${import.meta.env.BASE_URL}${mapFile}`}
           style={{ width: "100%", height: "100%", border: "none" }}
           onLoad={() => setLoading(false)}
         />
