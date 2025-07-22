@@ -7,6 +7,7 @@ function App() {
   const planRef = useRef(null);
   const parksRef = useRef(null);
   const tipsRef = useRef(null);
+  const [selectedState, setSelectedState] = useState("");
 
   const scrollTo = (ref) => {
     if (ref.current) {
