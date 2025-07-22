@@ -7,9 +7,15 @@
   },
   {
     "source":"Golden Gate National Recreation Area",
+    "destination":"Zion National Park",
+    "distance_miles":750.59,
+    "duration_hours":11.68
+  },
+  {
+    "source":"Zion National Park",
     "destination":"Fort Union National Monument",
-    "distance_miles":1253.43,
-    "duration_hours":18.49
+    "distance_miles":639.53,
+    "duration_hours":10.35
   },
   {
     "source":"Fort Union National Monument",
@@ -31,26 +37,20 @@
   },
   {
     "source":"Theodore Roosevelt National Park",
-    "destination":"Zion National Park",
-    "distance_miles":270.15,
-    "duration_hours":4.58
-  },
-  {
-    "source":"Zion National Park",
     "destination":"Charles Young Buffalo Soldiers National Monument",
-    "distance_miles":270.15,
-    "duration_hours":4.58
+    "distance_miles":1296.28,
+    "duration_hours":18.9
   },
   {
     "source":"Charles Young Buffalo Soldiers National Monument",
-    "destination":"Everglades National Park",
-    "distance_miles":1523.49,
-    "duration_hours":22.54
+    "destination":"Fire Island National Seashore",
+    "distance_miles":671.43,
+    "duration_hours":10.44
   },
   {
-    "source":"Everglades National Park",
-    "destination":"Fire Island National Seashore",
-    "distance_miles":1293.77,
-    "duration_hours":18.9
+    "source":"Fire Island National Seashore",
+    "destination":"Everglades National Park",
+    "distance_miles":1377.04,
+    "duration_hours":20.4
   }
 ]
