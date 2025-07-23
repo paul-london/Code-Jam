@@ -21,10 +21,10 @@ function Explore({
         &times;
       </button>
       <h4 className="explore__title">
-        Are you ready for the adventure of a life time?
+        Are you ready for the adventure of a lifetime?
       </h4>
       <p className="explore__paragraph">
-        Pack your bags, fill up your gas tank and lets go!!
+        Pack your bags, fill up your gas tank and let's go!
       </p>
       <div className="explore__container">
         <form action="" className="explore__form" onSubmit={handleSubmit}>
