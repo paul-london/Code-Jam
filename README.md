@@ -27,7 +27,7 @@ The framework of this project could serve additional use cases in delivery servi
 
 ## 🧠 Technologies
 
-- Programming Language: `Python` / `JavaScript` / `REACT`
+- Programming Languages & Tools: `JavaScript`, `React`, `Python`, `HTML`, `CSS`, `Vite`
 - Algorithm: Greedy Nearest Neighbor
 
 ## 🧑‍🤝‍🧑 Team Members
@@ -93,6 +93,12 @@ Park-Hopper-Routes/
 - Algorithm selection and trade-offs will be discussed as a group.
 - Aim to build something that _works_, then iterate and optimize.
 - Keep code modular and readable for team collaboration.
+
+## 📊 Data Sources
+
+- National Parks: Park coordinates and data pulled from the National Park Service API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
+- Google Maps: Travel distances and durations pulled from Google Maps API ([Documentation](https://developers.google.com/maps/documentation)).
+- US States: Coordinates obtained from public [Kaggle dataset](https://www.kaggle.com/datasets/tennerimaheshwar/us-state-and-territory-latitude-and-longitude-data). 
 
 ## 📬 Contact & Communication
 
