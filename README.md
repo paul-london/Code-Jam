@@ -40,7 +40,7 @@ The framework of this project could serve additional use cases in delivery servi
 | Paul London   | Data Science         |
 | Priti Sagar  | Data Science         |
 
-## 📁 Project Structure (Tentative)
+## 📁 Project Structure (Summary)
 
 ```text
 Park-Hopper-Routes/
@@ -54,28 +54,28 @@ Park-Hopper-Routes/
 │   │   └── parkimages/
 │   │       └── *.jpg
 │   ├── components/              # Shared reusable components
-│   │   ├── Footer.jsx
+│   |   ├── App.jsx              # Top-level components
+│   |   ├── Main.jsx
 │   │   ├── Header.jsx
-│   │   ├── Hero.jsx
+│   │   ├── Footer.jsx
+│   │   ├── PlanTrip.jsx
 │   │   ├── Itinerary.jsx
 │   │   ├── MapDisplay.jsx
-│   │   └── ParkCard.jsx
+│   │   └── ParkCards.jsx
 │   ├── contexts/                # Static data context (parksData.js)
-│   ├── pages/                   # Top-level page components
-│   │   └── Home.jsx
 │   ├── App.jsx
-│   └── main.jsx
+│   └── Main.jsx
 ├── maps/                        # Generated HTML maps from Python
 │   └── *.html
 ├── docs/                        # GitHub Pages deployment output (via `npm run deploy`)
 │   ├── assets/                  # Vite-generated assets
-│   ├── images/                  # Copied images (referenced by relative paths)
+│   ├── images/                  # Copied images for deployment (referenced by relative paths)
 │   │   └── parkimages/
 │   └── *.html                   # Embedded map pages
 ├── .gitignore
 ├── index.html                   # Main HTML template
-├── package.json
-├── README.md
+├── package.json                 # Deployment script
+├── README.md                    # This file
 └── vite.config.js               # Vite configuration with GitHub Pages base path
 ```
 
@@ -90,7 +90,7 @@ Park-Hopper-Routes/
 
 ## 📝 Notes
 
-- Algorithm selection and trade-offs will be discussed as a group.
+- Algorithm selection and trade-offs were discussed as a group.
 - Aim to build something that _works_, then iterate and optimize.
 - Keep code modular and readable for team collaboration.
 
