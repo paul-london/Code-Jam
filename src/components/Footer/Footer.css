@@ -37,4 +37,5 @@
 .footer__git-logo {
   height: 25px;
   width: 25px;
+  background: transparent;
 }
