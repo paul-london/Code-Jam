@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build && mkdir docs\\images && mkdir docs\\images\\parkimages && copy maps\\*.html docs\\ && copy src\\assets\\*.jpg docs\\images\\ && copy src\\assets\\*.jpeg docs\\images\\ && copy src\\assets\\*.jpeg docs\\images\\ && copy src\\assets\\parkimages\\*.jpg docs\\images\\parkimages\\",
+    "predeploy": "npm run build && mkdir docs\\images && mkdir docs\\images\\parkimages && copy maps\\*.html docs\\ && copy src\\assets\\*.jpg docs\\images\\ && copy src\\assets\\*.jpeg docs\\images\\ && copy src\\assets\\*.png docs\\images\\ && copy src\\assets\\parkimages\\*.jpg docs\\images\\parkimages\\",
     "deploy": "gh-pages -d docs"
   },
   "dependencies": {
