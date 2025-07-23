@@ -6,14 +6,14 @@ function Cards() {
       <ul className="cards__container">
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Golden-gate.jpg"
+            src="/Park-Hopper-Routes/images/parkimages/Golden_Gate_National_Recreation_Area.jpg"
             alt="Golden Gate"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Golden Gate National</h3>
+              <h3 className="card__title">Golden Gate National Recreation Area</h3>
               <span className="card__badge">🗓️ May - October</span>
             </div>
 
@@ -23,7 +23,7 @@ function Cards() {
               Experience a park so rich it supports 19 distinct ecosystems with
               over 2,000 plant and animal species. Go for a hike, enjoy a vista,
               have a picnic or learn about the centuries of overlapping history
-              from California\u2019s indigenous cultures, Spanish colonialism,
+              from California's indigenous cultures, Spanish colonialism,
               the Mexican Republic, US military expansion and the growth of San
               Francisco. All of this and more awaits you, so get out and find
               your park.
@@ -46,7 +46,7 @@ function Cards() {
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Charles Young Buffalo National</h3>
+              <h3 className="card__title">Charles Young Buffalo National Monument</h3>
               <span className="card__badge">🗓️ Year round</span>
             </div>
 
@@ -71,7 +71,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Fire-island-national.jpg"
+            src="/Park-Hopper-Routes/images/parkimages/Fire_Island_National_Seashore.jpg"
             alt="Fire Island National Seashore"
             className="card__image"
           />
@@ -108,7 +108,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Theodore-national-park.jpg"
+            src="/Park-Hopper-Routes/images/parkimages/Everglades_National_Park.jpg"
             alt="Theodore Roosevelt National Park"
             className="card__image"
           />
@@ -146,7 +146,7 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Kenilwork-park.jpg"
+            src="/Park-Hopper-Routes/images/parkimages/Kenilworth_Park__Aquatic_Gardens.jpg"
             alt="Kenilworth Park & Aquatic Gardens"
             className="card__image"
           />
@@ -157,7 +157,7 @@ function Cards() {
               <span className="card__badge">🗓️ June - August</span>
             </div>
 
-            <p className="card__location">📍 Washionton,DC</p>
+            <p className="card__location">📍 Washington, DC</p>
 
             <p className="card__description">
               Deep within Kenilworth lies an oasis, hidden behind trees and
@@ -182,14 +182,14 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Mount-rushmore-park.jpg"
+            src="/Park-Hopper-Routes/images/parkimages/Mount_Rushmore_National_Memorial.jpg"
             alt="Mount Rushmore National Memorial"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Mount Rushmore National </h3>
+              <h3 className="card__title">Mount Rushmore National Memorial</h3>
               <span className="card__badge">🗓️ May, September - October</span>
             </div>
 
