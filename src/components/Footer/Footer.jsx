@@ -39,7 +39,7 @@ function Footer() {
             </a>
           </div>
           <div className="footer__credits">
-            <p className="footer__author">Lily Thato Anderson (SWE)</p>
+            <p className="footer__author">Lily Thato Anderson (SE)</p>
             <a
               href="https://github.com/Thato-A"
               className="footer__author-link"
@@ -54,14 +54,28 @@ function Footer() {
             </a>
           </div>
           <div className="footer__credits">
-            <p className="footer__author">Matthew Richards (SWE)</p>
+            <p className="footer__author">Matthew Richards (SE)</p>
             <a
               href="https://github.com/matthewrichards234"
               className="footer__author-link"
               target="_blank"
             >
               <img
-                src="src\assets\git-logo.png"
+                src="Park-Hopper-Routes\images\github.png"
+                alt="GitHub logo"
+                className="footer__git-logo"
+              />
+            </a>
+          </div>
+          <div className="footer__credits">
+            <p className="footer__author">Vanessa Kwiatkoski (SE)</p>
+            <a
+              href="https://github.com/VanessaK21"
+              className="footer__author-link"
+              target="_blank"
+            >
+              <img
+                src="Park-Hopper-Routes\images\github.png"
                 alt="GitHub logo"
                 className="footer__git-logo"
               />
