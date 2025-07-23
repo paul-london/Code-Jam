@@ -1,6 +1,6 @@
 # 🗺️ Park Hopper Routes
 
-A collaborative project between TripleTen Data Science and Software Engineering students focused on developing an online tool to plan a vacation to United States National Parks based on their starting location. The interactive experience also includes featured parks and helpful travel tips.
+A collaborative project between TripleTen Data Science and Software Engineering students focused on developing an online tool to plan a vacation to United States National Parks based on their starting location. The interactive experience also includes an itinerary view, featured parks, and helpful travel tips.
 
 ## 🌐 Live Demo
 
@@ -14,7 +14,7 @@ https://paul-london.github.io/Park-Hopper-Routes/
 
 The goal of this project is to build a lightweight, functional tool that:
 
-- Plans a vacation through a selection of National Parks based on the user's starting location
+- Plans a vacation through a selection of US National Parks based on the user's starting location
 - Applies a route optimization algorithm to minimize travel distance (Greedy Nearest Neighbor)
 - Displays the determined travel route on an interactive map
 - Provide additional park information and travel tips
