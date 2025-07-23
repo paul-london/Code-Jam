@@ -6,7 +6,7 @@ A collaborative project between TripleTen Data Science and Software Engineering 
 
 https://paul-london.github.io/Park-Hopper-Routes/
 
-## 🛠️ Data Preparation
+## 🛠️ Methodology & Findings
 
 [Notebook](https://github.com/paul-london/Park-Hopper-Routes/blob/main/notebooks/Notebook.ipynb)
 
