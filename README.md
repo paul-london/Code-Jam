@@ -85,7 +85,7 @@ Park-Hopper-Routes/
 | -------------- | ------------------------ | ----------- |
 | 📌 Planning    | Define scope & algorithm | 7/17/2025   |
 | 🔧 Development | Build core features      | 7/20/2025   |
-| 🧪 Testing     | Deployment, Submission   | 7/22/2025   |
+| 🧪 Testing     | Deployment, submission   | 7/22/2025   |
 | 🚀 Launch      | Presentation             | 7/23/2025   |
 
 ## 📝 Notes
