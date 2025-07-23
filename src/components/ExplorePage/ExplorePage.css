@@ -98,6 +98,7 @@
   height: 60px;
   border-radius: 50%;
   animation: drive 6s linear infinite;
+  background: transparent;
 }
 
 @keyframes drive {
