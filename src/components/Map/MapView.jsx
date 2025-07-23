@@ -90,7 +90,6 @@ function MapView({ selectedState }) {
         <div className="spinner-overlay">
           <div className="spinner" />
           <p className="spinner__paragraph">Fetching Route...</p>
-          <img src="src/assets/car.jpeg" alt="Driving car" className="car" />
         </div>
       )}
 
