@@ -155,7 +155,7 @@ function Cards() {
               <span className="card__badge">🗓️ June - August</span>
             </div>
 
-            <p className="card__location">📍 Alpine, TX</p>
+            <p className="card__location">📍 Alpine, Texas</p>
 
             <p className="card__description">
               "There is a place in Far West Texas where night skies are dark as coal 
