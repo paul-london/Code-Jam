@@ -87,18 +87,18 @@ Park-Hopper-Routes/
 | 🧪 Testing     | Deployment, submission   | 7/22/2025   |
 | 🚀 Launch      | Presentation             | 7/23/2025   |
 
+## 📊 Data Sources
+
+- National Parks: Park coordinates and data were obtained from the [National Park Service](https://www.nps.gov) API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
+- Google Maps: Travel distances and durations were obtained from [Google Maps](https://www.google.com/maps) API ([Documentation](https://developers.google.com/maps/documentation)).
+- US States: Coordinates were obtained from public [Kaggle dataset](https://www.kaggle.com/datasets/tennerimaheshwar/us-state-and-territory-latitude-and-longitude-data).
+
 ## 🧭 Next Steps
 
 - Explore more advanced and accurate route algorithms.
 - Create regional roadtrips based on starting location and vary their lengths.
 - Expand starting point selection to include all states and possibly cities.
 - Generate route maps in real-time.
-
-## 📊 Data Sources
-
-- National Parks: Park coordinates and data were obtained from the [National Park Service](https://www.nps.gov) API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
-- Google Maps: Travel distances and durations were obtained from [Google Maps](https://www.google.com/maps) API ([Documentation](https://developers.google.com/maps/documentation)).
-- US States: Coordinates were obtained from public [Kaggle dataset](https://www.kaggle.com/datasets/tennerimaheshwar/us-state-and-territory-latitude-and-longitude-data). 
 
 ## 📬 Contact
 
