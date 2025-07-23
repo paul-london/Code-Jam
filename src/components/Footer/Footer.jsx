@@ -18,7 +18,7 @@ function Footer() {
               target="_blank"
             >
               <img
-                src="src\assets\git-logo.png"
+                src="Park-Hopper-Routes/images/github.png"
                 alt="GitHub logo"
                 className="footer__git-logo"
               />
@@ -32,7 +32,7 @@ function Footer() {
               target="_blank"
             >
               <img
-                src="src\assets\git-logo.png"
+                src="Park-Hopper-Routes/images/github.png"
                 alt="GitHub logo"
                 className="footer__git-logo"
               />
@@ -46,7 +46,7 @@ function Footer() {
               target="_blank"
             >
               <img
-                src="src\assets\git-logo.png"
+                src="Park-Hopper-Routes/images/github.png"
                 alt="GitHub logo"
                 className="footer__git-logo"
                 target="_blank"
@@ -61,7 +61,7 @@ function Footer() {
               target="_blank"
             >
               <img
-                src="Park-Hopper-Routes\images\github.png"
+                src="Park-Hopper-Routes/images/github.png"
                 alt="GitHub logo"
                 className="footer__git-logo"
               />
@@ -75,7 +75,7 @@ function Footer() {
               target="_blank"
             >
               <img
-                src="Park-Hopper-Routes\images\github.png"
+                src="Park-Hopper-Routes/images/github.png"
                 alt="GitHub logo"
                 className="footer__git-logo"
               />
