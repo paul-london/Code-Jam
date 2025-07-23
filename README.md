@@ -62,9 +62,7 @@ Park-Hopper-Routes/
 │   │   ├── MapDisplay.jsx
 │   │   ├── Itinerary.jsx        # Display components
 │   │   └── ParkCards.jsx
-│   ├── contexts/                # Static data context (parksData.js)
-│   ├── App.jsx
-│   └── Main.jsx
+│   └── contexts/                # Static data context (parksData.js)
 ├── maps/                        # Generated HTML maps from Python
 │   └── *.html
 ├── docs/                        # GitHub Pages deployment output (via `npm run deploy`)
