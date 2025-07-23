@@ -96,8 +96,8 @@ Park-Hopper-Routes/
 
 ## 📊 Data Sources
 
-- National Parks: Park coordinates and data pulled from the National Park Service API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
-- Google Maps: Travel distances and durations pulled from Google Maps API ([Documentation](https://developers.google.com/maps/documentation)).
+- National Parks: Park coordinates and data pulled from the [National Park Service](https://www.nps.gov) API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
+- Google Maps: Travel distances and durations pulled from [Google Maps](https://www.google.com/maps) API ([Documentation](https://developers.google.com/maps/documentation)).
 - US States: Coordinates obtained from public [Kaggle dataset](https://www.kaggle.com/datasets/tennerimaheshwar/us-state-and-territory-latitude-and-longitude-data). 
 
 ## 📬 Contact & Communication
