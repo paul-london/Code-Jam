@@ -30,9 +30,9 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
+              <span className="highlight">Iconic Landmarks</span>
+              <span className="highlight">Scenic Coastal Areas</span>
+              <span className="highlight">Recreational Opportunities</span>
             </div>
           </div>
         </li>
@@ -62,9 +62,9 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Youngsholm</span>
-              <span className="highlight">Buffalo Soldiers Legacy</span>
-              <span className="highlight">Guided Tours & Ranger Programs</span>
+              <span className="highlight">Historic Significance</span>
+              <span className="highlight">Preserved Buffalo Herd</span>
+              <span className="highlight">Historic Farm Complex</span>
             </div>
           </div>
         </li>
@@ -95,13 +95,11 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">
-                Maltese Cross Cabin & Elkhorn Ranch Site
+              <span className="highlight">Beaches and Oceanfront
               </span>
-              <span className="highlight">
-                Spectacular Badlands & Scenic Drives
+              <span className="highlight">Sunken Forest
               </span>
-              <span className="highlight">Wildlife & Geologic Wonders</span>
+              <span className="highlight">Fire Island Lighthouse</span>
             </div>
           </div>
         </li>
@@ -126,19 +124,19 @@ function Cards() {
               1883, he was a skinny, young, spectacled dude from New York. He
               could not have imagined how his adventure in this remote and
               unfamiliar place would forever alter the course of the nation. The
-              rugged landscape and strenuous life that TR experienced here would
-              help shape a conservation policy that we still benefit from today.
+              rugged landscape and strenuous life that Roosevelt experienced here 
+              would help shape a conservation policy that we still benefit from today.
             </p>
 
             <div className="card__highlights">
               <span className="highlight">
-                Three Successive Fort Sites & Santa Fe Trail Ruts
+                Badlands Landscape
               </span>
               <span className="highlight">
-                Major Civil‑War‑Era Supply Depot
+                Wildlife Viewing
               </span>
               <span className="highlight">
-                Guided & Self‑Guided Trails with Ranger Programs
+                Theodore Roosevelt's Legacy
               </span>
             </div>
           </div>
@@ -146,36 +144,32 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Kenilworth_Park__Aquatic_Gardens.jpg"
-            alt="Kenilworth Park & Aquatic Gardens"
+            src="/Park-Hopper-Routes/images/parkimages/Big_Bend_National_Park.jpg"
+            alt="Big Bend National Park"
             className="card__image"
           />
 
           <div className="card__content">
             <div className="card__heading">
-              <h3 className="card__title">Kenilworth Park & Aquatic Gardens</h3>
+              <h3 className="card__title">Big Bend National Park</h3>
               <span className="card__badge">🗓️ June - August</span>
             </div>
 
-            <p className="card__location">📍 Washington, DC</p>
+            <p className="card__location">📍 Alpine, Texas</p>
 
             <p className="card__description">
-              Deep within Kenilworth lies an oasis, hidden behind trees and
-              cattails. It's a place where beavers build their homes and turtles
-              sleep on logs. Lotus blooms rise from the muck and lilies sit on
-              the water. The wind dances with the dragonflies, rustling through
-              the trees, carrying the song of the birds until it brushes across
-              your face, fading to a whisper, saying \"come join.\"
+              "There is a place in Far West Texas where night skies are dark as coal 
+              and rivers carve temple-like canyons in ancient limestone. Here, at the 
+              end of the road, hundreds of bird species take refuge in a solitary 
+              mountain range surrounded by weather-beaten desert. Tenacious cactus 
+              bloom in sublime southwestern sun, and species diversity is the best 
+              in the country. This magical place is Big Bend...
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Fire Island Lighthouse</span>
-              <span className="highlight">
-                Sunken Forest & Otis Pike Wilderness
-              </span>
-              <span className="highlight">
-                Secluded Beaches & Vibrant Communities
-              </span>
+              <span className="highlight">Diverse Landscapes</span>
+              <span className="highlight">Chisos Mountains</span>
+              <span className="highlight">Rio Grande River</span>
             </div>
           </div>
         </li>
@@ -206,9 +200,9 @@ function Cards() {
             </p>
 
             <div className="card__highlights">
-              <span className="highlight">Cataract Falls</span>
-              <span className="highlight">Cades Cove</span>
-              <span className="highlight">Appalachian Trail</span>
+              <span className="highlight">The Monument</span>
+              <span className="highlight">Sculptor Gutzon Borglum</span>
+              <span className="highlight">Presidential Trail</span>
             </div>
           </div>
         </li>
