@@ -7,7 +7,7 @@ function Cards() {
         <li className="card">
           <img
             src="/Park-Hopper-Routes/images/parkimages/Golden_Gate_National_Recreation_Area.jpg"
-            alt="Golden Gate"
+            alt="Golden Gate National Recreation Area"
             className="card__image"
           />
 
@@ -39,8 +39,8 @@ function Cards() {
 
         <li className="card">
           <img
-            src="/Park-Hopper-Routes/images/parkimages/Charles-young-park.jpg"
-            alt="Charles Young National"
+            src="/Park-Hopper-Routes/images/parkimages/Charles_Young_Buffalo_Soldiers_National_Monument.jpg"
+            alt="Charles Young Buffalo Soldiers National Monument"
             className="card__image"
           />
 
@@ -109,7 +109,7 @@ function Cards() {
         <li className="card">
           <img
             src="/Park-Hopper-Routes/images/parkimages/Everglades_National_Park.jpg"
-            alt="Theodore Roosevelt National Park"
+            alt="Everglades National Park"
             className="card__image"
           />
 
