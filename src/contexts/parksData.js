@@ -2,7 +2,7 @@ const parks = [
   {
     id: "0E797FA8-6E31-418B-A68F-13CEE37A2AF5",
     name: "Golden Gate National Recreation Area",
-    location: "Califonia",
+    location: "California",
     latitude: 37.85982543,
     longitude: -122.6007386,
     description:
@@ -61,7 +61,7 @@ const parks = [
   {
     id: "A1901BAE-94DB-44E4-96D4-1E07422EDF6E",
     name: "Kenilworth Park & Aquatic Gardens",
-    location: "DC",
+    location: "Washington, DC",
     latitude: 38.9128,
     longitude: -76.9434,
     description:
