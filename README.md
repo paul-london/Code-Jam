@@ -22,7 +22,7 @@ The goal of this project is to build a lightweight, functional tool that:
 ## 📦 Features
 
 - Clean and modular backend structure
-- Basic frontend interface
+- Simple but interactive frontend interface
 - Input support: manual entry or uploaded data (e.g., CSV, JSON)
 - Route optimization algorithm (Greedy Nearest Neighbors) with performance comparison to random route
 - Integrated Google Maps driving data
