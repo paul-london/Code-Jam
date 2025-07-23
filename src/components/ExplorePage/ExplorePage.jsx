@@ -51,7 +51,7 @@ function Explore({
           </button>
         </form>
         <div className="explore__car-animation">
-          <img src="docs/assets/car.jpeg" alt="Driving car" className="car" />
+          <img src="/Park-Hopper-Routes/images/car.jpeg" alt="Driving car" className="car" />
         </div>
       </div>
     </div>
