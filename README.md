@@ -30,8 +30,14 @@ The goal of this project is to build a lightweight, functional tool that:
 
 ## 🧠 Technologies
 
-- Programming Languages & Tools: `JavaScript`, `React`, `Python`, `HTML`, `CSS`, `Vite`
-- Algorithm: Greedy Nearest Neighbor
+## Software Engineering
+- Languages & Frameworks: JavaScript, React, HTML, CSS, Vite  
+- Tools: Git, GitHub Pages, Node.js
+
+## Data Science
+- Languages: Python  
+- Algorithm: Greedy Nearest Neighbor  
+- Libraries: `pandas`, `numpy`, `folium`, `googlemaps`, `matplotlib`
 
 ## 📁 Project Structure (Summary)
 
