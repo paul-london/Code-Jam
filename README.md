@@ -37,7 +37,7 @@ The goal of this project is to build a lightweight, functional tool that:
 
 #### Software Engineering
 - JavaScript, React, HTML, CSS, Vite  
-- Git, GitHub Pages, Node.js
+- Git, GitHub Pages
 
 ## 📁 Project Structure (Summary)
 
