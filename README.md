@@ -57,9 +57,10 @@ Park-Hopper-Routes/
 │   |   ├── Main.jsx
 │   │   ├── Header.jsx
 │   │   ├── Footer.jsx
-│   │   ├── PlanTrip.jsx
-│   │   ├── Itinerary.jsx
+│   │   ├── PlanTrip.jsx         # Interactive components
+│   │   ├── ExplorePage.jsx
 │   │   ├── MapDisplay.jsx
+│   │   ├── Itinerary.jsx        # Display components
 │   │   └── ParkCards.jsx
 │   ├── contexts/                # Static data context (parksData.js)
 │   ├── App.jsx
