@@ -19,8 +19,6 @@ The goal of this project is to build a lightweight, functional tool that:
 - Displays the determined travel route on an interactive map
 - Provide additional park information and travel tips
 
-The framework of this project could serve additional use cases in delivery services, travel planning, field technician routing, or logistics.
-
 ## 📦 Features
 
 - Clean and modular backend structure
@@ -34,16 +32,6 @@ The framework of this project could serve additional use cases in delivery servi
 
 - Programming Languages & Tools: `JavaScript`, `React`, `Python`, `HTML`, `CSS`, `Vite`
 - Algorithm: Greedy Nearest Neighbor
-
-## 🧑‍🤝‍🧑 Team Members
-
-| Name    | Role                 |
-| ------- | -------------------- |
-| Lily Thato Anderson   | Software Engineering |
-| Matthew Richards | Software Engineering |
-| Vanessa Kwiatkoski | Software Engineering |
-| Paul London   | Data Science         |
-| Priti Sagar  | Data Science         |
 
 ## 📁 Project Structure (Summary)
 
@@ -93,20 +81,31 @@ Park-Hopper-Routes/
 | 🧪 Testing     | Deployment, submission   | 7/22/2025   |
 | 🚀 Launch      | Presentation             | 7/23/2025   |
 
-## 📝 Notes
+## 🧭 Next Steps
 
-- Algorithm selection and trade-offs were discussed as a group.
-- Aim to build something that _works_, then iterate and optimize.
-- Keep code modular and readable for team collaboration.
+- Explore more advanced and accurate route algorithms.
+- Create regional roadtrips based on starting location and vary their lengths.
+- Expand starting point selection to include all states and possibly cities.
+- Generate route maps in real-time.
 
 ## 📊 Data Sources
 
-- National Parks: Park coordinates and data pulled from the [National Park Service](https://www.nps.gov) API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
-- Google Maps: Travel distances and durations pulled from [Google Maps](https://www.google.com/maps) API ([Documentation](https://developers.google.com/maps/documentation)).
-- US States: Coordinates obtained from public [Kaggle dataset](https://www.kaggle.com/datasets/tennerimaheshwar/us-state-and-territory-latitude-and-longitude-data). 
+- National Parks: Park coordinates and data were obtained from the [National Park Service](https://www.nps.gov) API ([Documentation](https://www.nps.gov/subjects/developer/api-documentation.htm)).
+- Google Maps: Travel distances and durations were obtained from [Google Maps](https://www.google.com/maps) API ([Documentation](https://developers.google.com/maps/documentation)).
+- US States: Coordinates were obtained from public [Kaggle dataset](https://www.kaggle.com/datasets/tennerimaheshwar/us-state-and-territory-latitude-and-longitude-data). 
 
-## 📬 Contact & Communication
+## 📬 Contact
 
-Project coordination through [GitHub Issues](https://github.com/) and Discord.
+We appreciate feedback and collaboration opportunities, so please reach out! See links below.
+
+## 🧑‍🤝‍🧑 Team Members
+
+| Name    | Role                 | GitHub | LinkedIn |
+| ------- | -------------------- | -------------------- | -------------------- |
+| Lily Thato Anderson   | Software Engineering | [Link](https://github.com/Thato-A) | 
+| Vanessa Kwiatkoski | Software Engineering | [Link](https://github.com/VanessaK21) | [Link](https://www.linkedin.com/in/vanessa-kwiatkoski/)
+| Paul London   | Data Science         | [Link](https://github.com/paul-london) | [Link](https://www.linkedin.com/in/palondon/)
+| Matthew Richards | Software Engineering | [Link](https://github.com/matthewrichards234) | 
+| Priti Sagar  | Data Science         | [Link](https://github.com/Priti0427) | [Link](https://www.linkedin.com/in/priti-sagar04/)
 
 ---
