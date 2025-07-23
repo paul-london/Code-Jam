@@ -20,10 +20,11 @@ The framework of this project could serve additional use cases in delivery servi
 ## 📦 Features
 
 - Clean and modular backend structure
-- Basic frontend interface or API endpoint
+- Basic frontend interface
 - Input support: manual entry or uploaded data (e.g., CSV, JSON)
-- Route optimization algorithm (TBD)
-- Performance benchmarks and testing
+- Route optimization algorithm (Greedy Nearest Neighbors) with performance comparison to random route
+- Integrated Google Maps driving data
+- Support for six starting states
 
 ## 🧠 Technologies
 
